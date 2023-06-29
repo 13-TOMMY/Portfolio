@@ -1,0 +1,29 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color:inherit;
+}
+/* viewable area */
+.viewable-area{
+  display: flex;
+  background-image: url("../../Portfolio/src/assets/background.png");
+  background-size: cover;
+  background-position: center;
+}
+/* left side */
+.left-side{
+  width: max(200px, 10%);
+  height: 100vh;
+  background-color: brown;
+}
+/* right side */
+.right-side{
+  width: 90%;
+  height: 100vh;
+}
