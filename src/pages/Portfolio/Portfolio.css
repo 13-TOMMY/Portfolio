@@ -1,0 +1,44 @@
+/* Container */
+.portfolio-container {
+   width: 80%;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+ }
+ /* Portfolio Card */
+ .portfolio-1, .portfolio-2, .portfolio-3, .portfolio-4{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 400px;
+   height: 80%;
+   margin: 1%;
+ }
+ .port-1-img, .port-2-img, .port-3-img,.port-4-img{
+   width: 80%;
+   height: 357px;
+ }
+ .port-top{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .port-dark {
+   background: rgba(0, 0, 0, 0.28);
+   border-radius: 16px;
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(10.6px);
+   -webkit-backdrop-filter: blur(10.6px);
+   border: 1px solid rgba(0, 0, 0, 0.3);
+ }
+ .port-light {
+   background: rgba(255, 255, 255, 0.28);
+   border-radius: 16px;
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+   backdrop-filter: blur(10.6px);
+   -webkit-backdrop-filter: blur(10.6px);
+   border: 1px solid rgba(255, 255, 255, 0.3);
+ }
