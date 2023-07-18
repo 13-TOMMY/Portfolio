@@ -21,7 +21,7 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'M PLUS 1 Code', sans-serif;
 }
 
 a{
@@ -38,6 +38,7 @@ html{
   justify-content: center;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 .dark-mode-viewArea{
   background-image: url("../../Portfolio/src/assets/background.jpeg");
@@ -75,10 +76,11 @@ html{
 }
 
 /* right side */
-.right-side{
+.right-side {
   width: 90%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-y: auto;
 }
