@@ -1,0 +1,227 @@
+/* Container */
+.portfolio-container {
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10%;
+}
+
+/* Portfolio Card */
+.portfolio-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+
+.portfolio-1,
+.portfolio-2,
+.portfolio-3,
+.portfolio-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 48%;
+  max-width: 400px;
+  min-width: 300px;
+  max-height: 500px;
+  min-height: 300px;
+  aspect-ratio: 400/500;
+  margin: 1%;
+}
+
+.port-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55%;
+  width: 90%;
+}
+
+.port-1-img,
+.port-2-img,
+.port-3-img,
+.port-4-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.port-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 35%;
+  text-align: center;
+  overflow: hidden;
+}
+
+.port-bottom h3 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.port-bottom p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.port-bottom button {
+  width: 100px;
+  height: 40px;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  border-radius: 40px;
+  border: none;
+  margin: 2.5px;
+}
+
+.port-dark {
+  background: rgba(0, 0, 0, 0.28);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.6px);
+  -webkit-backdrop-filter: blur(10.6px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.port-light {
+  background: rgba(255, 255, 255, 0.28);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.6px);
+  -webkit-backdrop-filter: blur(10.6px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  /* Styles for tablets */
+  .portfolio-container {
+    width: 90%;
+    margin-top: 5%;
+  }
+
+  .portfolio-row {
+    margin-bottom: 5%;
+  }
+
+  .portfolio-1,
+  .portfolio-2,
+  .portfolio-3,
+  .portfolio-4 {
+    width: 100%;
+    max-width: none;
+    min-width: none;
+    max-height: 100%;
+    min-height: none;
+  }
+
+  .port-top {
+    width: 100%;
+  }
+
+  .port-bottom {
+    width: 100%;
+  }
+
+  .port-bottom h3 {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+
+  .port-bottom p {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .port-bottom button {
+    width: 80px;
+    height: 32px;
+    font-size: 24px;
+    margin: 2px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Styles for phones */
+  .portfolio-container {
+    width: 95%;
+    margin-top: 5%;
+  }
+
+  .portfolio-row {
+    margin-bottom: 2%;
+  }
+
+  .portfolio-1,
+  .portfolio-2,
+  .portfolio-3,
+  .portfolio-4 {
+    width: 100%;
+  }
+
+  .port-bottom h3 {
+    font-size: 24px;
+    margin-bottom: 6px;
+  }
+
+  .port-bottom p {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  .port-bottom button {
+    width: 60px;
+    height: 24px;
+    font-size: 20px;
+    margin: 1px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Styles for smaller devices */
+  .portfolio-container {
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  .portfolio-row {
+    margin-bottom: 1%;
+  }
+
+  .portfolio-1,
+  .portfolio-2,
+  .portfolio-3,
+  .portfolio-4 {
+    width: 100%;
+  }
+
+  .port-bottom h3 {
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+
+  .port-bottom p {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+
+  .port-bottom button {
+    width: 50px;
+    height: 20px;
+    font-size: 16px;
+    margin: 1px;
+  }
+}
