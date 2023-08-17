@@ -8,10 +8,10 @@ function About() {
   return (
     <div className='about-container'>
       <div className="ab-left">
-      <div className={darkMode ? "ab-left-top-dark ab-left-top" : "ab-left-top-light ab-left-top"}>
+      <div className={darkMode ? "div-dark ab-left-top" : "div-light ab-left-top"}>
       <img src="src/assets/photos/d93e089e-eee7-46ea-9ff6-3c87830453b0.jpeg" alt="Photo of me" className='ab-left-top-img'/>
       </div> 
-      <div className={darkMode ? "ab-left-bottom-dark ab-left-bottom" : "ab-left-bottom-light ab-left-bottom"}>
+      <div className={darkMode ? "div-dark ab-left-bottom" : "div-light ab-left-bottom"}>
       <img src="src/assets/Tech-Stack/oading-one.svg" alt="loading" />
       <img src="src/assets/Tech-Stack/oading-one.svg" alt="loading" />
       <img src="src/assets/Tech-Stack/oading-one.svg" alt="loading" />
@@ -19,7 +19,7 @@ function About() {
       </div>
     </div>
     <div className="ab-right">
-      <div className={darkMode ? "ab-right-p-dark ab-right-p" : "ab-right-p-light ab-right-p"}>
+      <div className={darkMode ? "div-dark ab-right-p" : "div-light ab-right-p"}>
         <p className={darkMode ? 'dark-text' : 'light-text'}>
         Growing up in London, my early exposure to technology sparked a deep passion within me. Through building and repairing computers, gaming consoles, and phones, I honed my problem-solving skills and gained a strong understanding of these devices. To further enhance my expertise, I completed the comprehensive front-end development bootcamp, Mimo. During this intensive seven-month program, I mastered HTML, CSS, JavaScript, React, and Git, solidifying my skills and expanding my knowledge of web development.
         </p>

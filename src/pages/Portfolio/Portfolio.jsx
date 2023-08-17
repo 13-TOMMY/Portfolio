@@ -9,7 +9,7 @@ function Portfolio() {
   return (
     <div className="portfolio-container">
       <div className="portfolio-row">
-        <div className={darkMode ? 'port-dark portfolio-1' : 'port-light portfolio-1'}>
+        <div className={darkMode ? 'div-dark portfolio-1' : 'div-light portfolio-1'}>
           <div className="port-top">
             <img
               src="src/assets/photos/d93e089e-eee7-46ea-9ff6-3c87830453b0.jpeg"
@@ -34,7 +34,7 @@ function Portfolio() {
           </div>
         </div>
 
-        <div className={darkMode ? 'port-dark portfolio-2' : 'port-light portfolio-2'}>
+        <div className={darkMode ? 'div-dark portfolio-2' : 'div-light portfolio-2'}>
           <div className="port-top">
             <img
               src="src/assets/photos/d93e089e-eee7-46ea-9ff6-3c87830453b0.jpeg"
@@ -61,7 +61,7 @@ function Portfolio() {
       </div>
 
       <div className="portfolio-row">
-        <div className={darkMode ? 'port-dark portfolio-3' : 'port-light portfolio-3'}>
+        <div className={darkMode ? 'div-dark portfolio-3' : 'div-light portfolio-3'}>
           <div className="port-top">
             <img
               src="src/assets/photos/d93e089e-eee7-46ea-9ff6-3c87830453b0.jpeg"
@@ -86,7 +86,7 @@ function Portfolio() {
           </div>
         </div>
 
-        <div className={darkMode ? 'port-dark portfolio-4' : 'port-light portfolio-4'}>
+        <div className={darkMode ? 'div-dark portfolio-4' : 'div-light portfolio-4'}>
           <div className="port-top">
             <img
               src="src/assets/photos/d93e089e-eee7-46ea-9ff6-3c87830453b0.jpeg"
