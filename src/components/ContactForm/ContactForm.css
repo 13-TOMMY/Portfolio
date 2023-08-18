@@ -1,0 +1,45 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: fit-content;
+  width: fit-content;
+  padding: 3%;
+}
+.contact-form-fields{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.form-title{
+    width: 300px;
+    padding-bottom: 20px;
+}
+.form-name,
+.form-email,
+.form-phone,
+.form-message {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 10px;
+}
+.form-name input,
+.form-email input,
+.form-phone input,
+.form-message textarea {
+   size: 100%;
+}
+.form-btns{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.form-btns :first-child, .form-btns :last-child{
+    width: 50px;
+    height: 35px;
+    background-color: var(--);
+}

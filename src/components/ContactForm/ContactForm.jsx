@@ -2,6 +2,7 @@ import React, { useRef, useState, useContext } from "react";
 import emailjs from "@emailjs/browser";
 import { toast, ToastContainer } from "react-toastify";
 import { ThemeContext } from "../../context/ThemeContext";
+import "./ContactForm.css";
 import "react-toastify/dist/ReactToastify.css";
 
 const ContactForm = () => {
@@ -55,74 +56,89 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="contact-form">
+    <div
+      className={darkMode ? "div-dark contact-form" : "div-light contact-form"}
+    >
       <ToastContainer />
-      <form ref={form} onSubmit={sendEmail}>
-        <label htmlFor="text" className={darkMode ? "dark-text" : "light-text"}>
-          Name
-        </label>
-        <input
-          type="text"
-          name="user_name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          required
-        />
-
-        <label
-          htmlFor="email"
-          className={darkMode ? "dark-text" : "light-text"}
-        >
-          Email
-        </label>
-        <input
-          type="email"
-          name="user_email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-
-        <label
-          htmlFor="number"
-          className={darkMode ? "dark-text" : "light-text"}
-        >
-          Phone Number (Optional)
-        </label>
-        <input
-          type="text"
-          name="user_phone_number"
-          value={phoneNumber}
-          onChange={(e) => setPhoneNumber(e.target.value)}
-        />
-
-        <label
-          htmlFor="message"
-          className={darkMode ? "dark-text" : "light-text"}
-        >
-          Message
-        </label>
-        <textarea
-          name="message"
-          cols="30"
-          rows="10"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          required
-        />
-
-        <input
-          type="submit"
-          value="Send"
-          className={darkMode ? "dark-text" : "light-text"}
-        />
-        <button
-          type="button"
-          onClick={clearForm}
-          className={darkMode ? "dark-text" : "light-text"}
-        >
-          Clear
-        </button>
+      <div className="form-title">
+        <h2>Contact Us</h2>
+        <p>Please fill out the form below to get in touch with us.</p>
+      </div>
+      <form ref={form} onSubmit={sendEmail} className="contact-form-fields">
+        <div className="form-name">
+          <label
+            htmlFor="text"
+            className={darkMode ? "dark-text" : "light-text"}
+          >
+            Name
+          </label>
+          <input
+            type="text"
+            name="user_name"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
+        </div>
+        <div className="form-email">
+          <label
+            htmlFor="email"
+            className={darkMode ? "dark-text" : "light-text"}
+          >
+            Email
+          </label>
+          <input
+            type="email"
+            name="user_email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+        </div>
+        <div className="form-phone">
+          <label
+            htmlFor="number"
+            className={darkMode ? "dark-text" : "light-text"}
+          >
+            Phone Number (Optional)
+          </label>
+          <input
+            type="text"
+            name="user_phone_number"
+            value={phoneNumber}
+            onChange={(e) => setPhoneNumber(e.target.value)}
+          />
+        </div>
+        <div className="form-message">
+          <label
+            htmlFor="message"
+            className={darkMode ? "dark-text" : "light-text"}
+          >
+            Message
+          </label>
+          <textarea
+            name="message"
+            cols="30"
+            rows="10"
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            required
+          />
+        </div>
+        <div className="form-btns">
+          <input
+            type="submit"
+            value="Send"
+            className={darkMode ? "dark-text" : "light-text"}
+          />
+          <button
+            type="button"
+            onClick={clearForm}
+            className={darkMode ? "dark-text" : "light-text"}
+          >
+            Clear
+          </button>
+        </div>
       </form>
     </div>
   );

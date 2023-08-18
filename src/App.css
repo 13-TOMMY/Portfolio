@@ -17,8 +17,9 @@ html {
 :root {
   --black: #000000;
   --white: white;
-  --light-first: #fdd041ff;
-  --light-sec: #00afe8ff;
+  --primary-light: #fdd041ff; /* Light Yellow */
+  --secondary-light-1: #00afe8ff; /* Light Blue */
+  --secondary-light-2: #5c5c5c; /* Light Gray */
 }
 .div-light {
   background: rgba(233, 233, 233, 0.46);
@@ -39,8 +40,9 @@ html {
 :root {
   --black: #000000;
   --white: white;
-  --dark-first: #004270ff;
-  --dark-sec: rgb(79, 48, 250);
+  --primary-dark: #004270ff; /* Dark Blue */
+  --secondary-dark-1: #7d43b3; /* Purple */
+  --secondary-dark-2: #212121; /* Dark Gray */
 }
 .div-dark {
   /* From https://css.glass */

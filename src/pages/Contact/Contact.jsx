@@ -4,8 +4,13 @@ import "./Contact.css"
 
 function Contact() {
   return (
-    <div>
+    <div className='contact-page'>
+      <div className="contact-form-container">
       <ContactForm />
+      </div>
+      <div className="contact-social-media-container">
+          <h5>social media links</h5>
+      </div>
     </div>
   )
 }
