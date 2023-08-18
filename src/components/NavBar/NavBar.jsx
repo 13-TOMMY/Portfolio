@@ -16,12 +16,12 @@ function NavBar() {
     <div className='nav-container'>
       <div className='top-icon-container'>
         <div className='top'>
-          <Link to="/"><BiHomeAlt2 className={darkMode ?"dark-icon icon":"light-icon icon"}/></Link>
-          <Link to="/about"><BiUser className={darkMode ?"dark-icon icon":"light-icon icon"} /></Link>
+          <Link to="/"><BiHomeAlt2 className={darkMode ?"dark-text hover-icon-d icon":"light-text hover-icon-l icon"}/></Link>
+          <Link to="/about"><BiUser className={darkMode ?"dark-text hover-icon-d icon":"light-text hover-icon-l icon"} /></Link>
         </div>
         <div className='bottom'>
-          <Link to="/portfolio"><BiLibrary className={darkMode ?"dark-icon icon":"light-icon icon"} /></Link>
-          <Link to="/contact"><BiPaperPlane className={darkMode ?"dark-icon icon":"light-icon icon"} /></Link>
+          <Link to="/portfolio"><BiLibrary className={darkMode ?"dark-text hover-icon-d icon":"light-text hover-icon-l icon"} /></Link>
+          <Link to="/contact"><BiPaperPlane className={darkMode ?"dark-text hover-icon-d icon":"light-text hover-icon-l icon"} /></Link>
         </div>
       </div>
       <div className='bottom-icon-container'>

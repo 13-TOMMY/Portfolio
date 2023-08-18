@@ -7,6 +7,8 @@
   align-items: center;
   justify-content: center;
 }
+
+
 /* top  */
 .hp-top {
   display: flex;
@@ -22,9 +24,16 @@
   height: 350px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-around;
   padding: 3%;
+}
+
+.hp-h1-text{
+  font-size: 24px;
+}
+.hp-p-text{
+  font-size: 18px;
 }
 /* top right */
 .hp-top-right {
@@ -73,6 +82,9 @@
 .ts-name{
    width: 20%;
    text-align: center;
+}
+.hp-ts-text{
+  font-size: 52px;
 }
 .tech-stack {
   width: 70%;

@@ -12,13 +12,15 @@ function Homepage() {
             darkMode ? "div-dark hp-top-left" : "div-light hp-top-left"
           }
         >
-          <h1 className={darkMode ? "dark-text" : "light-text"}>
+          <h1 className={darkMode ? "dark-text hp-h1-text" : "light-text hp-h1-text"}>
             Front-end Developer
           </h1>
-          <p className={darkMode ? "dark-text" : "light-text"}>
-            Hello, I am Tomasz Lis, an enthusiastic Front-end Developer based in
-            Krakow, Poland. I love coding and I believe in the power of
-            continuous learning, expanding my knowledge and skills every day.
+          <p className={darkMode ? "dark-text hp-p-text" : "light-text hp-p-text"}>
+            Hey there, I&apos;m Tomasz Lis, a Front-end Developer based in lively
+            Krakow, Poland. I&apos;m all about coding and continuous learning. Right
+            now, I&apos;m focused on leveling up to become a Full Stack Developer
+            because I believe in pushing my limits. Coding isn&apos;t just a job for
+            me – it&apos;s a passion that drives me to learn and grow every day.
           </p>
         </div>
         <div
@@ -36,13 +38,15 @@ function Homepage() {
       <div className="hp-bottom">
         <div
           className={
-            darkMode ? "div-dark hp-bottom" : "div-light hp-bottom-container"
+            darkMode
+              ? "div-dark hp-bottom-container"
+              : "div-light hp-bottom-container"
           }
         >
           <div className="hp-bottom-techStack">
             <div className="ts-name">
-              <h3 className={darkMode ? "dark-text" : "light-text"}>
-                Tech Stack
+              <h3 className={darkMode ? "dark-text hp-ts-text" : "light-text hp-ts-text"}>
+                TECH STACK
               </h3>
             </div>
             <div className="tech-stack">
