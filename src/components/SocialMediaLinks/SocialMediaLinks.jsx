@@ -28,7 +28,7 @@ function SocialMediaLinks() {
           </a>
           <label
             htmlFor="sml-img-link"
-            className={darkMode ? "dark-text" : "light-text"}
+            className={darkMode ? "dark-text sml-label" : "light-text sml-label"}
           >
             Twiiter / X
           </label>
@@ -47,7 +47,7 @@ function SocialMediaLinks() {
           </a>
           <label
             htmlFor="sml-img-link"
-            className={darkMode ? "dark-text" : "light-text"}
+            className={darkMode ? "dark-text sml-label" : "light-text sml-label"}
           >
             LinkedIn
           </label>
@@ -66,7 +66,7 @@ function SocialMediaLinks() {
           </a>
           <label
             htmlFor="sml-img-link"
-            className={darkMode ? "dark-text" : "light-text"}
+            className={darkMode ? "dark-text sml-label" : "light-text sml-label"}
           >
             Medium
           </label>
