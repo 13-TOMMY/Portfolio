@@ -1,115 +1,47 @@
-import React, { useContext } from 'react';
-import './Portfolio.css';
-import { ThemeContext } from '../../context/ThemeContext';
-import { Link } from 'react-router-dom';
+import React from "react";
+import "./Portfolio.css";
+import ProjectCard from "../../components/ProjectCard/ProjectCard";
 
 function Portfolio() {
-  const { darkMode, setDarkMode } = useContext(ThemeContext);
-
   return (
     <div className="portfolio-container">
       <div className="portfolio-row">
-        <div className={darkMode ? 'div-dark portfolio-1' : 'div-light portfolio-1'}>
-          <div className="port-top">
-            <img
-              src="src/assets/photos/d93e089e-eee7-46ea-9ff6-3c87830453b0.jpeg"
-              alt="Photo of me"
-              className="port-1-img"
-            />
-          </div>
-          <div className="port-bottom">
-            <h3>Project name</h3>
-            <p>
-              Short description of the project highlighting the features and your contribution /
-              Short description of the project highlighting the features and your contribution
-            </p>
-            <div className="button-container">
-              <button>
-                <Link to="https://github.com/jungwonJung/Space-Next">View</Link>
-              </button>
-              <button>
-                <Link to="https://github.com/jungwonJung/Space-Next">Visit</Link>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div className={darkMode ? 'div-dark portfolio-2' : 'div-light portfolio-2'}>
-          <div className="port-top">
-            <img
-              src="src/assets/photos/d93e089e-eee7-46ea-9ff6-3c87830453b0.jpeg"
-              alt="Photo of me"
-              className="port-2-img"
-            />
-          </div>
-          <div className="port-bottom">
-            <h3>Project name</h3>
-            <p>
-              Short description of the project highlighting the features and your contribution /
-              Short description of the project highlighting the features and your contribution
-            </p>
-            <div className="button-container">
-              <button>
-                <Link to="https://github.com/jungwonJung/Space-Next">View</Link>
-              </button>
-              <button>
-                <Link to="https://github.com/jungwonJung/Space-Next">Visit</Link>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="portfolio-row">
-        <div className={darkMode ? 'div-dark portfolio-3' : 'div-light portfolio-3'}>
-          <div className="port-top">
-            <img
-              src="src/assets/photos/d93e089e-eee7-46ea-9ff6-3c87830453b0.jpeg"
-              alt="Photo of me"
-              className="port-3-img"
-            />
-          </div>
-          <div className="port-bottom">
-            <h3>Project name</h3>
-            <p>
-              Short description of the project highlighting the features and your contribution /
-              Short description of the project highlighting the features and your contribution
-            </p>
-            <div className="button-container">
-              <button>
-                <Link to="https://github.com/jungwonJung/Space-Next">View</Link>
-              </button>
-              <button>
-                <Link to="https://github.com/jungwonJung/Space-Next">Visit</Link>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div className={darkMode ? 'div-dark portfolio-4' : 'div-light portfolio-4'}>
-          <div className="port-top">
-            <img
-              src="src/assets/photos/d93e089e-eee7-46ea-9ff6-3c87830453b0.jpeg"
-              alt="Photo of me"
-              className="port-4-img"
-            />
-          </div>
-          <div className="port-bottom">
-            <h3>Project name</h3>
-            <p>
-              Short description of the project highlighting the features and your contribution /
-              Short description of the project highlighting the features and your contribution
-            </p>
-            <div className="button-container">
-              <button>
-                <Link to="https://github.com/jungwonJung/Space-Next">View</Link>
-              </button>
-              <button>
-                <Link to="https://github.com/jungwonJung/Space-Next">Visit</Link>
-              </button>
-            </div>
-          </div>
-        </div>
+        <ProjectCard
+          videoLink={"src/assets/dark-background.jpeg"}
+          projectName={"RE:serve - Table Reservation System"}
+          projectDescription={
+            "RE:serve is a web application that simplifies table reservations at restaurants and venues. Users can effortlessly find and book tables, manage their reservations, and enjoy a seamless dining experience. Powered by users by the and Firebase, this project showcases my skills in React, three.js, Firebase Authentication, Firebase Firestore and responsive web design."
+          }
+          viewlink={"www.youtube.com"}
+          visitLink={"www.google.com"}
+        />
+        <ProjectCard
+          videoLink={"src/assets/dark-background.jpeg"}
+          projectName={"RE:serve - Table Reservation System"}
+          projectDescription={
+            "RE:serve is a web application that simplifies table reservations at restaurants and venues. Users can effortlessly find and book tables, manage their reservations, and enjoy a seamless dining experience. Powered by users by the and Firebase, this project showcases my skills in React, three.js, Firebase Authentication, Firebase Firestore and responsive web design."
+          }
+          viewlink={"www.youtube.com"}
+          visitLink={"www.google.com"}
+        />
+        <ProjectCard
+          videoLink={"src/assets/dark-background.jpeg"}
+          projectName={"RE:serve - Table Reservation System"}
+          projectDescription={
+            "RE:serve is a web application that simplifies table reservations at restaurants and venues. Users can effortlessly find and book tables, manage their reservations, and enjoy a seamless dining experience. Powered by users by the and Firebase, this project showcases my skills in React, three.js, Firebase Authentication, Firebase Firestore and responsive web design."
+          }
+          viewlink={"www.youtube.com"}
+          visitLink={"www.google.com"}
+        />
+        <ProjectCard
+          videoLink={"src/assets/dark-background.jpeg"}
+          projectName={"RE:serve - Table Reservation System"}
+          projectDescription={
+            "RE:serve is a web application that simplifies table reservations at restaurants and venues. Users can effortlessly find and book tables, manage their reservations, and enjoy a seamless dining experience. Powered by users by the and Firebase, this project showcases my skills in React, three.js, Firebase Authentication, Firebase Firestore and responsive web design."
+          }
+          viewlink={"www.youtube.com"}
+          visitLink={"www.google.com"}
+        />
       </div>
     </div>
   );

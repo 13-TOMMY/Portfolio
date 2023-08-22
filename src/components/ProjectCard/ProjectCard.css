@@ -1,0 +1,42 @@
+.portfolio-card {
+  width: 450px;
+  height: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+.portfolio-card img {
+  height: 45%;
+  width: 90%;
+  border-radius: 12px;
+}
+.portfolio-card h2 {
+  width: 90%;
+  text-align: center;
+  font-size: 26px;
+}
+.portfolio-card p {
+  width: 90%;
+  text-align: center;
+  font-size: 18px;
+}
+.pc-btn-container {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+}
+
+.pc-btn-container button {
+  width: 75px;
+  height: 50px;
+  border-radius: 16px;
+  background-color: var(--secondary-light-1);
+  font-size: 18px;
+  border: none;
+  color: var(--white);
+}
+.pc-btn-container button:hover{
+    border: 2px solid var(--white);
+}
