@@ -10,15 +10,15 @@ a {
   color: inherit;
 }
 html {
-  background-color: #727274;
+  background-color: var(--black);
 }
 /*Colours of light mode */
 /* root light mode  */
 :root {
   --black: #000000;
   --white: white;
-  --primary-light: #fdd041ff; /* Light Yellow */
-  --secondary-light-1: #00afe8ff; /* Light Blue */
+  --one-light: #00AFE8; /* Turquoise */
+  --two-light: #FF5733; /* Red/Orange */
   --secondary-light-2: #5c5c5c; /* Light Gray */
 }
 .div-light {
@@ -40,8 +40,8 @@ html {
 :root {
   --black: #000000;
   --white: white;
-  --primary-dark: #004270ff; /* Dark Blue */
-  --secondary-dark-1: #7d43b3; /* Purple */
+  --one-dark: #1E90FF; /* Dark Aqua Marine */
+  --two-dark: #9932CC; /* A different shade */
   --secondary-dark-2: #212121; /* Dark Gray */
 }
 .div-dark {
@@ -54,7 +54,7 @@ html {
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 .dark-mode-viewArea {
-  background-image: url("../../Portfolio/src/assets/dark2-background.jpeg");
+  background-image: url("../../Portfolio/src/assets/dark-background.avif");
 }
 .dark-text {
   color: var(--white);
@@ -66,7 +66,7 @@ html {
   justify-content: center;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 /* left side */
 .left-side {

@@ -1,18 +1,24 @@
 .social-media-links-container {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  width: 150px;
+  width: 200px;
   height: 100%;
+}
+.sml-list-links{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
 }
 .sml-list-links li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   gap: 10px;
   padding: 15% 0 15% 0;
-
 }
 
 .sml-img-link img {

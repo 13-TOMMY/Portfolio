@@ -76,8 +76,8 @@ function NavBar() {
               handleDiameter={28}
               offColor="#FFFFFF"
               onColor="#000000"
-              offHandleColor="#FFDB58"
-              onHandleColor="#0368b2"
+              offHandleColor="#FF5733"
+              onHandleColor="#1E90FF"
               height={40}
               width={70}
               borderRadius={6}

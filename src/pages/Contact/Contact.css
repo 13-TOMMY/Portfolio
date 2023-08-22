@@ -3,17 +3,17 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 .contact-form-container {
   display: flex;
   justify-content: center;
-  width: 60%;
+  width: 65%;
   height: 80%;
 }
 .contact-social-media-container {
   display: flex;
   justify-content: flex-start;
-  width: 30%;
-  height: 80%;
+  width: 35%;
+  height: 90%;
 }
