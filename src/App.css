@@ -62,7 +62,7 @@ html {
 /* viewable area */
 .viewable-area {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   background-size: cover;
   background-position: center;
@@ -71,7 +71,7 @@ html {
 /* left side */
 .left-side {
   width: max(200px, 10%);
-  height: 95vh;
+  height: 100vh;
   margin: 0 0 0 1%;
   border-radius: 16px;
   display: flex;
@@ -82,9 +82,9 @@ html {
 /* right side */
 .right-side {
   width: 90%;
-  height: 100vh;
+  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow-y: auto;
+  overflow-y: scroll;
 }

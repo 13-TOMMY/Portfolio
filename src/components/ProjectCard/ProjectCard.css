@@ -10,6 +10,7 @@
 .portfolio-card img {
   height: 45%;
   width: 90%;
+  object-fit: cover;
   border-radius: 12px;
 }
 .portfolio-card h2 {
