@@ -21,9 +21,7 @@ function App() {
         }
       >
         <div
-          className={
-            darkMode ? "div-dark left-side" : "div-light left-side"
-          }
+          className="left-side"
         >
           <NavBar />
         </div>
