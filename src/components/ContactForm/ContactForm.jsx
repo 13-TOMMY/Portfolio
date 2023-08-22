@@ -61,8 +61,8 @@ const ContactForm = () => {
     >
       <ToastContainer />
       <div className="form-title">
-        <h2>Contact Us</h2>
-        <p>Please fill out the form below to get in touch with us.</p>
+        <h2>Contact Me!</h2>
+        <p>Please fill out the form below to get in touch with me.</p>
       </div>
       <form ref={form} onSubmit={sendEmail} className="contact-form-fields">
         <div className="form-name">
@@ -78,12 +78,13 @@ const ContactForm = () => {
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
+            className="input-field"
           />
         </div>
         <div className="form-email">
           <label
             htmlFor="email"
-            className={darkMode ? "dark-text" : "light-text"}
+            className={darkMode ? "dark-text cf-label" : "light-text cf-label"}
           >
             Email
           </label>
@@ -93,12 +94,13 @@ const ContactForm = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
+            className="input-field"
           />
         </div>
         <div className="form-phone">
           <label
             htmlFor="number"
-            className={darkMode ? "dark-text" : "light-text"}
+            className={darkMode ? "dark-text cf-label" : "light-text cf-label"}
           >
             Phone Number (Optional)
           </label>
@@ -107,22 +109,25 @@ const ContactForm = () => {
             name="user_phone_number"
             value={phoneNumber}
             onChange={(e) => setPhoneNumber(e.target.value)}
+            className="input-field"
           />
         </div>
         <div className="form-message">
           <label
             htmlFor="message"
-            className={darkMode ? "dark-text" : "light-text"}
+            className={darkMode ? "dark-text cf-label" : "light-text cf-label"}
           >
             Message
           </label>
           <textarea
             name="message"
             cols="30"
-            rows="10"
+            rows="6"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
+            className="text-field"
+
           />
         </div>
         <div className="form-btns">

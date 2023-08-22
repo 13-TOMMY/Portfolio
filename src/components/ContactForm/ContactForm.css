@@ -3,43 +3,64 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
-  height: fit-content;
-  width: fit-content;
+  width: 500px;
   padding: 3%;
+  height: 100%;
 }
-.contact-form-fields{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+.contact-form-fields {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
-.form-title{
-    width: 300px;
-    padding-bottom: 20px;
+.form-title {
+  width: 100%;
+  padding-bottom: 20px;
+}
+.form-title h2 {
+  font-size: 26px;
+}
+.form-title {
+  font-size: 18px;
 }
 .form-name,
 .form-email,
 .form-phone,
 .form-message {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-bottom: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 10px;
 }
-.form-name input,
-.form-email input,
-.form-phone input,
-.form-message textarea {
-   size: 100%;
+.cf-label {
+  font-size: 18px;
 }
-.form-btns{
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
+.input-field {
+  width: 100%;
+  height: 30px;
 }
-.form-btns :first-child, .form-btns :last-child{
-    width: 50px;
-    height: 35px;
-    background-color: var(--);
+.text-field {
+  width: 100%;
+  overflow: scroll;
+}
+.form-btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.form-btns :first-child,
+.form-btns :last-child {
+  width: 75px;
+  height: 35px;
+  border-radius: 12px;
+  background-color: var(--secondary-light-1);
+  font-size: 18px;
+  border: none;
+  color: var(--white);
+  transition: 1s;
+}
+.form-btns :first-child:hover,
+.form-btns :last-child:hover {
+  border: 2px solid var(--white);
 }
