@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./NavBar.css";
+import { motion } from "framer-motion"; // Import motion from Framer Motion
 import {
   BiHomeAlt2,
   BiUser,
@@ -15,10 +16,15 @@ import { ThemeContext } from "../../context/ThemeContext";
 
 function NavBar() {
   const { darkMode, setDarkMode } = useContext(ThemeContext);
-
+  const location = useLocation();
   const handleChange = (isChecked) => {
     setDarkMode(isChecked);
   };
+
+  const isHomepage = location.pathname === "/";
+  const isAbout = location.pathname === "/about";
+  const isPortfolio = location.pathname === "/portfolio";
+  const isContact = location.pathname === "/contact";
 
   return (
     <div
@@ -29,59 +35,91 @@ function NavBar() {
       <div className="top-icon-container">
         <div className="nb-icon-links">
           <Link to="/">
-            <BiHomeAlt2
+            <motion.div
+              initial={{ scale: 1 }}
+              whileHover={{ scale: 1.2 }}
               className={
                 darkMode
-                  ? "dark-text hover-icon-d icon"
-                  : "light-text hover-icon-l icon"
+                  ? `icon ${
+                      isHomepage ? "selected-dark" : "dark-text"
+                    }`
+                  : `icon ${
+                      isHomepage ? "selected-light" : "light-text"
+                    }`
               }
-            />
+            >
+              <BiHomeAlt2 />
+            </motion.div>
           </Link>
           <Link to="/about">
-            <BiUser
+            <motion.div
+              initial={{ scale: 1 }}
+              whileHover={{ scale: 1.2 }}
               className={
                 darkMode
-                  ? "dark-text hover-icon-d icon"
-                  : "light-text hover-icon-l icon"
+                  ? `icon ${
+                      isAbout ? "selected-dark" : "dark-text"
+                    }`
+                  : `icon ${
+                      isAbout ? "selected-light" : "light-text"
+                    }`
               }
-            />
+            >
+              <BiUser />
+            </motion.div>
           </Link>
           <Link to="/portfolio">
-            <BiLibrary
+            <motion.div
+              initial={{ scale: 1 }}
+              whileHover={{ scale: 1.2 }}
               className={
                 darkMode
-                  ? "dark-text hover-icon-d icon"
-                  : "light-text hover-icon-l icon"
+                  ? `icon ${
+                      isPortfolio ? "selected-dark" : "dark-text"
+                    }`
+                  : `icon ${
+                      isPortfolio ? "selected-light" : "light-text"
+                    }`
               }
-            />
+            >
+              <BiLibrary />
+            </motion.div>
           </Link>
           <Link to="/contact">
-            <BiPaperPlane
+            <motion.div
+              initial={{ scale: 1 }}
+              whileHover={{ scale: 1.2 }}
               className={
                 darkMode
-                  ? "dark-text hover-icon-d icon"
-                  : "light-text hover-icon-l icon"
+                  ? `icon ${
+                      isContact ? "selected-dark" : "dark-text"
+                    }`
+                  : `icon ${
+                      isContact ? "selected-light" : "light-text"
+                    }`
               }
-            />
+            >
+              <BiPaperPlane />
+            </motion.div>
           </Link>
         </div>
       </div>
       <div className="bottom-icon-container">
         <img src="src/assets/logo.svg" alt="Logo: TOMMY" />
-        <div className="dark-light-mode">
+        <div className="dark-light-mode" style={{ transform: "rotate(90deg)" }}>
           <label htmlFor="material-switch">
             <Switch
               checked={darkMode}
               onChange={handleChange}
               handleDiameter={28}
               offColor="#FFFFFF"
-              onColor="#000000"
+              onColor="#FFFFFF"
               offHandleColor="#FF5733"
               onHandleColor="#1CB2CC"
-              height={40}
+              height={50}
               width={70}
-              borderRadius={6}
-              activeBoxShadow="0px 0px 1px 2px #fffc35"
+              borderRadius={12}
+              activeBoxShadow="0px 0px 1px 2px #212121"
               uncheckedIcon={
                 <div
                   style={{
@@ -89,9 +127,10 @@ function NavBar() {
                     justifyContent: "center",
                     alignItems: "center",
                     height: "100%",
-                    fontSize: 15,
+                    fontSize: 16,
                     color: "grey",
                     paddingRight: 2,
+                    transform: "rotate(-90deg)",
                   }}
                 >
                   <BiMoon />
@@ -104,7 +143,7 @@ function NavBar() {
                     justifyContent: "center",
                     alignItems: "center",
                     height: "100%",
-                    fontSize: 15,
+                    fontSize: 16,
                     color: "gray",
                     paddingRight: 2,
                   }}
@@ -120,7 +159,7 @@ function NavBar() {
                     alignItems: "center",
                     height: "100%",
                     color: "White",
-                    fontSize: 20,
+                    fontSize: 18,
                   }}
                 >
                   <BiSun />
@@ -135,6 +174,7 @@ function NavBar() {
                     height: "100%",
                     color: "White",
                     fontSize: 18,
+                    transform: "rotate(-90deg)",
                   }}
                 >
                   <BiSolidMoon />

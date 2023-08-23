@@ -62,8 +62,8 @@ const ContactForm = () => {
     >
       <ToastContainer />
       <div className="form-title">
-        <h2>Contact Me!</h2>
-        <p>Please fill out the form below to get in touch with me.</p>
+        <h2 className={darkMode ? "dark-text " : "light-text "}>Contact Me!</h2>
+        <p className={darkMode ? "dark-text " : "light-text "}>Please fill out the form below to get in touch with me.</p>
       </div>
       <form ref={form} onSubmit={sendEmail} className="contact-form-fields">
         <div className="form-name">
