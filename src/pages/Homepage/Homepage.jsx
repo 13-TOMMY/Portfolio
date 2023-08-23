@@ -29,7 +29,7 @@ function Homepage() {
           }
         >
           <img
-            src="src/assets/photos/IMG_8014.jpeg"
+            src="/assets/photos/IMG_8014.jpeg"
             alt="Photo of me"
             className="hp-top-right-img"
           />
@@ -51,19 +51,19 @@ function Homepage() {
             </div>
             <div className="tech-stack">
               <img
-                src="src/assets/tech-stack/javascript.svg"
+                src="/assets/tech-stack/javascript.svg"
                 alt="JavaScript icon"
               />
               <img
-                src="src/assets/tech-stack/react-dark.svg"
+                src="/assets/tech-stack/react-dark.svg"
                 alt="React icon"
               />
-              <img src="src/assets/tech-stack/nodejs-light.svg" alt="loading" />
-              <img src="src/assets/tech-stack/html.svg" alt="HTML icon" />
-              <img src="src/assets/tech-stack/css.svg" alt="CSS icon" />
-              <img src="src/assets/tech-stack/git.svg" alt="Git icon" />
-              <img src="src/assets/tech-stack/firebase.svg" alt="loading" />
-              <img src="src/assets/tech-stack/figma-dark.svg" alt="loading" />
+              <img src="/assets/tech-stack/nodejs-light.svg" alt="loading" />
+              <img src="/assets/tech-stack/html.svg" alt="HTML icon" />
+              <img src="/assets/tech-stack/css.svg" alt="CSS icon" />
+              <img src="/assets/tech-stack/git.svg" alt="Git icon" />
+              <img src="/assets/tech-stack/firebase.svg" alt="loading" />
+              <img src="/assets/tech-stack/figma-dark.svg" alt="loading" />
             </div>
           </div>
         </div>

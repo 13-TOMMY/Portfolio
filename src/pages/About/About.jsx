@@ -14,7 +14,7 @@ function About() {
           }
         >
           <img
-            src="src/assets/photos/d93e089e-eee7-46ea-9ff6-3c87830453b0.jpeg"
+            src="/assets/photos/d93e089e-eee7-46ea-9ff6-3c87830453b0.jpeg"
             alt="Photo of me"
             className="ab-left-top-img"
           />
@@ -24,10 +24,10 @@ function About() {
             darkMode ? "div-dark ab-left-bottom" : "div-light ab-left-bottom"
           }
         >
-          <img src="src/assets/social-media/linkedin.svg" alt="loading" />
-          <img src="src/assets/social-media/twitter.svg" alt="loading" />
-          <img src="src/assets/social-media/medium.svg" alt="loading" />
-          <img src="src/assets/social-media/github-dark.svg" alt="loading" />
+          <img src="/assets/social-media/linkedin.svg" alt="loading" />
+          <img src="/assets/social-media/twitter.svg" alt="loading" />
+          <img src="/assets/social-media/medium.svg" alt="loading" />
+          <img src="/assets/social-media/github-dark.svg" alt="loading" />
         </div>
       </div>
       <div className="ab-right">

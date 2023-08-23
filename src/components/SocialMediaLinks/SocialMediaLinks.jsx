@@ -49,7 +49,7 @@ function SocialMediaLinks() {
             className="sml-img-link"
           >
             <img
-              src="src/assets/social-media/linkedin.svg"
+              src="/assets/social-media/linkedin.svg"
               alt="LinkedIn profile tomasz-lis-67b879261"
             />
           </motion.a>
@@ -72,7 +72,7 @@ function SocialMediaLinks() {
             className="sml-img-link"
           >
             <img
-              src="src/assets/social-media/medium.svg"
+              src="/assets/social-media/medium.svg"
               alt="Medium profile @13__tommy"
             />
           </motion.a>

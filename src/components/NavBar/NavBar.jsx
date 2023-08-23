@@ -105,7 +105,7 @@ function NavBar() {
         </div>
       </div>
       <div className="bottom-icon-container">
-        <img src="src/assets/logo.svg" alt="Logo: TOMMY" />
+        <img src="/assets/logo.svg" alt="Logo: TOMMY" />
         <div className="dark-light-mode" style={{ transform: "rotate(90deg)" }}>
           <label htmlFor="material-switch">
             <Switch
