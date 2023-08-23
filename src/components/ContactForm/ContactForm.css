@@ -13,18 +13,23 @@
   align-items: flex-start;
   justify-content: center;
   width: 100%;
-  height: 30%;
+  height: 20%;
   gap: 25px;
+  padding: 0 15px 20px 15px;
 }
 .form-title h2 {
+  width: 100%;
   font-size: 34px;
+  text-align: center;
 }
-.form-title {
+.form-title p {
+  width: 100%;
   font-size: 26px;
+  text-align: center;
 }
 .contact-form-fields {
   width: 100%;
-  height: 70%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -39,35 +44,34 @@
   flex-direction: column;
   align-items: flex-start;
   padding-bottom: 10px;
+  gap: 5px;
 }
 .cf-label {
+  padding-left: 15px;
   font-size: 18px;
 }
 .input-field {
   width: 100%;
-  height: 30px;
+  height: 40px;
+  border-radius: 12px;
+  border: none;
+  padding-left: 15px;
 }
 .text-field {
   width: 100%;
   overflow: scroll;
+  border-radius: 12px;
+  padding-left: 15px;
+  border: none;
 }
 .form-btns {
   width: 100%;
   display: flex;
   justify-content: space-around;
 }
-.form-btns :first-child,
-.form-btns :last-child {
-  width: 75px;
-  height: 35px;
+.cf-btn {
+  width: 100px;
+  height: 50px;
   border-radius: 12px;
-  background-color: var(--two-light);
-  font-size: 18px;
-  border: none;
-  color: var(--white);
-  transition: 1s;
-}
-.form-btns :first-child:hover,
-.form-btns :last-child:hover {
-  border: 2px solid var(--white);
+  font-size: 26px;
 }

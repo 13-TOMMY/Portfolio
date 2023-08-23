@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
+import { motion } from "framer-motion";
 import "./ProjectCard.css";
 
 function ProjectCard({
@@ -18,15 +19,31 @@ function ProjectCard({
       }
     >
       <img src={videoLink} alt={videoLink} />
-      <h2>{projectName}</h2>
-      <p>{projectDescription}</p>
+      <h2 className={darkMode ? "dark-text" : "light-text"}>{projectName}</h2>
+      <p className={darkMode ? "dark-text" : "light-text"}>{projectDescription}</p>
       <div className="pc-btn-container">
-        <button>
-          <a href={viewlink}>View</a>
-        </button>
-        <button>
+        <motion.button
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.9 }}
+          className={
+            darkMode
+              ? "dark-text dark-btn pc-btn"
+              : "light-text light-btn pc-btn"
+          }
+        >
+          <a href={viewlink}>View</a>{" "}
+        </motion.button>
+        <motion.button
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.9 }}
+          className={
+            darkMode
+              ? "dark-text dark-btn pc-btn"
+              : "light-text light-btn pc-btn"
+          }
+        >
           <a href={visitLink}>Vist</a>
-        </button>
+        </motion.button>
       </div>
     </div>
   );

@@ -4,7 +4,9 @@
   box-sizing: border-box;
   font-family: "M PLUS 1 Code", sans-serif;
 }
-
+button, a, link{
+  cursor: pointer;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -25,9 +27,9 @@ html {
   background: rgba(233, 233, 233, 0.46);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(11.3px);
-  -webkit-backdrop-filter: blur(11.3px);
-  border: 1px solid rgba(233, 233, 233, 0.3);
+  backdrop-filter: blur(12.5px);
+  -webkit-backdrop-filter: blur(12.5px);
+  border: 2px solid rgba(111, 111, 111, 0.544);
 }
 .light-mode-viewArea {
   background-image: url("../../Portfolio/src/assets/light-background.jpeg");
@@ -40,18 +42,18 @@ html {
 :root {
   --black: #000000;
   --white: white;
-  --one-dark: #1E90FF; /* Dark Aqua Marine */
-  --two-dark: #9932CC; /* A different shade */
+  --one-dark: #1CB2CC; /* Dark Aqua Marine */
+  --two-dark: #FC9F5B; /* A different shade */
   --secondary-dark-2: #212121; /* Dark Gray */
 }
 .div-dark {
   /* From https://css.glass */
-  background: rgba(0, 0, 0, 0.33);
+  background: rgba(0, 0, 0, 0.442);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(12.5px);
   -webkit-backdrop-filter: blur(12.5px);
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 2px solid rgba(171, 171, 171, 0.844);
 }
 .dark-mode-viewArea {
   background-image: url("../../Portfolio/src/assets/dark-background.avif");
@@ -59,6 +61,24 @@ html {
 .dark-text {
   color: var(--white);
 }
+/*Btn styling*/
+.light-btn {
+  background-color: var(--two-light);
+  border: none;
+  transition: 500ms;
+}
+.light:hover {
+  border: 1px solid var(--white);
+}
+.dark-btn {
+  background-color: var(--one-dark);
+  border: none;
+  transition: 500ms;
+}
+.dark:hover {
+  border: 1px solid var(--white);
+}
+
 /* viewable area */
 .viewable-area {
   display: flex;

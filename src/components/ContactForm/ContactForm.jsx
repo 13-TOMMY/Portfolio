@@ -2,6 +2,7 @@ import React, { useRef, useState, useContext } from "react";
 import emailjs from "@emailjs/browser";
 import { toast, ToastContainer } from "react-toastify";
 import { ThemeContext } from "../../context/ThemeContext";
+import { motion } from "framer-motion";
 import "./ContactForm.css";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -127,22 +128,26 @@ const ContactForm = () => {
             onChange={(e) => setMessage(e.target.value)}
             required
             className="text-field"
-
           />
         </div>
         <div className="form-btns">
-          <input
+          <motion.button
+            whileHover={{ scale: 1.2 }} // Define hover animation
+            whileTap={{ scale: 0.9 }}
             type="submit"
-            value="Send"
-            className={darkMode ? "dark-text" : "light-text"}
-          />
-          <button
-            type="button"
+            className={darkMode ? "dark-text dark-btn cf-btn" : "light-text  light-btn cf-btn"}
+            >
+            Send
+          </motion.button>
+          <motion.button
+            whileHover={{ scale: 1.2 }} // Define hover animation
+            whileTap={{ scale: 0.9 }}
             onClick={clearForm}
-            className={darkMode ? "dark-text" : "light-text"}
-          >
+            type="button"
+            className={darkMode ? "dark-text dark-btn cf-btn" : "light-text light-btn cf-btn"}
+            >
             Clear
-          </button>
+          </motion.button>
         </div>
       </form>
     </div>
