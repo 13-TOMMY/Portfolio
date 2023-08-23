@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import './AboutLinks.className';
+import './AboutLinks.css';
 
 function AboutLinks() {
   return (
