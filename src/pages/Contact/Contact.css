@@ -1,19 +1,9 @@
 .contact-page {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   width: 100%;
   height: 100vh;
-}
-.contact-form-container {
-  display: flex;
-  justify-content: center;
-  width: 65%;
-  height: 80%;
-}
-.contact-social-media-container {
-  display: flex;
-  justify-content: flex-start;
-  width: 35%;
-  height: 90%;
+  padding: 50px 0;
+  gap: 50px;
 }

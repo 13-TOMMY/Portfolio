@@ -1,42 +1,45 @@
 /* Container */
 .about-container {
-  width: 80%;
-  height: 100%;
+  width: 100%;
+  height: 1000px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 50px;
+  padding: 50px 0;
 }
 
 /* Left Section */
 .ab-left {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 80%;
-  width: 30%;
+  align-items: flex-end;
+  justify-content: flex-start;
+  height: 100%;
+  width: fit-content;
+  gap: 50px;
 }
 
 /* Top Left */
 .ab-left-top {
-  width: 100%;
-  height: 45%;
+  width: 325px;
+  height: 325px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .ab-left-top-img {
-  width: fit-content;
-  height: fit-content;
-  max-width: 100%;
-  max-height: min(100%, 300px);
+  width: 98%;
+  height: 98%;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 /* Bottom Left */
 .ab-left-bottom {
-  width: 100%;
-  height: 45%;
+  width: 325px;
+  height: 325px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -44,39 +47,23 @@
   flex-wrap: wrap;
   padding: 5%;
 }
-.ab-left-bottom-dark {
-  background: rgba(0, 0, 0, 0.28);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10.6px);
-  -webkit-backdrop-filter: blur(10.6px);
-  border: 1px solid rgba(0, 0, 0, 0.3);
-}
 
-.ab-left-bottom-light {
-  background: rgba(255, 255, 255, 0.28);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10.6px);
-  -webkit-backdrop-filter: blur(10.6px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
 
 /* Right Section */
 .ab-right {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 60%;
-  height: 80%;
+  justify-content: flex-start;
+  width: fit-content;
+  height: 90%;
 }
 /* Right Section */
 .ab-right-p{
    display: flex;
    align-items: center;
    justify-content: center;
-   width: 100%;
-   height: 100%;
+   width: 525px;
+   height: 900px;
    padding: 7.5%;
 }
 

@@ -68,7 +68,7 @@ const ContactForm = () => {
         <div className="form-name">
           <label
             htmlFor="text"
-            className={darkMode ? "dark-text" : "light-text"}
+            className={darkMode ? "dark-text cf-label" : "light-text cf-label"}
           >
             Name
           </label>

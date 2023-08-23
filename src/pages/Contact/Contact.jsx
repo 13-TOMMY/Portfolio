@@ -1,19 +1,15 @@
-import React from 'react'
-import ContactForm from '../../components/ContactForm/ContactForm'
-import SocialMediaLinks from '../../components/SocialMediaLinks/SocialMediaLinks'
-import "./Contact.css"
+import React from "react";
+import ContactForm from "../../components/ContactForm/ContactForm";
+import SocialMediaLinks from "../../components/SocialMediaLinks/SocialMediaLinks";
+import "./Contact.css";
 
 function Contact() {
   return (
-    <div className='contact-page'>
-      <div className="contact-form-container">
+    <div className="contact-page">
       <ContactForm />
-      </div>
-      <div className="contact-social-media-container">
-          <SocialMediaLinks />
-      </div>
+      <SocialMediaLinks />
     </div>
-  )
+  );
 }
 
-export default Contact
+export default Contact;
