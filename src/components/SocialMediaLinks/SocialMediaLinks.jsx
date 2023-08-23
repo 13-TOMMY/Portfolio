@@ -25,7 +25,7 @@ function SocialMediaLinks() {
             className="sml-img-link"
           >
             <img
-              src="src/assets/social-media/twitter.svg"
+              src="/assets/social-media/twitter.svg"
               alt="X/Twitter profile @13__tommy"
             />
           </motion.a>
