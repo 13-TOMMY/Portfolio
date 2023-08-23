@@ -42,7 +42,7 @@ function SocialMediaLinks() {
         <li style={{ listStyle: "none" }}>
           <motion.a
             whileHover={{ scale: 1.2}}
-            whileTap={{ scale: 0.8, rotate: -22.5}}
+            whileTap={{ scale: 0.8, rotate: -365}}
             href="https://www.linkedin.com/in/tomasz-lis-67b879261"
             target="_blank"
             rel="noopener noreferrer"
@@ -65,7 +65,7 @@ function SocialMediaLinks() {
         <li style={{ listStyle: "none" }}>
           <motion.a
             whileHover={{ scale: 1.2}}
-            whileTap={{ scale: 0.8, rotate: -22.5}}
+            whileTap={{ scale: 0.8, rotate: -365}}
             href="https://medium.com/@13__TOMMY"
             target="_blank"
             rel="noopener noreferrer"

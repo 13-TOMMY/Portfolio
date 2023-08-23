@@ -1,9 +1,9 @@
 /* Container */
 .about-container {
   width: 100%;
-  height: 1000px;
+  height: fit-content;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 50px;
   padding: 50px 0;
@@ -40,14 +40,7 @@
 .ab-left-bottom {
   width: 325px;
   height: 325px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 5%;
 }
-
 
 /* Right Section */
 .ab-right {
@@ -58,12 +51,20 @@
   height: 90%;
 }
 /* Right Section */
-.ab-right-p{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 525px;
-   height: 900px;
-   padding: 7.5%;
+.ab-right-p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 525px;
+  height: fit-content;
+  padding: 5%;
+  gap: 10px;
 }
 
+.ab-right-p h3 {
+  font-size: 26px;
+}
+.ab-right-p p {
+  font-size: 18px;
+}

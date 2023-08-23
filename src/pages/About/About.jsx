@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useContext } from "react";
 import "./About.css";
 import { ThemeContext } from "../../context/ThemeContext";
+import AboutLinks from "../../components/AboutLinks/AboutLinks";
 
 function About() {
   const { darkMode, setDarkMode } = useContext(ThemeContext);
@@ -24,25 +25,54 @@ function About() {
             darkMode ? "div-dark ab-left-bottom" : "div-light ab-left-bottom"
           }
         >
-          <img src="/assets/social-media/linkedin.svg" alt="loading" />
-          <img src="/assets/social-media/twitter.svg" alt="loading" />
-          <img src="/assets/social-media/medium.svg" alt="loading" />
-          <img src="/assets/social-media/github-dark.svg" alt="loading" />
+          <AboutLinks />
         </div>
       </div>
       <div className="ab-right">
         <div
           className={darkMode ? "div-dark ab-right-p" : "div-light ab-right-p"}
         >
+          <h3 className={darkMode ? "dark-text" : "light-text"}>About Me:</h3>
           <p className={darkMode ? "dark-text" : "light-text"}>
-            Growing up in London, my early exposure to technology sparked a deep
-            passion within me. Through building and repairing computers, gaming
-            consoles, and phones, I honed my problem-solving skills and gained a
-            strong understanding of these devices. To further enhance my
-            expertise, I completed the comprehensive front-end development
-            bootcamp, Mimo. During this intensive seven-month program, I
-            mastered HTML, CSS, JavaScript, React, and Git, solidifying my
-            skills and expanding my knowledge of web development.
+            I'm a London native with a lifelong passion for technology. I
+            started building and repairing computers, gaming consoles, and
+            phones from a young age, which honed my problem-solving skills and
+            deepened my understanding of these devices. During the COVID-19
+            pandemic, I sought a new direction and found it in programming. It
+            all began with a fascination for Google Ads and the idea of creating
+            websites. To pursue this newfound passion, I embarked on a journey
+            with Mimo, starting with Python and gradually diving into web
+            development.
+          </p>
+          <h3 className={darkMode ? "dark-text" : "light-text"}>
+            Education and Skills:
+          </h3>
+          <p className={darkMode ? "dark-text" : "light-text"}>
+            I graduated from a 7-month front-end development bootcamp, mastering
+            HTML, CSS, JavaScript, React, and Git. I have hands-on experience
+            with over 8 projects. Also i am proficient in Git for version
+            control, and familiar with design tools like Figma and Firebase. I
+            specialize in creating responsive, mobile-friendly projects.
+            Currently, I&apos;m expanding my skill set by participating in a
+            back-end development bootcamp, where I&apos;m learning Node.js,
+            Next.js, and PostgreSQL.
+          </p>
+          <h3 className={darkMode ? "dark-text" : "light-text"}>
+            Language Proficiency:
+          </h3>
+          <p className={darkMode ? "dark-text" : "light-text"}>
+            I&apos;m fluent in English, a skill I&apos;ve honed during my
+            18-year stay in London. This proficiency enhances my ability to
+            communicate technical concepts and collaborate effectively in
+            diverse teams.
+          </p>
+          <h3 className={darkMode ? "dark-text" : "light-text"}>
+            Future Goals:
+          </h3>
+          <p className={darkMode ? "dark-text" : "light-text"}>
+            I'm on the lookout for challenging opportunities that allow me to
+            leverage my front-end and back-end development skills, contributing
+            to innovative projects and fueling my passion for technology.
           </p>
         </div>
       </div>
