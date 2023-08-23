@@ -51,19 +51,19 @@ function Homepage() {
             </div>
             <div className="tech-stack">
               <img
-                src="src/assets/Tech-Stack/javascript.svg"
+                src="src/assets/tech-stack/javascript.svg"
                 alt="JavaScript icon"
               />
               <img
-                src="src/assets/Tech-Stack/react-dark.svg"
+                src="src/assets/tech-stack/react-dark.svg"
                 alt="React icon"
               />
-              <img src="src/assets/Tech-Stack/html.svg" alt="HTML icon" />
-              <img src="src/assets/Tech-Stack/css.svg" alt="CSS icon" />
-              <img src="src/assets/Tech-Stack/git.svg" alt="Git icon" />
-              <img src="src/assets/Tech-Stack/oading-one.svg" alt="loading" />
-              <img src="src/assets/Tech-Stack/oading-one.svg" alt="loading" />
-              <img src="src/assets/Tech-Stack/oading-one.svg" alt="loading" />
+              <img src="src/assets/tech-stack/nodejs-light.svg" alt="loading" />
+              <img src="src/assets/tech-stack/html.svg" alt="HTML icon" />
+              <img src="src/assets/tech-stack/css.svg" alt="CSS icon" />
+              <img src="src/assets/tech-stack/git.svg" alt="Git icon" />
+              <img src="src/assets/tech-stack/firebase.svg" alt="loading" />
+              <img src="src/assets/tech-stack/figma-dark.svg" alt="loading" />
             </div>
           </div>
         </div>
