@@ -100,7 +100,7 @@ html {
 }
 /* left side */
 .left-side {
-  width: max(200px, 10%);
+  width: max(200px, 5%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,7 +109,7 @@ html {
 
 /* right side */
 .right-side {
-  width: 90%;
+  width: 95%;
   height: fit-content;
   display: flex;
   align-items: center;

@@ -6,6 +6,7 @@ import AboutLinks from "../../components/AboutLinks/AboutLinks";
 
 function About() {
   const { darkMode, setDarkMode } = useContext(ThemeContext);
+
   return (
     <div className="about-container">
       <div className="ab-left">

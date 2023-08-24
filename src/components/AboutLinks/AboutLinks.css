@@ -7,9 +7,13 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-.abl-icon-top-row img,
-.abl-icon-bottom-row img {
+.abl-icon-top{
   height: 100px;
   width: 100px;
-  margin: 15px;
+  margin: 10px 0 10px 30px;
+}
+.abl-icon-bottom{
+  height: 100px;
+  width: 100px;
+  margin: 10px 30px 10px 0;
 }
