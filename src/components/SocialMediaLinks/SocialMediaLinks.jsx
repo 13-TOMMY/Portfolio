@@ -14,6 +14,7 @@ function SocialMediaLinks() {
           : "div-light social-media-links-container"
       }
     >
+      <h2 className={darkMode ? "dark-text " : "light-text "}>Find Me Here!</h2>
       <ul className="sml-list-links">
         <li style={{ listStyle: "none" }}>
           <motion.a

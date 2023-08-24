@@ -105,8 +105,7 @@ function NavBar() {
         </div>
       </div>
       <div className="bottom-icon-container">
-        <img src="/assets/logo.svg" alt="Logo: TOMMY" />
-        <div className="dark-light-mode" style={{ transform: "rotate(90deg)" }}>
+        <div className="dark-light-mode">
           <label htmlFor="material-switch">
             <Switch
               checked={darkMode}
@@ -122,60 +121,60 @@ function NavBar() {
               activeBoxShadow="0px 0px 1px 2px #212121"
               uncheckedIcon={
                 <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    height: "100%",
-                    fontSize: 16,
-                    color: "grey",
-                    paddingRight: 2,
-                    transform: "rotate(-90deg)",
-                  }}
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  height: "100%",
+                  fontSize: 16,
+                  color: "grey",
+                  paddingRight: 2,
+                  transform: "rotate(-90deg)",
+                }}
                 >
                   <BiMoon />
                 </div>
               }
               checkedIcon={
                 <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    height: "100%",
-                    fontSize: 16,
-                    color: "gray",
-                    paddingRight: 2,
-                  }}
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  height: "100%",
+                  fontSize: 16,
+                  color: "gray",
+                  paddingRight: 2,
+                }}
                 >
                   <BiSun />
                 </div>
               }
               uncheckedHandleIcon={
                 <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    height: "100%",
-                    color: "White",
-                    fontSize: 18,
-                  }}
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  height: "100%",
+                  color: "White",
+                  fontSize: 18,
+                }}
                 >
                   <BiSun />
                 </div>
               }
               checkedHandleIcon={
                 <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    height: "100%",
-                    color: "White",
-                    fontSize: 18,
-                    transform: "rotate(-90deg)",
-                  }}
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  height: "100%",
+                  color: "White",
+                  fontSize: 18,
+                  transform: "rotate(-90deg)",
+                }}
                 >
                   <BiSolidMoon />
                 </div>
@@ -185,6 +184,7 @@ function NavBar() {
             />
           </label>
         </div>
+      <img src="/assets/tommy-logo.svg" alt="Logo: TOMMY" />
       </div>
     </div>
   );

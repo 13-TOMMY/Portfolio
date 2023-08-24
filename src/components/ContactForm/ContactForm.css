@@ -4,8 +4,8 @@
   align-items: flex-start;
   justify-content: flex-start;
   width: 600px;
-  padding: 3%;
-  height: 700px;
+  padding: 20px;
+  height: 800px;
 }
 .form-title {
   display: flex;
@@ -45,6 +45,7 @@
   align-items: flex-start;
   padding-bottom: 10px;
   gap: 5px;
+  font-size: 18px;
 }
 .cf-label {
   padding-left: 15px;
@@ -56,13 +57,15 @@
   border-radius: 12px;
   border: none;
   padding-left: 15px;
+  font-size: 18px;
 }
 .text-field {
   width: 100%;
-  overflow: scroll;
+  height: 200px;
   border-radius: 12px;
-  padding-left: 15px;
+  padding: 15px;
   border: none;
+  font-size: 18px;
 }
 .form-btns {
   width: 100%;
