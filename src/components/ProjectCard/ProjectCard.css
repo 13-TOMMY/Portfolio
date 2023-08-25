@@ -7,12 +7,18 @@
   justify-content: space-between;
   padding: 25px 0;
 }
-.portfolio-card img {
+.portfolio-card video {
   height: 40%;
   width: 90%;
   object-fit: cover;
   border-radius: 12px;
 }
+/* Add this to your CSS file */
+.hovered-video:hover {
+  transform: scale(1.05);
+  animation: playVideo 1s linear infinite;
+}
+
 .portfolio-card h2 {
   height: 10%;
   width: 90%;
