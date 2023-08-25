@@ -20,8 +20,8 @@
   gap: 50px;
 }
 
-/* Top Left */
-.ab-left-top {
+/* middle Left */
+.ab-left-middle {
   width: 325px;
   height: 325px;
   display: flex;
@@ -29,17 +29,11 @@
   align-items: center;
   justify-content: center;
 }
-.ab-left-top-img {
+.ab-left-middle-img {
   width: 98%;
   height: 98%;
   object-fit: cover;
   border-radius: 12px;
-}
-
-/* Bottom Left */
-.ab-left-bottom {
-  width: 325px;
-  height: 325px;
 }
 
 /* Right Section */

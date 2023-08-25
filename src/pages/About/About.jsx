@@ -3,6 +3,7 @@ import { useState, useContext } from "react";
 import "./About.css";
 import { ThemeContext } from "../../context/ThemeContext";
 import AboutLinks from "../../components/AboutLinks/AboutLinks";
+import Cv from "../../components/Cv/Cv";
 
 function About() {
   const { darkMode, setDarkMode } = useContext(ThemeContext);
@@ -10,24 +11,19 @@ function About() {
   return (
     <div className="about-container">
       <div className="ab-left">
+        <Cv />
         <div
           className={
-            darkMode ? "div-dark ab-left-top" : "div-light ab-left-top"
+            darkMode ? "div-dark ab-left-middle" : "div-light ab-left-middle"
           }
         >
           <img
             src="/assets/photos/d93e089e-eee7-46ea-9ff6-3c87830453b0.jpeg"
             alt="Photo of me"
-            className="ab-left-top-img"
+            className="ab-left-middle-img"
           />
         </div>
-        <div
-          className={
-            darkMode ? "div-dark ab-left-bottom" : "div-light ab-left-bottom"
-          }
-        >
-          <AboutLinks />
-        </div>
+        <AboutLinks />
       </div>
       <div className="ab-right">
         <div

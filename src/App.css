@@ -75,17 +75,33 @@ html {
 .light-btn {
   background-color: var(--two-light);
   border: none;
-  transition: 500ms;
+  transition: 200ms;
 }
 .light-btn:hover {
   border: 1px solid var(--black);
 }
+.light-btn-two {
+  background-color: var(--one-light);
+  border: none;
+  transition: 200ms;
+}
+.light-btn-two:hover {
+  border: 1px solid var(--dark);
+}
 .dark-btn {
   background-color: var(--one-dark);
   border: none;
-  transition: 500ms;
+  transition: 200ms;
 }
 .dark-btn:hover {
+  border: 1px solid var(--dark);
+}
+.dark-btn-two {
+  background-color: var(--two-dark);
+  border: none;
+  transition: 200ms;
+}
+.dark-btn-two:hover {
   border: 1px solid var(--dark);
 }
 
