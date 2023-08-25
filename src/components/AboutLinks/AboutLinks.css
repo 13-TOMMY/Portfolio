@@ -7,13 +7,25 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-.abl-icon-top{
+.abl-icon-top {
   height: 100px;
   width: 100px;
   margin: 10px 0 10px 30px;
 }
-.abl-icon-bottom{
+.abl-icon-bottom {
   height: 100px;
   width: 100px;
   margin: 10px 30px 10px 0;
+}
+@media (max-width: 1024px) {
+  .about-links-container {
+    width: 650px;
+    height: 325px;
+  }
+}
+@media (max-width: 767px) {
+  .about-links-container {
+    width: 90%;
+    height: 325px;
+  }
 }

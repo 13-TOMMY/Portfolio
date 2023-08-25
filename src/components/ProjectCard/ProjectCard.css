@@ -44,3 +44,10 @@
   border-radius: 12px;
   font-size: 26px;
 }
+
+@media (max-width: 767px) {
+  .portfolio-card {
+    width: 90%;
+    height: 800px;
+  }
+}

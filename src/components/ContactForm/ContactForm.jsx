@@ -144,7 +144,7 @@ const ContactForm = () => {
             whileTap={{ scale: 0.9 }}
             onClick={clearForm}
             type="button"
-            className={darkMode ? "dark-text dark-btn cf-btn" : "light-text light-btn cf-btn"}
+            className={darkMode ? "dark-text dark-btn-two cf-btn" : "light-text light-btn-two cf-btn"}
             >
             Clear
           </motion.button>

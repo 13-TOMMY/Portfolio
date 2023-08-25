@@ -25,7 +25,6 @@
   width: 325px;
   height: 325px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -61,4 +60,37 @@
 }
 .ab-right-p p {
   font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ab-left {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .ab-left-middle {
+    width: 650px;
+    height: 500px;
+  }
+  .ab-right {
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+  }
+  .ab-right-p {
+    width: 650px;
+  }
+}
+@media (max-width: 767px) {
+  .ab-left-middle {
+    width: 90%;
+  }
+  .ab-right-p {
+    width: 90%;
+    padding: 2.5%;
+  }
 }

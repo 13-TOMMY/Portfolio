@@ -78,3 +78,20 @@
   border-radius: 12px;
   font-size: 26px;
 }
+
+@media (max-width: 1024px) {
+  .contact-form {
+    width: 650px;
+  }
+}
+@media (max-width: 767px) {
+  .contact-form {
+    width: 90%;
+  }
+  .form-title h2 {
+    font-size: 26px;
+  }
+  .form-title p {
+    font-size: 18px;
+  }
+}

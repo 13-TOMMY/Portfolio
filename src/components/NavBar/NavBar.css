@@ -44,9 +44,9 @@
   vertical-align: middle;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .nav-container {
-    width: 600px;
+    width: 650px;
     height: 100px;
     display: flex;
     flex-direction: row;
@@ -65,26 +65,15 @@
     transform: rotate(90deg);
   }
 }
-@media (min-width: 380px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .nav-container {
     width: 90%;
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    padding: 0 20px;
-    position: static;
-  }
-  .nb-icon-links {
-    
-    flex-direction: row;
   }
   .icon {
     font-size: 48px;
   }
-  .bottom-icon-container{
-    flex-direction: row;
-  }
-  .dark-light-mode{
-    transform: rotate(90deg);
+  .bottom-icon-container img{
+    width: 30px;
+    height: 30px;
   }
 }

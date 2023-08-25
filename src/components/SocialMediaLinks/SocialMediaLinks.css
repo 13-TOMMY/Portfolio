@@ -38,3 +38,14 @@
 .sml-label{
     font-size: 18px;
 }
+
+@media (max-width: 1024px) {
+  .social-media-links-container {
+    width: 650px;
+  }
+}
+@media (max-width: 767px) {
+  .social-media-links-container {
+    width: 90%;
+  }
+}

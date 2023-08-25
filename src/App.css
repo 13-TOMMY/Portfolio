@@ -90,21 +90,21 @@ html {
   border: none;
 }
 .light-btn-two:hover {
-  border: 1px solid var(--dark);
+  border: 1px solid var(--black);
 }
 .dark-btn {
   background-color: var(--one-dark);
   border: none;
 }
 .dark-btn:hover {
-  border: 1px solid var(--dark);
+  border: 1px solid var(--white);
 }
 .dark-btn-two {
   background-color: var(--two-dark);
   border: none;
 }
 .dark-btn-two:hover {
-  border: 1px solid var(--dark);
+  border: 1px solid var(--white);
 }
 
 /* viewable area */
@@ -160,7 +160,7 @@ html {
     justify-content: center;
   }
 }
-@media (min-width: 380px) and (max-width: 767px) {
+@media (max-width: 767px) {
   .viewable-area {
     display: flex;
     flex-direction: column;
