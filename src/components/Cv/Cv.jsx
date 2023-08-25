@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import EnglishCv from "../../../public/assets/cv/cv-eng.pdf";
-import PolishCv from "../../../public/assets/cv/cv-pl.pdf";
+import EnglishCv from "../../Assets/cv/cv-eng.pdf";
+import PolishCv from "../../Assets/cv/cv-pl.pdf";
 import { ThemeContext } from "../../context/ThemeContext";
 import { motion } from "framer-motion";
 import { AiOutlineDownload } from "react-icons/ai";
@@ -21,7 +21,7 @@ function Cv() {
           : "div-light ab-left-bottom cv-container"
       }
     >
-      <div className="english-cv">
+          <div className={darkMode ? "english-cv dark-border" : "english-cv light-border"}>
         <h3 className={darkMode ? "dark-text" : "light-text"}>English Cv</h3>
         <motion.button
           whileHover={{ scale: 1.2 }}
@@ -54,7 +54,7 @@ function Cv() {
           </a>
         </motion.button>
       </div>
-      <div className="polish-cv">
+      <div className={darkMode ? "polish-cv dark-border" : "polish-cv light-border"}>
         <h3 className={darkMode ? "dark-text" : "light-text"}>Polish Cv</h3>
         <motion.button
           whileHover={{ scale: 1.2 }}
