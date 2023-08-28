@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import "./Homepage.css";
 import { ThemeContext } from "../../context/ThemeContext";
+import TechStack from "../../components/TechStack/TechStack";
 
 function Homepage() {
   const { darkMode, setDarkMode } = useContext(ThemeContext);
@@ -45,40 +46,7 @@ function Homepage() {
         </div>
       </div>
       <div className="hp-bottom">
-        <div
-          className={
-            darkMode
-              ? "div-dark hp-bottom-container"
-              : "div-light hp-bottom-container"
-          }
-        >
-          <div className="ts-name">
-            <h3
-              className={
-                darkMode ? "dark-text hp-ts-text" : "light-text hp-ts-text"
-              }
-            >
-              TECH STACK
-            </h3>
-          </div>
-          <div className="tech-stack">
-            <div className="ts-top">
-            <img
-              src="/assets/tech-stack/javascript.svg"
-              alt="JavaScript icon"
-            />
-            <img src="/assets/tech-stack/react-dark.svg" alt="React icon" />
-            <img src="/assets/tech-stack/nodejs-light.svg" alt="Node Js" />
-              <img src="/assets/tech-stack/html.svg" alt="HTML icon" />
-            </div>
-            <div className="ts-bottom">
-            <img src="/assets/tech-stack/css.svg" alt="CSS icon" />
-            <img src="/assets/tech-stack/git.svg" alt="Git icon" />
-            <img src="/assets/tech-stack/firebase.svg" alt="Firebase" />
-              <img src="/assets/tech-stack/figma-dark.svg" alt="figma" />
-              </div>
-          </div>
-        </div>
+        <TechStack />
       </div>
     </div>
   );

@@ -26,11 +26,12 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
-  padding: 3%;
+  padding: 2%;
+  gap: 20px;
 }
 
 .hp-h1-text {
-  font-size: 24px;
+  font-size: 48px;
 }
 .hp-p-text {
   font-size: 18px;
@@ -60,49 +61,6 @@
   width: 100%;
   height: 50%;
 }
-.hp-bottom-container {
-  width: 900px;
-  height: 340px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.ts-name {
-  width: 30%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.hp-ts-text {
-  width: 60%;
-  text-align: center;
-  font-size: 52px;
-}
-.tech-stack {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 70%;
-  height: 100%;
-  gap: 10px;
-}
-.ts-top{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-.ts-bottom{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-.tech-stack img {
-  height: 100px;
-  width: 100px;
-}
 
 /* MEDIA */
 
@@ -112,54 +70,33 @@
     gap: 50px;
   }
   .hp-top {
-   flex-direction: column;
+    flex-direction: column;
     align-items: center;
   }
   .hp-top-left {
     width: 650px;
     height: 300px;
   }
-  .hp-top-right{
+  .hp-top-right {
     width: 650px;
     height: 400px;
   }
-  .hp-bottom-container {
-    width: 650px;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .ts-name {
-    width: 100%;
-    height: 30%;
-  }
-  .hp-ts-text {
-    width: 100%;
-  }
-  .tech-stack {
-    width: 100%;
-    height: 70%;
-    flex-direction: column;
+  .hp-h1-text {
+    font-size: 48px;
   }
 }
 
 @media (max-width: 767px) {
   .hp-top-left {
     width: 90%;
-    height: 350px;
+    height: fit-content;
+    padding: 5%;
   }
-  .hp-top-right{
+  .hp-h1-text {
+    font-size: 38px;
+  }
+  .hp-top-right {
     width: 90%;
     height: 350px;
-  }
-  .hp-bottom-container {
-    width: 90%;
-    height: 400px;
-  }
-  .tech-stack img {
-    height: 80px;
-    width: 80px;
   }
 }
