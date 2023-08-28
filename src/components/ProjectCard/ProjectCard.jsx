@@ -1,9 +1,10 @@
-import React, { createRef, useContext, useState } from "react";
+import React, { createRef, useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { motion } from "framer-motion";
 import "./ProjectCard.css";
 
 function ProjectCard({
+  photo,
   videoLink,
   projectName,
   projectDescription,
@@ -13,6 +14,13 @@ function ProjectCard({
   const { darkMode, setDarkMode } = useContext(ThemeContext);
   const [isHovered, setIsHovered] = useState(false);
   const videoRef = createRef();
+  const [width, setWidth] = useState(window.innerWidth < 1024);
+
+  useEffect(() => {
+    const handleWindowResize = () => setWidth(window.innerWidth < 1024);
+    window.addEventListener("resize", handleWindowResize);
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, []);
 
   const handleVideoHover = () => {
     setIsHovered(true);
@@ -31,15 +39,19 @@ function ProjectCard({
         darkMode ? "div-dark portfolio-card" : "div-light portfolio-card"
       }
     >
-      <video
-        ref={videoRef}
-        src={videoLink}
-        loop
-        muted
-        onMouseEnter={handleVideoHover}
-        onMouseLeave={handleVideoLeave}
-        className={isHovered ? "hovered-video" : ""}
-      />
+      {width ? (
+        <img src={photo} className="portfolio-img"/> 
+      ) : (
+        <video
+          ref={videoRef}
+          src={videoLink}
+          loop
+          muted
+          onMouseEnter={handleVideoHover}
+          onMouseLeave={handleVideoLeave}
+          className={isHovered ? "hovered-video" : ""}
+        />
+      )}
       <h2 className={darkMode ? "dark-text" : "light-text"}>{projectName}</h2>
       <p className={darkMode ? "dark-text" : "light-text"}>
         {projectDescription}
@@ -77,4 +89,3 @@ function ProjectCard({
 }
 
 export default ProjectCard;
-

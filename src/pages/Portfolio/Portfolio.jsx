@@ -6,6 +6,7 @@ function Portfolio() {
   return (
     <div className="portfolio-container">
       <ProjectCard
+        photo={"/assets/potfolio/uni-life/uni-life-img.png"}
         videoLink={"/assets/potfolio/re-serve/re-serve-img.jpg"}
         projectName={"RE:serve - Table Reservation System"}
         projectDescription={
@@ -15,6 +16,7 @@ function Portfolio() {
         visitLink={"www.google.com"}
       />
       <ProjectCard
+        photo={"/assets/potfolio/uni-life/uni-life-img.png"}
         videoLink={"/assets/potfolio/uni-life/uni-life.mp4"}
         projectName={"UniLife - Student Accommodation Search"}
         projectDescription={
@@ -24,6 +26,7 @@ function Portfolio() {
         visitLink={"https://uni-life.netlify.app/"}
       />
       <ProjectCard
+        photo={"/assets/potfolio/uni-life/uni-life-img.png"}
         videoLink={"/assets/dark-background.avif"}
         projectName={"Blog - Write Your Story"}
         projectDescription={
@@ -33,6 +36,7 @@ function Portfolio() {
         visitLink={"www.google.com"}
       />
       <ProjectCard
+        photo={"/assets/potfolio/uni-life/uni-life-img.png"}
         videoLink={"/assets/dark-background.avif"}
         projectName={"Fake store - E-Commerce"}
         projectDescription={
@@ -42,6 +46,7 @@ function Portfolio() {
         visitLink={"www.google.com"}
       />
       <ProjectCard
+        photo={"/assets/potfolio/space-next/space-next-img.png"}
         videoLink={"/assets/potfolio/space-next/space-next.mp4"}
         projectName={"Space Next - Real Time Launches"}
         projectDescription={
@@ -53,6 +58,7 @@ function Portfolio() {
         }
       />
       <ProjectCard
+        photo={"/assets/potfolio/uni-life/uni-life-img.png"}
         videoLink={"/assets/dark-background.avif"}
         projectName={"Cinetrail - Database of Movies "}
         projectDescription={
