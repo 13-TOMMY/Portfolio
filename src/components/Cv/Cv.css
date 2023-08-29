@@ -7,8 +7,8 @@
   gap: 10px;
 }
 .english-cv {
-  width: 45%;
-  height: 90%;
+  width: 152.5px;
+  height: 100%;
   padding: 10px 0;
   display: flex;
   align-items: center;
@@ -22,8 +22,8 @@
   text-align: center;
 }
 .polish-cv {
-  width: 45%;
-  height: 90%;
+  width: 152.5px;
+  height: 100%;
   padding: 10px 0;
   display: flex;
   align-items: center;

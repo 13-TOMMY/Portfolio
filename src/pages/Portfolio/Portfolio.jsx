@@ -6,14 +6,14 @@ function Portfolio() {
   return (
     <div className="portfolio-container">
       <ProjectCard
-        photo={"/assets/potfolio/uni-life/uni-life-img.png"}
+        photo={"/assets/potfolio/re-serve/re-serve-img.jpg"}
         videoLink={"/assets/potfolio/re-serve/re-serve.mp4"}
-        projectName={"RE:serve - Table Reservation System"}
+        projectName={"RE:serve - Table Reservation"}
         projectDescription={
           "RE:serve is a web application that simplifies table reservations at restaurants and venues. Users can effortlessly find and book tables, manage their reservations, and enjoy a seamless dining experience. Powered by users by the and Firebase, this project showcases my skills in React, three.js, Firebase Authentication, Firebase Firestore and responsive web design."
         }
-        viewlink={"www.youtube.com"}
-        visitLink={"www.google.com"}
+        viewlink={"https://re-serve.netlify.app/"}
+        visitLink={"https://cine-trail.netlify.app"}
       />
       <ProjectCard
         photo={"/assets/potfolio/uni-life/uni-life-img.png"}
@@ -32,18 +32,18 @@ function Portfolio() {
         projectDescription={
           "RE:serve is a web application that simplifies table reservations at restaurants and venues. Users can effortlessly find and book tables, manage their reservations, and enjoy a seamless dining experience. Powered by users by the and Firebase, this project showcases my skills in React, three.js, Firebase Authentication, Firebase Firestore and responsive web design."
         }
-        viewlink={"www.youtube.com"}
-        visitLink={"www.google.com"}
+        viewlink={"https://b10g.netlify.app"}
+        visitLink={"https://github.com/13-TOMMY/blog"}
       />
       <ProjectCard
         photo={"/assets/potfolio/fake-store/fake-store-img.png"}
         videoLink={"/assets/potfolio/fake-store/fake-store.mp4"}
         projectName={"Fake store - E-Commerce"}
         projectDescription={
-          "ReactStore is a cutting-edge web application designed to provide users with a seamless and personalized online shopping experience. It harnesses the power of React and a library of NPM packages to create a responsive Single Page Application (SPA). Users can explore an extensive selection of products, delve into detailed product information, add items to their favorites, and complete their purchases."
+          "Fake store is a shopping web application designed to provide users with a seamless and personalized online shopping experience. It harnesses the power of React and a library of NPM packages to create a responsive Single Page Application (SPA). Users can explore an extensive selection of products, delve into detailed product information, add items to their favorites, and complete their purchases."
         }
-        viewlink={"www.youtube.com"}
-        visitLink={"www.google.com"}
+        viewlink={"https://github.com/13-TOMMY/Uni-Life"}
+        visitLink={"https://fake-store-e.netlify.app"}
       />
       <ProjectCard
         photo={"/assets/potfolio/space-next/space-next-img.png"}
@@ -58,14 +58,14 @@ function Portfolio() {
         }
       />
       <ProjectCard
-        photo={"/assets/potfolio/uni-life/uni-life-img.png"}
-        videoLink={"/assets/dark-background.avif"}
+        photo={"/assets/potfolio/cine-trail/cine-trail-img.png"}
+        videoLink={"/assets/potfolio/cine-trail/cine-trail.mp4"}
         projectName={"Cinetrail - Database of Movies "}
         projectDescription={
           "RE:serve is a web application that simplifies table reservations at restaurants and venues. Users can effortlessly find and book tables, manage their reservations, and enjoy a seamless dining experience. Powered by users by the and Firebase, this project showcases my skills in React, three.js, Firebase Authentication, Firebase Firestore and responsive web design."
         }
-        viewlink={"www.youtube.com"}
-        visitLink={"www.google.com"}
+        viewlink={"https://github.com/13-TOMMY/cinetrail"}
+        visitLink={"https://cine-trail.netlify.app"}
       />
     </div>
   );

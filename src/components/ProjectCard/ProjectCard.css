@@ -1,6 +1,6 @@
 .portfolio-card {
   width: 425px;
-  height: 800px;
+  height: 750px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,15 +8,15 @@
   padding: 25px 0;
 }
 .portfolio-img{
-  height: 40%;
-  width: 90%;
-  object-fit: cover;
+  height: 35%;
+  width: 375px;
+  object-fit: fill;
   border-radius: 12px;
 }
 .portfolio-card video {
-  height: 40%;
-  width: 90%;
-  object-fit: cover;
+  height: 35%;
+  width: 375px;
+  object-fit: fill;
   border-radius: 12px;
 }
 /* Add this to your CSS file */
@@ -26,13 +26,16 @@
 }
 
 .portfolio-card h2 {
-  height: 10%;
+  height: 15%;
   width: 90%;
-  text-align: center;
   font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .portfolio-card p {
-  height: 35%;
+  height: 40%;
   width: 90%;
   text-align: center;
   font-size: 18px;
@@ -45,7 +48,7 @@
 }
 
 .pc-btn {
-  width: 100px;
+  width: 125px;
   height: 50px;
   border-radius: 12px;
   font-size: 26px;

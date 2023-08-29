@@ -80,7 +80,7 @@ function ProjectCard({
           }
         >
           <a href={visitLink} target="_blank" rel="noopener noreferrer">
-            Visit
+            Github
           </a>
         </motion.button>
       </div>
