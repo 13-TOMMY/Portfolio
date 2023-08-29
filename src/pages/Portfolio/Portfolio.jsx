@@ -22,8 +22,8 @@ function Portfolio() {
         projectDescription={
           "UniLife simplifies the process of finding student accommodation. Built using React and react-router, this responsive app fetches data from an API, offering multiple pages for exploration. It demonstrates my proficiency in React, React Router, and API integration."
         }
-        viewlink={"https://github.com/13-TOMMY/Uni-Life"}
-        visitLink={"https://uni-life.netlify.app/"}
+        viewLink={"https://uni-life.netlify.app/"}
+        visitlink={"https://github.com/13-TOMMY/Uni-Life"}
       />
       <ProjectCard
         photo={"/assets/potfolio/uni-life/uni-life-img.png"}
@@ -42,8 +42,8 @@ function Portfolio() {
         projectDescription={
           "Fake store is a shopping web application designed to provide users with a seamless and personalized online shopping experience. It harnesses the power of React and a library of NPM packages to create a responsive Single Page Application (SPA). Users can explore an extensive selection of products, delve into detailed product information, add items to their favorites, and complete their purchases."
         }
-        viewlink={"https://github.com/13-TOMMY/Uni-Life"}
-        visitLink={"https://fake-store-e.netlify.app"}
+        viewlink={"https://fake-store-e.netlify.app"}
+        visitLink={"https://github.com/13-TOMMY/Uni-Life"}
       />
       <ProjectCard
         photo={"/assets/potfolio/space-next/space-next-img.png"}
@@ -52,10 +52,10 @@ function Portfolio() {
         projectDescription={
           "Space Next gives access to upcoming launch details, featuring countdowns, voting and interactive maps. This website built using CSS, HTML, and JavaScript. We integrated APIs like the Rocket Launch API for launch data and the Bing Maps Locations API for mapping. Collaboratined with talented individuals,  Jungwon Jung and Paul Hondl, this project highlighted my skills in web development, responsive design, and data integration."
         }
-        viewlink={"https://github.com/jungwonJung/Space-Next"}
-        visitLink={
+        viewlink={
           "https://stupendous-mandazi-1fbde3.netlify.app/#info-container"
         }
+        visitLink={"https://github.com/jungwonJung/Space-Next"}
       />
       <ProjectCard
         photo={"/assets/potfolio/cine-trail/cine-trail-img.png"}
@@ -64,8 +64,8 @@ function Portfolio() {
         projectDescription={
           "RE:serve is a web application that simplifies table reservations at restaurants and venues. Users can effortlessly find and book tables, manage their reservations, and enjoy a seamless dining experience. Powered by users by the and Firebase, this project showcases my skills in React, three.js, Firebase Authentication, Firebase Firestore and responsive web design."
         }
-        viewlink={"https://github.com/13-TOMMY/cinetrail"}
-        visitLink={"https://cine-trail.netlify.app"}
+        viewlink={"https://cine-trail.netlify.app"}
+        visitLink={"https://github.com/13-TOMMY/cinetrail"}
       />
     </div>
   );
