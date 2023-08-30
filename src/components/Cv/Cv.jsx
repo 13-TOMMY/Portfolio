@@ -6,19 +6,25 @@ import { motion } from "framer-motion";
 import { AiOutlineDownload } from "react-icons/ai";
 import { MdOutlineFindInPage } from "react-icons/md";
 import "./Cv.css";
+import LanguageText from "../LanguageText/LanguageText";
 
 function Cv() {
   const englishCVUrl = EnglishCv;
   const polishCVUrl = PolishCv;
 
-  const { darkMode, setDarkMode } = useContext(ThemeContext);
+  const { darkMode } = useContext(ThemeContext);
 
   return (
-    <div
-     className="cv-container"
-    >
-          <div className={darkMode ? "english-cv div-dark" : "english-cv div-light"}>
-        <h3 className={darkMode ? "dark-text" : "light-text"}>English Cv</h3>
+    <div className="cv-container">
+      <div
+        className={darkMode ? "english-cv div-dark" : "english-cv div-light"}
+      >
+        <h3 className={darkMode ? "dark-text" : "light-text"}>
+          <LanguageText
+            englishText={<>English CV</>}
+            polishText={<>Angielskie CV</>}
+          />
+        </h3>
         <motion.button
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
@@ -51,7 +57,12 @@ function Cv() {
         </motion.button>
       </div>
       <div className={darkMode ? "polish-cv div-dark" : "polish-cv div-light"}>
-        <h3 className={darkMode ? "dark-text" : "light-text"}>Polish Cv</h3>
+        <h3 className={darkMode ? "dark-text" : "light-text"}>
+        <LanguageText
+            englishText={<>Polish CV</>}
+            polishText={<>Polskie CV</>}
+          />
+        </h3>
         <motion.button
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}

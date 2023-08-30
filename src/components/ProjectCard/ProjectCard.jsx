@@ -2,6 +2,7 @@ import React, { createRef, useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { motion } from "framer-motion";
 import "./ProjectCard.css";
+import LanguageText from "../LanguageText/LanguageText";
 
 function ProjectCard({
   photo,
@@ -66,8 +67,8 @@ function ProjectCard({
               : "light-text light-btn pc-btn"
           }
         >
-          <a href={viewlink} target="_blank" rel="noopener noreferrer">
-            View
+          <a href={ visitLink} target="_blank" rel="noopener noreferrer">
+          <LanguageText englishText={<>Visit</>} polishText={<>Odwiedz</>} />
           </a>{" "}
         </motion.button>
         <motion.button
@@ -79,7 +80,7 @@ function ProjectCard({
               : "light-text light-btn-two pc-btn"
           }
         >
-          <a href={visitLink} target="_blank" rel="noopener noreferrer">
+          <a href={viewlink} target="_blank" rel="noopener noreferrer">
             Github
           </a>
         </motion.button>

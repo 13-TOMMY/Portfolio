@@ -186,6 +186,7 @@ function NavBar() {
               activeBoxShadow="0px 0px 1px 2px #212121"
               uncheckedIcon={
                 <div
+                  className="rotate-switch"
                   style={{
                     display: "flex",
                     justifyContent: "center",
@@ -201,6 +202,7 @@ function NavBar() {
               }
               checkedIcon={
                 <div
+                className="rotate-switch"
                   style={{
                     display: "flex",
                     justifyContent: "center",
@@ -216,6 +218,7 @@ function NavBar() {
               }
               uncheckedHandleIcon={
                 <div
+                className="rotate-switch"
                   style={{
                     display: "flex",
                     justifyContent: "center",
@@ -230,6 +233,7 @@ function NavBar() {
               }
               checkedHandleIcon={
                 <div
+                className="rotate-switch"
                   style={{
                     display: "flex",
                     justifyContent: "center",

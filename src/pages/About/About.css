@@ -50,7 +50,8 @@
   align-items: flex-start;
   justify-content: space-around;
   width: 525px;
-  height: 1075px;
+  height: fit-content;
+  min-height: 1075px;
   padding: 5%;
   gap: 10px;
 }
@@ -79,7 +80,6 @@
   .ab-right {
     justify-content: center;
     width: 100%;
-    height: fit-content;
   }
   .ab-right-p {
     width: 650px;

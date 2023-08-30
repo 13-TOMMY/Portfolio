@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import "./SocialMediaLinks.css";
 import { ThemeContext } from "../../context/ThemeContext";
 import { motion } from "framer-motion";
+import LanguageText from "../LanguageText/LanguageText";
 
 function SocialMediaLinks() {
   const { darkMode, setDarkMode } = useContext(ThemeContext);
@@ -14,20 +15,24 @@ function SocialMediaLinks() {
           : "div-light social-media-links-container"
       }
     >
-      <h2 className={darkMode ? "dark-text " : "light-text "}>Find Me Here!</h2>
+      <h2 className={darkMode ? "dark-text " : "light-text "}>
+        {" "}
+        <LanguageText englishText={<>Find Me Here!</>} polishText={<>Znajdź mnie tutaj!</>} />
+      </h2>
       <ul className="sml-list-links">
         <li style={{ listStyle: "none" }}>
           <motion.a
-            whileHover={{ scale: 1.2}}
-            whileTap={{ scale: 0.8, rotate: -365}}
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8}}
             href="https://twitter.com/13___tommy"
             target="_blank"
             rel="noopener noreferrer"
-            className="sml-img-link"
+            className="sml-img-link "
           >
             <img
               src="/assets/social-media/twitter.svg"
               alt="X/Twitter profile @13__tommy"
+              className="rgb-border contact-icon"
             />
           </motion.a>
 
@@ -42,8 +47,8 @@ function SocialMediaLinks() {
         </li>
         <li style={{ listStyle: "none" }}>
           <motion.a
-            whileHover={{ scale: 1.2}}
-            whileTap={{ scale: 0.8, rotate: -365}}
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8}}
             href="https://www.linkedin.com/in/tomasz-lis-67b879261"
             target="_blank"
             rel="noopener noreferrer"
@@ -52,6 +57,7 @@ function SocialMediaLinks() {
             <img
               src="/assets/social-media/linkedin.svg"
               alt="LinkedIn profile tomasz-lis-67b879261"
+              className="rgb-border contact-icon"
             />
           </motion.a>
           <label
@@ -65,8 +71,8 @@ function SocialMediaLinks() {
         </li>
         <li style={{ listStyle: "none" }}>
           <motion.a
-            whileHover={{ scale: 1.2}}
-            whileTap={{ scale: 0.8, rotate: -365}}
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8}}
             href="https://medium.com/@13__TOMMY"
             target="_blank"
             rel="noopener noreferrer"
@@ -75,6 +81,7 @@ function SocialMediaLinks() {
             <img
               src="/assets/social-media/medium.svg"
               alt="Medium profile @13__tommy"
+              className="rgb-border contact-icon"
             />
           </motion.a>
           <label

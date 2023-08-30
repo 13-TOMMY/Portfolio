@@ -34,9 +34,6 @@ html {
   -webkit-backdrop-filter: blur(12.5px);
   border: 2px solid rgba(111, 111, 111, 0.544);
 }
-.light-border{
-  border: 2px solid rgba(111, 111, 111, 0.544);
-}
 .light-mode-viewArea {
   background-image: url("/assets/light-background.jpeg");
 }
@@ -63,9 +60,6 @@ html {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(12.5px);
   -webkit-backdrop-filter: blur(12.5px);
-  border: 2px solid rgba(171, 171, 171, 0.844);
-}
-.dark-border{
   border: 2px solid rgba(171, 171, 171, 0.844);
 }
 .dark-mode-viewArea {
@@ -106,7 +100,25 @@ html {
 .dark-btn-two:hover {
   border: 1px solid var(--white);
 }
-
+/*Border effect*/
+.rgb-border{
+  border: 2px solid transparent; /* Set the initial border size and color */
+  transition: border-color 0.5s ease-in-out;
+  border-radius: 24%;
+}
+.rgb-border:hover {
+  border-color: rgba(255, 255, 255, 0.5); /* Change the border color on hover */
+  animation: lightPulse 0.8s infinite alternate; /* Add a light pulse animation */
+}
+@keyframes lightPulse {
+  0% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.778);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0);
+  }
+}
+/*App.jsx*/
 /* viewable area */
 .viewable-area {
   display: flex;

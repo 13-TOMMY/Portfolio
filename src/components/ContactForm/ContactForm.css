@@ -3,9 +3,9 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  width: 600px;
-  padding: 20px;
-  height: 800px;
+  width: 550px;
+  padding: 50px 20px;
+  height: fit-content;
 }
 .form-title {
   display: flex;
@@ -19,12 +19,12 @@
 }
 .form-title h2 {
   width: 100%;
-  font-size: 34px;
+  font-size: 48px;
   text-align: center;
 }
 .form-title p {
   width: 100%;
-  font-size: 26px;
+  font-size: 18px;
   text-align: center;
 }
 .contact-form-fields {
@@ -73,7 +73,7 @@
   justify-content: space-around;
 }
 .cf-btn {
-  width: 100px;
+  width: 120px;
   height: 50px;
   border-radius: 12px;
   font-size: 26px;
@@ -83,13 +83,14 @@
   .contact-form {
     width: 650px;
   }
+
 }
 @media (max-width: 767px) {
   .contact-form {
     width: 90%;
   }
   .form-title h2 {
-    font-size: 26px;
+    font-size: 38px;
   }
   .form-title p {
     font-size: 18px;

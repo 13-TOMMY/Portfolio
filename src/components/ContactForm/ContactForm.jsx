@@ -5,6 +5,7 @@ import { ThemeContext } from "../../context/ThemeContext";
 import { motion } from "framer-motion";
 import "./ContactForm.css";
 import "react-toastify/dist/ReactToastify.css";
+import LanguageText from "../LanguageText/LanguageText";
 
 const ContactForm = () => {
   const { darkMode, setDarkMode } = useContext(ThemeContext);
@@ -62,8 +63,24 @@ const ContactForm = () => {
     >
       <ToastContainer />
       <div className="form-title">
-        <h2 className={darkMode ? "dark-text " : "light-text "}>Contact Me!</h2>
-        <p className={darkMode ? "dark-text " : "light-text "}>Please fill out the form below to get in touch with me.</p>
+        <h2 className={darkMode ? "dark-text " : "light-text "}>
+          <LanguageText
+            englishText={<>Contact Me!</>}
+            polishText={<>Skontaktuj się ze mną!</>}
+          />
+        </h2>
+        <p className={darkMode ? "dark-text " : "light-text "}>
+          <LanguageText
+            englishText={
+              <> Please fill out the form below to get in touch with me.</>
+            }
+            polishText={
+              <>
+                Proszę wypełnić poniższy formularz, aby się ze mną skontaktować.
+              </>
+            }
+          />
+        </p>
       </div>
       <form ref={form} onSubmit={sendEmail} className="contact-form-fields">
         <div className="form-name">
@@ -71,7 +88,7 @@ const ContactForm = () => {
             htmlFor="text"
             className={darkMode ? "dark-text cf-label" : "light-text cf-label"}
           >
-            Name
+            <LanguageText englishText={<>Name:</>} polishText={<>Imię</>} />
           </label>
           <input
             type="text"
@@ -87,7 +104,7 @@ const ContactForm = () => {
             htmlFor="email"
             className={darkMode ? "dark-text cf-label" : "light-text cf-label"}
           >
-            Email
+            Email:
           </label>
           <input
             type="email"
@@ -103,7 +120,10 @@ const ContactForm = () => {
             htmlFor="number"
             className={darkMode ? "dark-text cf-label" : "light-text cf-label"}
           >
-            Phone Number (Optional)
+            <LanguageText
+              englishText={<>Phone Number (Optional):</>}
+              polishText={<>Numer telefonu (opcjonalnie)</>}
+            />
           </label>
           <input
             type="text"
@@ -118,7 +138,10 @@ const ContactForm = () => {
             htmlFor="message"
             className={darkMode ? "dark-text cf-label" : "light-text cf-label"}
           >
-            Message
+            <LanguageText
+              englishText={<>Message:</>}
+              polishText={<>Wiadomość:</>}
+            />
           </label>
           <textarea
             name="message"
@@ -135,18 +158,26 @@ const ContactForm = () => {
             whileHover={{ scale: 1.2 }} // Define hover animation
             whileTap={{ scale: 0.9 }}
             type="submit"
-            className={darkMode ? "dark-text dark-btn cf-btn" : "light-text  light-btn cf-btn"}
-            >
-            Send
+            className={
+              darkMode
+                ? "dark-text dark-btn cf-btn"
+                : "light-text  light-btn cf-btn"
+            }
+          >
+            <LanguageText englishText={<>Send</>} polishText={<>Wyślij</>} />
           </motion.button>
           <motion.button
             whileHover={{ scale: 1.2 }} // Define hover animation
             whileTap={{ scale: 0.9 }}
             onClick={clearForm}
             type="button"
-            className={darkMode ? "dark-text dark-btn-two cf-btn" : "light-text light-btn-two cf-btn"}
-            >
-            Clear
+            className={
+              darkMode
+                ? "dark-text dark-btn-two cf-btn"
+                : "light-text light-btn-two cf-btn"
+            }
+          >
+            <LanguageText englishText={<>Clear</>} polishText={<>Wyczyść</>} />
           </motion.button>
         </div>
       </form>
