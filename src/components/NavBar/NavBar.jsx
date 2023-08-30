@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./NavBar.css";
 import { motion } from "framer-motion"; // Import motion from Framer Motion
@@ -13,11 +13,13 @@ import {
 } from "react-icons/bi";
 import Switch from "react-switch";
 import { ThemeContext } from "../../context/ThemeContext";
+import { LangContext } from "../../context/LangContext";
 
 function NavBar() {
   const { darkMode, setDarkMode } = useContext(ThemeContext);
+  const { language, toggleLanguage } = useContext(LangContext);
   const location = useLocation();
-  const handleChange = (isChecked) => {
+  const handleDarkChange = (isChecked) => {
     setDarkMode(isChecked);
   };
 
@@ -40,12 +42,8 @@ function NavBar() {
               whileHover={{ scale: 1.2 }}
               className={
                 darkMode
-                  ? `icon ${
-                      isHomepage ? "selected-dark" : "dark-text"
-                    }`
-                  : `icon ${
-                      isHomepage ? "selected-light" : "light-text"
-                    }`
+                  ? `icon ${isHomepage ? "selected-dark" : "dark-text"}`
+                  : `icon ${isHomepage ? "selected-light" : "light-text"}`
               }
             >
               <BiHomeAlt2 />
@@ -57,12 +55,8 @@ function NavBar() {
               whileHover={{ scale: 1.2 }}
               className={
                 darkMode
-                  ? `icon ${
-                      isAbout ? "selected-dark" : "dark-text"
-                    }`
-                  : `icon ${
-                      isAbout ? "selected-light" : "light-text"
-                    }`
+                  ? `icon ${isAbout ? "selected-dark" : "dark-text"}`
+                  : `icon ${isAbout ? "selected-light" : "light-text"}`
               }
             >
               <BiUser />
@@ -74,12 +68,8 @@ function NavBar() {
               whileHover={{ scale: 1.2 }}
               className={
                 darkMode
-                  ? `icon ${
-                      isPortfolio ? "selected-dark" : "dark-text"
-                    }`
-                  : `icon ${
-                      isPortfolio ? "selected-light" : "light-text"
-                    }`
+                  ? `icon ${isPortfolio ? "selected-dark" : "dark-text"}`
+                  : `icon ${isPortfolio ? "selected-light" : "light-text"}`
               }
             >
               <BiLibrary />
@@ -91,12 +81,8 @@ function NavBar() {
               whileHover={{ scale: 1.2 }}
               className={
                 darkMode
-                  ? `icon ${
-                      isContact ? "selected-dark" : "dark-text"
-                    }`
-                  : `icon ${
-                      isContact ? "selected-light" : "light-text"
-                    }`
+                  ? `icon ${isContact ? "selected-dark" : "dark-text"}`
+                  : `icon ${isContact ? "selected-light" : "light-text"}`
               }
             >
               <BiPaperPlane />
@@ -109,7 +95,7 @@ function NavBar() {
           <label htmlFor="material-switch">
             <Switch
               checked={darkMode}
-              onChange={handleChange}
+              onChange={handleDarkChange}
               handleDiameter={28}
               offColor="#FFFFFF"
               onColor="#FFFFFF"
@@ -121,60 +107,60 @@ function NavBar() {
               activeBoxShadow="0px 0px 1px 2px #212121"
               uncheckedIcon={
                 <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  height: "100%",
-                  fontSize: 16,
-                  color: "grey",
-                  paddingRight: 2,
-                  transform: "rotate(-90deg)",
-                }}
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    height: "100%",
+                    fontSize: 16,
+                    color: "grey",
+                    paddingRight: 2,
+                    transform: "rotate(-90deg)",
+                  }}
                 >
                   <BiMoon />
                 </div>
               }
               checkedIcon={
                 <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  height: "100%",
-                  fontSize: 16,
-                  color: "gray",
-                  paddingRight: 2,
-                }}
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    height: "100%",
+                    fontSize: 16,
+                    color: "gray",
+                    paddingRight: 2,
+                  }}
                 >
                   <BiSun />
                 </div>
               }
               uncheckedHandleIcon={
                 <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  height: "100%",
-                  color: "White",
-                  fontSize: 18,
-                }}
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    height: "100%",
+                    color: "White",
+                    fontSize: 18,
+                  }}
                 >
                   <BiSun />
                 </div>
               }
               checkedHandleIcon={
                 <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  height: "100%",
-                  color: "White",
-                  fontSize: 18,
-                  transform: "rotate(-90deg)",
-                }}
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    height: "100%",
+                    color: "White",
+                    fontSize: 18,
+                    transform: "rotate(-90deg)",
+                  }}
                 >
                   <BiSolidMoon />
                 </div>
@@ -184,7 +170,84 @@ function NavBar() {
             />
           </label>
         </div>
-      <img src="/assets/tommy-logo.svg" alt="Logo: TOMMY" />
+        <div className="language-mode">
+          <label htmlFor="material-switch">
+            <Switch
+              checked={language === 'pl'}
+              onChange={toggleLanguage}
+              handleDiameter={28}
+              offColor="#FFFFFF"
+              onColor="#FFFFFF"
+              offHandleColor="#FF5733"
+              onHandleColor="#1CB2CC"
+              height={50}
+              width={70}
+              borderRadius={12}
+              activeBoxShadow="0px 0px 1px 2px #212121"
+              uncheckedIcon={
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    height: "100%",
+                    fontSize: 14,
+                    color: "grey",
+                    textAlign: "center",
+                  }}
+                >
+                  <p>Eng</p>
+                </div>
+              }
+              checkedIcon={
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    height: "100%",
+                    fontSize: 14,
+                    color: "gray",
+                    textAlign: "center",
+                  }}
+                >
+                  <p>Pl</p>
+                </div>
+              }
+              uncheckedHandleIcon={
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    height: "100%",
+                    color: "White",
+                    fontSize: 16,
+                  }}
+                >
+                  <p>🇵🇱</p>
+                </div>
+              }
+              checkedHandleIcon={
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    height: "100%",
+                    color: "White",
+                    fontSize: 16,
+                  }}
+                >
+                  <p>🏴󠁧󠁢󠁥󠁮󠁧󠁿</p>
+                </div>
+              }
+              className="react-switch"
+              id="small-radius-switch"
+            />
+          </label>
+        </div>
+        <img src="/assets/tommy-logo.svg" alt="Logo: TOMMY" />
       </div>
     </div>
   );

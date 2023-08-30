@@ -8,7 +8,7 @@ function Portfolio() {
       <ProjectCard
         photo={"/assets/potfolio/re-serve/re-serve-img.jpg"}
         videoLink={"/assets/potfolio/re-serve/re-serve.mp4"}
-        projectName={"RE:serve - Table Reservation"}
+        projectName={"RE:serve - Simplify Reservations"}
         projectDescription={
           "RE:serve is a web application that simplifies table reservations at restaurants and venues. Users can effortlessly find and book tables, manage their reservations, and enjoy a seamless dining experience. Powered by users by the and Firebase, this project showcases my skills in React, three.js, Firebase Authentication, Firebase Firestore and responsive web design."
         }

@@ -81,9 +81,6 @@
     width: 650px;
     height: 400px;
   }
-  .hp-h1-text {
-    font-size: 48px;
-  }
 }
 
 @media (max-width: 767px) {

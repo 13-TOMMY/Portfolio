@@ -1,10 +1,12 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import "./Homepage.css";
 import { ThemeContext } from "../../context/ThemeContext";
 import TechStack from "../../components/TechStack/TechStack";
+import LanguageText from "../../components/LanguageText/LanguageText";
 
 function Homepage() {
-  const { darkMode, setDarkMode } = useContext(ThemeContext);
+  const { darkMode } = useContext(ThemeContext);
+
   return (
     <div className="Homepage-container">
       <div className="hp-top">
@@ -25,12 +27,28 @@ function Homepage() {
               darkMode ? "dark-text hp-p-text" : "light-text hp-p-text"
             }
           >
-            Hey there, I&apos;m Tomasz Lis, a Front-end Developer based in
-            Krakow, Poland. I&apos;m all about coding and continuous learning.
-            Right now, I&apos;m focused on leveling up to become a Full Stack
-            Developer because I believe in pushing my limits. Coding isn&apos;t
-            just a job for me – it&apos;s a passion that drives me to learn and
-            grow every day.
+            <LanguageText
+              englishText={
+                <>
+                  Hello! I&apos;m Tomasz Lis, a Krakow-based Front-end
+                  Developer. My world revolves around code and continuous
+                  learning. Currently, I&apos;m on a journey to become a Full
+                  Stack Developer, driven by my passion for pushing boundaries.
+                  Coding isn&apos;t just my job; it&apos;s a daily source of
+                  inspiration for me, fuelling my growth.
+                </>
+              }
+              polishText={
+                <>
+                  Cześć! Jestem Tomasz Lis, Front-end Developer z Krakowa. Moje
+                  życie kręci się wokół kodu i nieustannej nauki. Obecnie dążę
+                  do zostania Deweloperem Full Stack, kierując się pasją do
+                  przekraczania własnych ograniczeń. Programowanie to nie tylko
+                  moja praca; to codzienne źródło inspiracji, które napędza mój
+                  rozwój.
+                </>
+              }
+            />
           </p>
         </div>
         <div
