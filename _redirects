@@ -1,11 +1,11 @@
 # Redirects for Portfolio Website
 # Redirect from the root path to the homepage
-/                       /index.html             200
+/                       /src/pages/Homepage/Homepage.html             200
 
 # Redirects for individual routes
-/about                  /about/index.html       200
-/portfolio              /portfolio/index.html   200
-/contact                /contact/index.html     200
+/about                  /src/pages/About/About.html                200
+/portfolio              /src/pages/Portfolio/Portfolio.html            200
+/contact                /src/pages/Contact/Contact.html              200
 
 # Catch-all route (404)
-/*                      /index.html             404
+/*                      /src/pages/Homepage/Homepage.html             404
