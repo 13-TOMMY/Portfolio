@@ -26,7 +26,7 @@ function AboutLinks() {
         <div className="abl-icon-row">
           <motion.a
             whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.8, rotate: -365 }}
+            whileTap={{ scale: 0.8,}}
             href="https://github.com/13-TOMMY"
             target="_blank"
             rel="noopener noreferrer"  
@@ -40,7 +40,7 @@ function AboutLinks() {
           </motion.a>
           <motion.a
             whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.8, rotate: -365 }}
+            whileTap={{ scale: 0.8,}}
             href="https://twitter.com/13___tommy"
             target="_blank"
             rel="noopener noreferrer"  
@@ -56,7 +56,7 @@ function AboutLinks() {
         <div className="abl-icon-row">
           <motion.a
             whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.8, rotate: -365 }}
+            whileTap={{ scale: 0.8,}}
             href="https://www.linkedin.com/in/tomasz-lis-67b879261"
             target="_blank"
             rel="noopener noreferrer"  
@@ -71,7 +71,7 @@ function AboutLinks() {
 
           <motion.a
             whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.8, rotate: -365 }}
+            whileTap={{ scale: 0.8,}}
             href="https://medium.com/@13__TOMMY"
             target="_blank"
             rel="noopener noreferrer"  

@@ -17,7 +17,7 @@ function Cv() {
   return (
     <div className="cv-container">
       <div
-        className={darkMode ? "english-cv div-dark" : "english-cv div-light"}
+        className={darkMode ? "cv div-dark" : "cv div-light"}
       >
         <h3 className={darkMode ? "dark-text" : "light-text"}>
           <LanguageText
@@ -56,7 +56,7 @@ function Cv() {
           </a>
         </motion.button>
       </div>
-      <div className={darkMode ? "polish-cv div-dark" : "polish-cv div-light"}>
+      <div className={darkMode ? "cv div-dark" : "cv div-light"}>
         <h3 className={darkMode ? "dark-text" : "light-text"}>
         <LanguageText
             englishText={<>Polish CV</>}

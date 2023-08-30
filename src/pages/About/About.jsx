@@ -5,6 +5,7 @@ import { ThemeContext } from "../../context/ThemeContext";
 import AboutLinks from "../../components/AboutLinks/AboutLinks";
 import Cv from "../../components/Cv/Cv";
 import LanguageText from "../../components/LanguageText/LanguageText";
+import Codewars from "../../components/Codewars/Codewars";
 
 function About() {
   const { darkMode, setDarkMode } = useContext(ThemeContext);
@@ -24,6 +25,7 @@ function About() {
             className="ab-left-middle-img"
           />
         </div>
+        <Codewars />
         <AboutLinks />
       </div>
       <div className="ab-right">

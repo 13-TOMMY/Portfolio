@@ -27,12 +27,12 @@ html {
   --secondary-light-2: #5c5c5c; /* Light Gray */
 }
 .div-light {
-  background: rgba(233, 233, 233, 0.46);
+  background: rgba(233, 233, 233, 0.39);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(12.5px);
-  -webkit-backdrop-filter: blur(12.5px);
-  border: 2px solid rgba(111, 111, 111, 0.544);
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(11px);
+  border: 1px solid rgba(233, 233, 233, 0.43);
 }
 .light-mode-viewArea {
   background-image: url("/assets/light-background.jpeg");
@@ -54,13 +54,12 @@ html {
   --secondary-dark-2: #212121; /* Dark Gray */
 }
 .div-dark {
-  /* From https://css.glass */
-  background: rgba(0, 0, 0, 0.442);
+  background: rgba(109, 109, 109, 0.39);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(12.5px);
-  -webkit-backdrop-filter: blur(12.5px);
-  border: 2px solid rgba(171, 171, 171, 0.844);
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(11px);
+  border: 1px solid rgba(109, 109, 109, 0.43);
 }
 .dark-mode-viewArea {
   background-image: url("/assets/dark-background.avif");
@@ -101,7 +100,7 @@ html {
   border: 1px solid var(--white);
 }
 /*Border effect*/
-.rgb-border{
+.rgb-border {
   border: 2px solid transparent; /* Set the initial border size and color */
   transition: border-color 0.5s ease-in-out;
   border-radius: 24%;

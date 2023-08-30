@@ -6,7 +6,7 @@
   justify-content: center;
   gap: 10px;
 }
-.english-cv {
+.cv {
   width: 152.5px;
   height: 100%;
   padding: 10px 0;
@@ -16,24 +16,9 @@
   flex-direction: column;
   border-radius: 12px;
 }
-.english-cv h3 {
+.cv h3 {
   font-size: 26px;
   padding: 0 7%;
-  text-align: center;
-}
-.polish-cv {
-  width: 152.5px;
-  height: 100%;
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-  border-radius: 12px;
-}
-.polish-cv h3 {
-  font-size: 26px;
-  width: 80px;
   text-align: center;
 }
 .cv-btn {
@@ -57,10 +42,38 @@
 @media (max-width: 1024px) {
   .cv-container {
     width: 650px;
+    height: fit-content;
+    flex-direction: column;
+  }
+  .cv {
+    width: 100%;
+    height: 100px;
+    padding: 0 50px ;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .cv h3 {
+    font-size: 26px;
+    padding: 0;
+    text-align: start;
+    width: 50%;
   }
 }
 @media (max-width: 767px) {
   .cv-container {
     width: 90%;
+  }
+  .cv{
+    height: 80px;
+  }
+  .cv h3 {
+    font-size: 18px;
+  }
+  .cv-btn {
+    width: 50px;
+    height: 50px;
+  }
+  .cv-btn a {
+    font-size: 38px;
   }
 }

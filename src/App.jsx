@@ -5,7 +5,7 @@ import Homepage from "./pages/Homepage/Homepage";
 import About from "./pages/About/About";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import Contact from "./pages/Contact/Contact";
-import NavBar from "./components/NavBar/NavBar";
+import Header from "./components/Header/Header";
 import { ThemeContext } from "./context/ThemeContext";
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
         <div
           className="left-side"
         >
-          <NavBar />
+          <Header />
         </div>
         <div className="right-side">
           <Routes>

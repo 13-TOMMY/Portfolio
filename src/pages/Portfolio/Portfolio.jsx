@@ -109,9 +109,7 @@ function Portfolio() {
                 from a Figma design. This project excels in implementing dynamic
                 routing, conditional rendering, and React hooks for efficient
                 state management. It also showcases expertise in using fetch to
-                retrieve data from an API while demonstrating a deep
-                understanding of React fundamentals, including component
-                lifecycle, props, state, and event handling.
+                retrieve data from an API.
               </>
             }
             polishText={
@@ -121,9 +119,7 @@ function Portfolio() {
                 responsywna Strona Jednej Strony (SPA). Projekt wyróżnia się
                 dynamicznym routingiem, warunkowym renderowaniem i React Hooks
                 do efektywnego zarządzania stanem. Pokazuje również umiejętność
-                korzystania z fetch do pobierania danych z API, prezentując
-                głęboką znajomość podstaw React, takich jak cykl życia
-                komponentów, propsy, stan i obsługa zdarzeń.
+                korzystania z fetch do pobierania danych z API.
               </>
             }
           />

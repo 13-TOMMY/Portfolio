@@ -39,7 +39,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50px;
+  height: 40px;
   width: 70px;
 }
 .react-switch {
@@ -65,7 +65,7 @@
   .dark-light-mode,
   .language-mode {
     transform: rotate(90deg);
-    width: 50px;
+    width: 40px;
   }
   .rotate-switch {
     transform: rotate(-90deg);
