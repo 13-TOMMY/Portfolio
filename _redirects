@@ -1,6 +1,1 @@
-# Redirects for Portfolio Website
-# Redirect from the root path to the index.html file
-/                       /index.html             200
-
-# Catch-all route (404)
-/*                      /index.html             404
+/*    /index.html   200
