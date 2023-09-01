@@ -1,4 +1,3 @@
-import React from "react";
 import "./Portfolio.css";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import LanguageText from "../../components/LanguageText/LanguageText";
@@ -105,7 +104,7 @@ function Portfolio() {
               <>
                 Fake Store is an immersive shopping web app that provides users
                 with a personalized online shopping experience. Developed using
-                React, it's a responsive Single Page Application (SPA) crafted
+                React, it&apos;s a responsive Single Page Application (SPA) crafted
                 from a Figma design. This project excels in implementing dynamic
                 routing, conditional rendering, and React hooks for efficient
                 state management. It also showcases expertise in using fetch to

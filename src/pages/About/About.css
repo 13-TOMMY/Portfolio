@@ -8,7 +8,6 @@
   gap: 50px;
   padding: 50px 0;
 }
-
 /* Left Section */
 .ab-left {
   display: flex;
@@ -19,7 +18,6 @@
   width: fit-content;
   gap: 50px;
 }
-
 /* middle Left */
 .ab-left-middle {
   width: 325px;
@@ -57,7 +55,7 @@
 }
 
 .ab-right-p h3 {
-  font-size: 26px;
+  font-size: 34px;
 }
 .ab-right-p p {
   font-size: 18px;
@@ -92,5 +90,8 @@
   .ab-right-p {
     width: 90%;
     padding: 2.5%;
+  }
+  .ab-right-p h3 {
+    font-size: 26px;
   }
 }

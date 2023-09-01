@@ -1,4 +1,4 @@
-import React, { useRef, useState, useContext } from "react";
+import { useRef, useState, useContext } from "react";
 import emailjs from "@emailjs/browser";
 import { toast, ToastContainer } from "react-toastify";
 import { ThemeContext } from "../../context/ThemeContext";
@@ -8,7 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 import LanguageText from "../LanguageText/LanguageText";
 
 const ContactForm = () => {
-  const { darkMode, setDarkMode } = useContext(ThemeContext);
+  const { darkMode } = useContext(ThemeContext);
 
   const form = useRef();
   const [name, setName] = useState("");

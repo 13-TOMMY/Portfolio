@@ -1,11 +1,11 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { motion } from "framer-motion";
 import "./AboutLinks.css";
 import LanguageText from "../LanguageText/LanguageText";
 
 function AboutLinks() {
-  const { darkMode, setDarkMode } = useContext(ThemeContext);
+  const { darkMode } = useContext(ThemeContext);
 
   return (
     <div
@@ -15,13 +15,13 @@ function AboutLinks() {
           : "div-light about-links-container"
       }
     >
-      <h2 className={darkMode ? "dark-text " : "light-text "}>
+      <h3 className={darkMode ? "dark-text " : "light-text "}>
         {" "}
         <LanguageText
           englishText={<>Find Me Here!</>}
           polishText={<>Znajdź mnie tutaj!</>}
         />
-      </h2>
+      </h3>
       <div className="abl-icon-container">
         <div className="abl-icon-row">
           <motion.a

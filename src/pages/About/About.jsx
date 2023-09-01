@@ -1,5 +1,4 @@
-import React from "react";
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import "./About.css";
 import { ThemeContext } from "../../context/ThemeContext";
 import AboutLinks from "../../components/AboutLinks/AboutLinks";
@@ -8,7 +7,7 @@ import LanguageText from "../../components/LanguageText/LanguageText";
 import Codewars from "../../components/Codewars/Codewars";
 
 function About() {
-  const { darkMode, setDarkMode } = useContext(ThemeContext);
+  const { darkMode } = useContext(ThemeContext);
 
   return (
     <div className="about-container">

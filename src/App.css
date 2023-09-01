@@ -36,6 +36,9 @@ html {
 }
 .light-mode-viewArea {
   background-image: url("/assets/light-background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
 }
 .light-text {
   color: var(--black);
@@ -63,6 +66,9 @@ html {
 }
 .dark-mode-viewArea {
   background-image: url("/assets/dark-background.avif");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
 }
 .dark-text {
   color: var(--white);
@@ -123,9 +129,6 @@ html {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll;
 }
 /* left side */
 .left-side {
