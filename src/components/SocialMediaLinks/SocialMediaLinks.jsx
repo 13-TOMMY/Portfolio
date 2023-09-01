@@ -15,10 +15,10 @@ function SocialMediaLinks() {
           : "div-light social-media-links-container"
       }
     >
-      <h2 className={darkMode ? "dark-text " : "light-text "}>
+      <h3 className={darkMode ? "dark-text " : "light-text "}>
         {" "}
         <LanguageText englishText={<>Find Me Here!</>} polishText={<>Znajdź mnie tutaj!</>} />
-      </h2>
+      </h3>
       <ul className="sml-list-links">
         <li style={{ listStyle: "none" }}>
           <motion.a

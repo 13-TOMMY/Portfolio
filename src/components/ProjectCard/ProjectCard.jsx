@@ -53,7 +53,7 @@ function ProjectCard({
           className={isHovered ? "hovered-video" : ""}
         />
       )}
-      <h2 className={darkMode ? "dark-text" : "light-text"}>{projectName}</h2>
+      <h3 className={darkMode ? "dark-text" : "light-text"}>{projectName}</h3>
       <p className={darkMode ? "dark-text" : "light-text"}>
         {projectDescription}
       </p>

@@ -20,19 +20,21 @@ function Portfolio() {
               <>
                 RE:serve is a user-friendly web app for effortless restaurant
                 and venue table reservations, powered by React, three.js,
-                Firebase, and responsive design. IOffering multiple pages for
-                exploration with React-router, robust Firebase-based CRUD
-                functionality, and comprehensive user authentication.
+                Firebase, and responsive design. It offers a single-page
+                application (SPA) experience with React-router for seamless
+                navigation, robust Firebase-based CRUD functionality, and
+                comprehensive user authentication.
               </>
             }
             polishText={
               <>
-                RE:serve to przyjazna użytkownikom aplikacja internetowa
+                RE:serve to przyjazna dla użytkownika aplikacja webowa
                 umożliwiająca łatwe rezerwacje stolików w restauracjach i
-                lokalach, oparta na technologiach React, three.js, Firebase i
-                responsywnym projektowaniu. Oferując wiele stron do eksploracj z
-                React-router, solidną funkcjonalność CRUD opartą na Firebase
-                oraz kompleksową autentykację użytkowników.
+                lokalach, zasilana przez React, three.js, Firebase oraz
+                responsywny design. Zapewnia wiele stron do eksploracji dzięki
+                React-router, solidne funkcje CRUD oparte na Firebase oraz
+                kompleksową autentykację użytkownika. Jest to aplikacja typu
+                Single Page Application (SPA).
               </>
             }
           />
@@ -53,20 +55,22 @@ function Portfolio() {
           <LanguageText
             englishText={
               <>
-                UniLife simplifies the process of finding student accommodation.
-                Built using React and react-router, this responsive app fetches
-                data from an API, offering multiple pages for exploration. It
-                demonstrates my proficiency in React, React Router, and API
-                integration.
+                UniLife streamlines the process of discovering student housing.
+                Crafted with React and react-router, this responsive application
+                retrieves data from an API, providing an array of pages for
+                exploration. It showcases my expertise in React, React Router,
+                and seamless API integration. This is a Single Page Application
+                (SPA).
               </>
             }
             polishText={
               <>
                 UniLife upraszcza proces poszukiwania zakwaterowania dla
-                studentów. Zbudowana przy użyciu React i react-router, ta
-                responsywna aplikacja pobiera dane z interfejsu API, oferując
-                wiele stron do eksploracji. Demonstrowuje moje umiejętności w
-                zakresie React, React Router i integracji z interfejsem API.
+                studentów. Stworzona przy użyciu React i react-router,
+                responsywna aplikacja pobiera dane z API, oferując wiele stron
+                do eksploracji. Prezentuje moją wiedzę w zakresie React, React
+                Router oraz płynnej integracji z API. To jest aplikacja typu
+                Single Page Application (SPA).
               </>
             }
           />
@@ -102,23 +106,25 @@ function Portfolio() {
           <LanguageText
             englishText={
               <>
-                Fake Store is an immersive shopping web app that provides users
-                with a personalized online shopping experience. Developed using
-                React, it&apos;s a responsive Single Page Application (SPA) crafted
-                from a Figma design. This project excels in implementing dynamic
-                routing, conditional rendering, and React hooks for efficient
-                state management. It also showcases expertise in using fetch to
-                retrieve data from an API.
+                Fake Store is an immersive shopping web app that offers users a
+                personalized online shopping experience. Built using React,
+                it&apos;s a responsive Single Page Application (SPA) crafted
+                based on a Figma design. This project excels in implementing
+                dynamic routing, conditional rendering, and efficient state
+                management using React hooks. It also demonstrates expertise in
+                fetching data from an API.
               </>
             }
             polishText={
               <>
-                Fake Store to interaktywna aplikacja zakupowa, oferująca
-                spersonalizowane doświadczenie online. Zbudowana w React, to
-                responsywna Strona Jednej Strony (SPA). Projekt wyróżnia się
-                dynamicznym routingiem, warunkowym renderowaniem i React Hooks
-                do efektywnego zarządzania stanem. Pokazuje również umiejętność
-                korzystania z fetch do pobierania danych z API.
+                Fake Store to immersyjna aplikacja internetowa do zakupów, która
+                zapewnia użytkownikom spersonalizowane doświadczenie zakupowe
+                online. Zbudowana przy użyciu React, to responsywna aplikacja
+                typu Single Page Application (SPA), stworzona na podstawie
+                projektu z Figma. Ten projekt wyróżnia się w implementacji
+                dynamicznego routingu, warunkowego renderowania oraz efektywnego
+                zarządzania stanem przy użyciu React hooks. Ponadto, prezentuje
+                umiejętność pobierania danych z API.
               </>
             }
           />
@@ -180,21 +186,23 @@ function Portfolio() {
           <LanguageText
             englishText={
               <>
-                CineTrail is an engaging React-based website that leverages NPM
-                packages and a movie database API to offer users an immersive
-                movie experience. Featuring user authentication, it provides a
-                personalized environment where users can explore movies, leave
-                comments, and interact with the cinematic world.
+                CineTrail is an engaging website based on React that utilizes
+                NPM packages and a movie database API to deliver an immersive
+                movie-watching experience to users. With built-in user
+                authentication, it offers a personalized environment where users
+                can discover movies, leave comments, and interact with the world
+                of cinema.
               </>
             }
             polishText={
               <>
-                CineTrail to zaangażowana strona oparta na React, wykorzystująca
-                pakiety NPM i bazę danych filmów API, by zapewnić użytkownikom
-                wciągające doświadczenie filmowe. Z obsługą autentykacji,
-                umożliwia spersonalizowane środowisko, w którym użytkownicy mogą
-                odkrywać filmy, zostawiać komentarze i wchodzić w interakcje z
-                kinowym światem.
+                CineTrail to atrakcyjna strona internetowa oparta na React,
+                wykorzystująca pakiety NPM i bazę danych filmów API, aby
+                zapewnić użytkownikom immersyjne doświadczenia związane z
+                oglądaniem filmów. Dzięki wbudowanej autentykacji użytkowników,
+                oferuje spersonalizowane środowisko, w którym użytkownicy mogą
+                odkrywać filmy, zostawiać komentarze i interakcjonować z światem
+                kina.
               </>
             }
           />
