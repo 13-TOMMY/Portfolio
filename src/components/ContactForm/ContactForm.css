@@ -83,7 +83,6 @@
   .contact-form {
     width: 650px;
   }
-
 }
 @media (max-width: 767px) {
   .contact-form {
@@ -91,8 +90,5 @@
   }
   .form-title h2 {
     font-size: 38px;
-  }
-  .form-title p {
-    font-size: 18px;
   }
 }

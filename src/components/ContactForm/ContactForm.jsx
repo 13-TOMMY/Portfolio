@@ -27,7 +27,7 @@ const ContactForm = () => {
     if (!inputPhoneNumber) {
       return true;
     }
-    const phoneRegex = /^\+?\d{1,3}?[-.\s]?\d{10}$/;
+    const phoneRegex = /\+?[0-9\s-()]{6,20}/;
     return phoneRegex.test(inputPhoneNumber);
   };
 
@@ -155,7 +155,7 @@ const ContactForm = () => {
         </div>
         <div className="form-btns">
           <motion.button
-            whileHover={{ scale: 1.2 }} // Define hover animation
+            whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
             type="submit"
             className={
@@ -167,7 +167,7 @@ const ContactForm = () => {
             <LanguageText englishText={<>Send</>} polishText={<>Wyślij</>} />
           </motion.button>
           <motion.button
-            whileHover={{ scale: 1.2 }} // Define hover animation
+            whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.9 }}
             onClick={clearForm}
             type="button"

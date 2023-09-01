@@ -1,4 +1,4 @@
-import React, { createRef, useContext, useEffect, useState } from "react";
+import { createRef, useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { motion } from "framer-motion";
 import "./ProjectCard.css";
@@ -12,7 +12,7 @@ function ProjectCard({
   viewlink,
   visitLink,
 }) {
-  const { darkMode, setDarkMode } = useContext(ThemeContext);
+  const { darkMode } = useContext(ThemeContext);
   const [isHovered, setIsHovered] = useState(false);
   const videoRef = createRef();
   const [width, setWidth] = useState(window.innerWidth < 1024);

@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import "./TechStack.css";
 
 function TechStack() {
-  const { darkMode, setDarkMode } = useContext(ThemeContext);
+  const { darkMode } = useContext(ThemeContext);
   return (
     <div
       className={
