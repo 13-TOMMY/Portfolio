@@ -98,8 +98,8 @@ function Portfolio() {
         videoLink={"/assets/potfolio/fake-store/fake-store.mp4"}
         projectName={
           <LanguageText
-            englishText={<>Fake store - Seamless Online Shopping</>}
-            polishText={<>Fake Store - Bezproblemowe Zakupy Online</>}
+            englishText={<>Fake store - Online Shopping</>}
+            polishText={<>Fake Store -  Zakupy Online</>}
           />
         }
         projectDescription={
@@ -111,7 +111,7 @@ function Portfolio() {
                 it&apos;s a responsive Single Page Application (SPA) crafted
                 based on a Figma design. This project excels in implementing
                 dynamic routing, conditional rendering, and efficient state
-                management using React hooks. It also demonstrates expertise in
+                management using React hooks. It also demonstrates
                 fetching data from an API.
               </>
             }
@@ -122,9 +122,9 @@ function Portfolio() {
                 online. Zbudowana przy użyciu React, to responsywna aplikacja
                 typu Single Page Application (SPA), stworzona na podstawie
                 projektu z Figma. Ten projekt wyróżnia się w implementacji
-                dynamicznego routingu, warunkowego renderowania oraz efektywnego
-                zarządzania stanem przy użyciu React hooks. Ponadto, prezentuje
-                umiejętność pobierania danych z API.
+                dynamicznego routingu, warunkowego renderowania oraz użyciu
+                React hooks. Ponadto, prezentuje pobierania danych z
+                API.
               </>
             }
           />
