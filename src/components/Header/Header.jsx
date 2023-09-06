@@ -225,10 +225,10 @@ function NavBar() {
                     alignItems: "center",
                     height: "100%",
                     color: "White",
-                    fontSize: 16,
+                    fontSize: 15,
                   }}
                 >
-                  <p>🇵🇱</p>
+                  <p>Pl</p>
                 </div>
               }
               checkedHandleIcon={
@@ -240,10 +240,10 @@ function NavBar() {
                     alignItems: "center",
                     height: "100%",
                     color: "White",
-                    fontSize: 16,
+                    fontSize: 15,
                   }}
                 >
-                  <p>🏴󠁧󠁢󠁥󠁮󠁧󠁿</p>
+                  <p>Eng</p>
                 </div>
               }
               className="react-switch"

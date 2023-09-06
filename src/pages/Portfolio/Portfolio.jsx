@@ -10,7 +10,7 @@ function Portfolio() {
         videoLink={"/assets/potfolio/re-serve/re-serve.mp4"}
         projectName={
           <LanguageText
-            englishText={<> RE:serve - Simplify Reservations</>}
+            englishText={<>RE:serve - Simplify Reservations</>}
             polishText={<>RE:serve - Ułatw Rezerwacje</>}
           />
         }
@@ -18,7 +18,7 @@ function Portfolio() {
           <LanguageText
             englishText={
               <>
-                RE:serve is a user-friendly web app for effortless restaurant
+                Website in Progress. RE:serve is a user-friendly web app for effortless restaurant
                 and venue table reservations, powered by React, three.js,
                 Firebase, and responsive design. It offers a single-page
                 application (SPA) experience with React-router for seamless
@@ -28,7 +28,7 @@ function Portfolio() {
             }
             polishText={
               <>
-                RE:serve to przyjazna dla użytkownika aplikacja webowa
+                Strona w trakcie realizacji. RE:serve to przyjazna dla użytkownika aplikacja webowa
                 umożliwiająca łatwe rezerwacje stolików w restauracjach i
                 lokalach, zasilana przez React, three.js, Firebase oraz
                 responsywny design. Zapewnia wiele stron do eksploracji dzięki
@@ -79,8 +79,8 @@ function Portfolio() {
         viewlink={"https://github.com/13-TOMMY/Uni-Life"}
       />
       <ProjectCard
-        photo={"/assets/potfolio/uni-life/uni-life-img.png"}
-        videoLink={"/assets/dark-background.avif"}
+        photo={"public/assets/potfolio/blog/blog-img.png"}
+        videoLink={"public/assets/potfolio/blog/blog.mp4"}
         projectName={
           <LanguageText
             englishText={<>Blog - Write Your Story</>}
@@ -88,7 +88,29 @@ function Portfolio() {
           />
         }
         projectDescription={
-          <LanguageText englishText={<>Todo</>} polishText={<>todo</>} />
+          <LanguageText
+            englishText={
+              <>
+                Blog It is a single-page application (SPA) built using React,
+                Firebase, JavaScript, and CSS. It offers users the ability to
+                create accounts and share engaging articles. Visitors can not
+                only read these articles but also interact by liking and
+                commenting, creating a dynamic and engaging platform for sharing
+                and discussing ideas.
+              </>
+            }
+            polishText={
+              <>
+                Blog It to jednostronicowa aplikacja (SPA) stworzona przy użyciu
+                React, Firebase, JavaScript i CSS. Umożliwia użytkownikom
+                tworzenie kont i udostępnianie interesujących artykułów.
+                Odwiedzający mogą nie tylko czytać te artykuły, ale także
+                interagować, lajkować i komentować, tworząc dynamiczną i
+                angażującą platformę do dzielenia się i dyskutowania na temat
+                pomysłów.
+              </>
+            }
+          />
         }
         visitLink={"https://b10g.netlify.app"}
         viewlink={"https://github.com/13-TOMMY/blog"}
@@ -99,7 +121,7 @@ function Portfolio() {
         projectName={
           <LanguageText
             englishText={<>Fake store - Online Shopping</>}
-            polishText={<>Fake Store -  Zakupy Online</>}
+            polishText={<>Fake Store - Zakupy Online</>}
           />
         }
         projectDescription={
@@ -111,8 +133,8 @@ function Portfolio() {
                 it&apos;s a responsive Single Page Application (SPA) crafted
                 based on a Figma design. This project excels in implementing
                 dynamic routing, conditional rendering, and efficient state
-                management using React hooks. It also demonstrates
-                fetching data from an API.
+                management using React hooks. It also demonstrates fetching data
+                from an API.
               </>
             }
             polishText={
@@ -123,8 +145,7 @@ function Portfolio() {
                 typu Single Page Application (SPA), stworzona na podstawie
                 projektu z Figma. Ten projekt wyróżnia się w implementacji
                 dynamicznego routingu, warunkowego renderowania oraz użyciu
-                React hooks. Ponadto, prezentuje pobierania danych z
-                API.
+                React hooks. Ponadto, prezentuje pobierania danych z API.
               </>
             }
           />
