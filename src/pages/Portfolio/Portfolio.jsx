@@ -79,8 +79,8 @@ function Portfolio() {
         viewlink={"https://github.com/13-TOMMY/Uni-Life"}
       />
       <ProjectCard
-        photo={"/public/assets/potfolio/blog/blog-img.png"}
-        videoLink={"/public/assets/potfolio/blog/blog.mp4"}
+        photo={"/assets/potfolio/blog/blog-img.png"}
+        videoLink={"/assets/potfolio/blog/blog.mp4"}
         projectName={
           <LanguageText
             englishText={<>Blog - Write Your Story</>}
