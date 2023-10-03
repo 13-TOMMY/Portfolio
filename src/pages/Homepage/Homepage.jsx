@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import "./Homepage.css";
 import { ThemeContext } from "../../context/ThemeContext";
 import TechStack from "../../components/TechStack/TechStack";
 import LanguageText from "../../components/LanguageText/LanguageText";
@@ -17,14 +16,14 @@ function Homepage() {
         >
           <h1
             className={
-              darkMode ? "dark-text hp-h1-text" : "light-text hp-h1-text"
+              darkMode ? "dark-text l-font" : "light-text l-font"
             }
           >
             Front-end Developer
           </h1>
           <p
             className={
-              darkMode ? "dark-text hp-p-text" : "light-text hp-p-text"
+              darkMode ? "dark-text s-font" : "light-text s-font"
             }
           >
             <LanguageText

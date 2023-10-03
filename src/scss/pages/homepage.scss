@@ -1,0 +1,73 @@
+/* General */
+.Homepage-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: $margin-m-top-bottom;
+  gap: $gap-xl;
+}
+
+/* top  */
+.hp-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 50%;
+  width: 100%;
+  gap: $gap-xl;
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hp-top-left {
+    width: 425px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: $gap-l;
+    @include tablet {
+      width: 650px;
+      height: 300px;
+    }
+    @include mobile {
+      width: 90%;
+      height: fit-content;
+    }
+  }
+  .hp-top-right {
+    width: 425px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include tablet {
+      width: 650px;
+      height: 400px;
+    }
+    @include mobile {
+      width: 90%;
+      height: 350px;
+    }
+    .hp-top-right-img {
+      width: 98%;
+      height: 98%;
+      object-fit: cover;
+      border-radius: $in-border-radius;
+    }
+  }
+}
+
+/* .bottom */
+.hp-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 50%;
+}

@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import "./About.css";
 import { ThemeContext } from "../../context/ThemeContext";
 import AboutLinks from "../../components/AboutLinks/AboutLinks";
 import Cv from "../../components/Cv/Cv";
@@ -31,13 +30,13 @@ function About() {
         <div
           className={darkMode ? "div-dark ab-right-p" : "div-light ab-right-p"}
         >
-          <h3 className={darkMode ? "dark-text" : "light-text"}>
+          <h3 className={darkMode ? "dark-text m-font" : "light-text m-font"}>
             <LanguageText
               englishText={<>About Me:</>}
               polishText={<>O mnie:</>}
             />
           </h3>
-          <p className={darkMode ? "dark-text" : "light-text"}>
+          <p className={darkMode ? "dark-text s-font" : "light-text s-font"}>
             <LanguageText
               englishText={
                 <>
@@ -70,13 +69,13 @@ function About() {
               }
             />
           </p>
-          <h3 className={darkMode ? "dark-text" : "light-text"}>
+          <h3 className={darkMode ? "dark-text m-font" : "light-text m-font"}>
             <LanguageText
               englishText={<>Education and Skills:</>}
               polishText={<>Edukacja i Umiejętności:</>}
             />
           </h3>
-          <p className={darkMode ? "dark-text" : "light-text"}>
+          <p className={darkMode ? "dark-text s-font" : "light-text s-font"}>
             <LanguageText
               englishText={
                 <>
@@ -111,13 +110,13 @@ function About() {
               }
             />
           </p>
-          <h3 className={darkMode ? "dark-text" : "light-text"}>
+          <h3 className={darkMode ? "dark-text m-font" : "light-text m-font"}>
             <LanguageText
               englishText={<>Language Proficiency:</>}
               polishText={<>Znajomość Języków:</>}
             />
           </h3>
-          <p className={darkMode ? "dark-text" : "light-text"}>
+          <p className={darkMode ? "dark-text s-font" : "light-text s-font"}>
             <LanguageText
               englishText={
                 <>
@@ -137,13 +136,13 @@ function About() {
               }
             />
           </p>
-          <h3 className={darkMode ? "dark-text" : "light-text"}>
+          <h3 className={darkMode ? "dark-text m-font" : "light-text m-font"}>
             <LanguageText
               englishText={<>Future Goals:</>}
               polishText={<>Przyszłe Cele:</>}
             />
           </h3>
-          <p className={darkMode ? "dark-text" : "light-text"}>
+          <p className={darkMode ? "dark-text s-font" : "light-text s-font"}>
             <LanguageText
               englishText={
                 <>
