@@ -1,6 +1,6 @@
 import { useContext, } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./App.css";
+import "./scss/app.scss";
 import Homepage from "./pages/Homepage/Homepage";
 import About from "./pages/About/About";
 import Portfolio from "./pages/Portfolio/Portfolio";

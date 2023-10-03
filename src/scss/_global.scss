@@ -1,0 +1,17 @@
+
+html {
+    box-sizing: border-box;
+    font-family: $font-family;
+    background-color: $gunMetal;
+  }
+
+button,
+a,
+link {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

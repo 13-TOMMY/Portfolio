@@ -1,4 +1,3 @@
-import "./Portfolio.css";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import LanguageText from "../../components/LanguageText/LanguageText";
 

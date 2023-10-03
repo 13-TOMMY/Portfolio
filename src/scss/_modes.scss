@@ -1,0 +1,105 @@
+//Light mode
+.div-light {
+  background: rgba(233, 233, 233, 0.39);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(11px);
+  border: 1px solid rgba(233, 233, 233, 0.43);
+}
+.light-mode-viewArea {
+  background-image: url("/assets/light-background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+}
+.light-text {
+  color: $color-black;
+}
+.selected-light {
+  color: $coral;
+}
+//Light btn styling
+.light-btn {
+  background-color: $coral;
+  border: none;
+}
+.light-btn:hover {
+  border: 1px solid $color-black;
+}
+.light-btn-two {
+  background-color: $platinum;
+  border: none;
+}
+.light-btn-two:hover {
+  border: 1px solid $color-black;
+}
+//Dark mode
+.div-dark {
+  background: rgba(109, 109, 109, 0.39);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(11px);
+  border: 1px solid rgba(109, 109, 109, 0.43);
+}
+.dark-mode-viewArea {
+  background-image: url("/assets/dark-background.avif");
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+}
+.dark-text {
+  color: $color-white;
+}
+.selected-dark {
+  color: $amber;
+}
+//Dark btn styling
+
+.dark-btn {
+  background-color: $amber;
+  border: none;
+}
+.dark-btn:hover {
+  border: 1px solid $color-white;
+}
+.dark-btn-two {
+  background-color: $taupe;
+  border: none;
+}
+.dark-btn-two:hover {
+  border: 1px solid $color-white;
+}
+
+/*Border effect*/
+.rgb-border {
+  border: 2px solid transparent; /* Set the initial border size and color */
+  transition: border-color 0.5s ease-in-out;
+  border-radius: 24%;
+}
+.rgb-border:hover {
+  border-color: rgba(255, 255, 255, 0.5); /* Change the border color on hover */
+  animation: lightPulse 0.8s infinite alternate; /* Add a light pulse animation */
+}
+
+@keyframes lightPulse {
+  0% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.778);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0);
+  }
+}
+
+//Need to delete
+
+:root {
+  --secondary-light-2: #5c5c5c; /* Light Gray */
+}
+
+:root {
+  --one-dark: #1cb2cc; /* Dark Aqua Marine */
+  --two-dark: #fc9f5b; /* A different shade */
+  --secondary-dark-2: #212121; /* Dark Gray */
+}
