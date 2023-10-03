@@ -6,6 +6,46 @@ function Portfolio() {
   return (
     <div className="portfolio-container">
       <ProjectCard
+        photo={"/assets/potfolio/fox-remonty/fox-remonty.png"}
+        videoLink={"/assets/potfolio/fox-remonty/fox-remonty.mp4"}
+        projectName={
+          <LanguageText
+            englishText={<>Fox Remonty - Construction Company</>}
+            polishText={<>Fox Remonty - Firmy Budowlanej</>}
+          />
+        }
+        projectDescription={
+          <LanguageText
+            englishText={
+              <>
+                Fox Remonty represents my first freelance project, developed for
+                a construction company aiming to provide comprehensive
+                information to prospective clients. This application was crafted
+                using cutting-edge technologies, including REACT, TypeScript,
+                SCSS, and extensive NPM packages to ensure responsiveness. For
+                the development of this single-page application (SPA) website, I
+                leveraged Vite, while Figma and Canva served as my design
+                tools.
+              </>
+            }
+            polishText={
+              <>
+                Fox Remonty to mój pierwszy niezależny projekt, opracowany dla
+                firmy budowlanej, mający na celu dostarczenie informacji
+                potencjalnym klientom. Ta aplikacja została stworzona przy
+                użyciu najnowocześniejszych technologii, w tym REACT,
+                TypeScript, SCSS i rozbudowane pakiety NPM w celu zapewnienia
+                responsywności. Dla do stworzenia tej jednostronicowej aplikacji
+                (SPA) wykorzystałem wykorzystałem Vite, a Figma i Canva
+                posłużyły mi jako narzędzia projektowe.
+              </>
+            }
+          />
+        }
+        visitLink={"https://fox-remonty.com/"}
+        viewlink={"https://github.com/13-TOMMY/fox-remonty"}
+      />
+      <ProjectCard
         photo={"/assets/potfolio/re-serve/re-serve-img.jpg"}
         videoLink={"/assets/potfolio/re-serve/re-serve.mp4"}
         projectName={
@@ -18,29 +58,29 @@ function Portfolio() {
           <LanguageText
             englishText={
               <>
-                Website in Progress. RE:serve is a user-friendly web app for effortless restaurant
-                and venue table reservations, powered by React, three.js,
-                Firebase, and responsive design. It offers a single-page
-                application (SPA) experience with React-router for seamless
-                navigation, robust Firebase-based CRUD functionality, and
-                comprehensive user authentication.
+                Website in Progress. RE:serve is a user-friendly web app for
+                effortless restaurant and venue table reservations, powered by
+                React, three.js, Firebase, and responsive design. It offers a
+                single-page application (SPA) experience with React-router for
+                seamless navigation, robust Firebase-based CRUD functionality,
+                and comprehensive user authentication.
               </>
             }
             polishText={
               <>
-                Strona w trakcie realizacji. RE:serve to przyjazna dla użytkownika aplikacja webowa
-                umożliwiająca łatwe rezerwacje stolików w restauracjach i
-                lokalach, zasilana przez React, three.js, Firebase oraz
-                responsywny design. Zapewnia wiele stron do eksploracji dzięki
-                React-router, solidne funkcje CRUD oparte na Firebase oraz
-                kompleksową autentykację użytkownika. Jest to aplikacja typu
-                Single Page Application (SPA).
+                Strona w trakcie realizacji. RE:serve to przyjazna dla
+                użytkownika aplikacja webowa umożliwiająca łatwe rezerwacje
+                stolików w restauracjach i lokalach, zasilana przez React,
+                three.js, Firebase oraz responsywny design. Zapewnia wiele stron
+                do eksploracji dzięki React-router, solidne funkcje CRUD oparte
+                na Firebase oraz kompleksową autentykację użytkownika. Jest to
+                aplikacja typu Single Page Application (SPA).
               </>
             }
           />
         }
         visitLink={"https://re-serve.netlify.app/"}
-        viewlink={"https://cine-trail.netlify.app"}
+        viewlink={"https://github.com/13-TOMMY/RE-serve"}
       />
       <ProjectCard
         photo={"/assets/potfolio/uni-life/uni-life-img.png"}
