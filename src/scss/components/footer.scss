@@ -1,0 +1,41 @@
+.footer-container {
+  z-index: 999;
+}
+.footer {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $padding-m-side;
+  @include tablet {
+    height: 80px;
+  }
+  @include mobile {
+    justify-content: space-around;
+  }
+  .footer-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    @include mobile {
+      display: none;
+    }
+    .p-footer-left {
+      font-family: var(--modern-font);
+    }
+  }
+  .footer-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    gap: $gap-s;
+    @include mobile {
+      width: 100%;
+    }
+    .p-footer-right {
+      text-align: center;
+    }
+  }
+}
