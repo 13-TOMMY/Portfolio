@@ -3,7 +3,6 @@ import emailjs from "@emailjs/browser";
 import { toast, ToastContainer } from "react-toastify";
 import { ThemeContext } from "../../context/ThemeContext";
 import { motion } from "framer-motion";
-import "./ContactForm.css";
 import "react-toastify/dist/ReactToastify.css";
 import LanguageText from "../LanguageText/LanguageText";
 
@@ -63,13 +62,13 @@ const ContactForm = () => {
     >
       <ToastContainer />
       <div className="form-title">
-        <h2 className={darkMode ? "dark-text " : "light-text "}>
+        <h2 className={darkMode ? "dark-text  l-font" : "light-text  l-font"}>
           <LanguageText
             englishText={<>Contact Me!</>}
             polishText={<>Skontaktuj się ze mną!</>}
           />
         </h2>
-        <p className={darkMode ? "dark-text " : "light-text "}>
+        <p className={darkMode ? "dark-text s-font" : "light-text s-font"}>
           <LanguageText
             englishText={
               <> Please fill out the form below to get in touch with me.</>
@@ -86,7 +85,7 @@ const ContactForm = () => {
         <div className="form-name">
           <label
             htmlFor="text"
-            className={darkMode ? "dark-text cf-label" : "light-text cf-label"}
+            className={darkMode ? "dark-text cf-label s-font" : "light-text cf-label s-font"}
           >
             <LanguageText englishText={<>Name:</>} polishText={<>Imię</>} />
           </label>
@@ -96,13 +95,13 @@ const ContactForm = () => {
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
-            className="input-field"
+            className="input-field s-font"
           />
         </div>
         <div className="form-email">
           <label
             htmlFor="email"
-            className={darkMode ? "dark-text cf-label" : "light-text cf-label"}
+            className={darkMode ? "dark-text cf-label s-font" : "light-text cf-label s-font"}
           >
             Email:
           </label>
@@ -112,13 +111,13 @@ const ContactForm = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="input-field"
+            className="input-field s-font"
           />
         </div>
         <div className="form-phone">
           <label
             htmlFor="number"
-            className={darkMode ? "dark-text cf-label" : "light-text cf-label"}
+            className={darkMode ? "dark-text cf-label s-font" : "light-text cf-label s-font"}
           >
             <LanguageText
               englishText={<>Phone Number (Optional):</>}
@@ -130,13 +129,13 @@ const ContactForm = () => {
             name="user_phone_number"
             value={phoneNumber}
             onChange={(e) => setPhoneNumber(e.target.value)}
-            className="input-field"
+            className="input-field s-font"
           />
         </div>
         <div className="form-message">
           <label
             htmlFor="message"
-            className={darkMode ? "dark-text cf-label" : "light-text cf-label"}
+            className={darkMode ? "dark-text cf-label s-font" : "light-text cf-label s-font"}
           >
             <LanguageText
               englishText={<>Message:</>}
@@ -150,7 +149,7 @@ const ContactForm = () => {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
-            className="text-field"
+            className="text-field s-font"
           />
         </div>
         <div className="form-btns">
@@ -160,8 +159,8 @@ const ContactForm = () => {
             type="submit"
             className={
               darkMode
-                ? "dark-text dark-btn cf-btn"
-                : "light-text  light-btn cf-btn"
+                ? "dark-text dark-btn cf-btn m-font"
+                : "light-text  light-btn cf-btn m-font"
             }
           >
             <LanguageText englishText={<>Send</>} polishText={<>Wyślij</>} />
@@ -173,8 +172,8 @@ const ContactForm = () => {
             type="button"
             className={
               darkMode
-                ? "dark-text dark-btn-two cf-btn"
-                : "light-text light-btn-two cf-btn"
+                ? "dark-text dark-btn-two cf-btn m-font"
+                : "light-text light-btn-two cf-btn m-font"
             }
           >
             <LanguageText englishText={<>Clear</>} polishText={<>Wyczyść</>} />
