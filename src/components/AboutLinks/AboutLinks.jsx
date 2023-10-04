@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { motion } from "framer-motion";
-import "./AboutLinks.css";
 import LanguageText from "../LanguageText/LanguageText";
 
 function AboutLinks() {
@@ -15,8 +14,7 @@ function AboutLinks() {
           : "div-light about-links-container"
       }
     >
-      <h3 className={darkMode ? "dark-text " : "light-text "}>
-        {" "}
+      <h3 className={darkMode ? "dark-text m-font" : "light-text m-font"}>
         <LanguageText
           englishText={<>Find Me Here!</>}
           polishText={<>Znajdź mnie tutaj!</>}
@@ -30,7 +28,6 @@ function AboutLinks() {
             href="https://github.com/13-TOMMY"
             target="_blank"
             rel="noopener noreferrer"  
-            className="abl-img-link "
           >
             <img
               src="/assets/social-media/github-dark.svg"
@@ -44,7 +41,6 @@ function AboutLinks() {
             href="https://twitter.com/13___tommy"
             target="_blank"
             rel="noopener noreferrer"  
-            className="sml-img-link "
           >
             <img
               src="/assets/social-media/twitter.svg"
@@ -60,7 +56,6 @@ function AboutLinks() {
             href="https://www.linkedin.com/in/tomasz-lis-67b879261"
             target="_blank"
             rel="noopener noreferrer"  
-            className="sml-img-link "
           >
             <img
               src="/assets/social-media/linkedin.svg"
@@ -75,7 +70,6 @@ function AboutLinks() {
             href="https://medium.com/@13__TOMMY"
             target="_blank"
             rel="noopener noreferrer"  
-            className="sml-img-link "
           >
             <img
               src="/assets/social-media/medium.svg"

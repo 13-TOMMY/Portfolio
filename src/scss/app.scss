@@ -6,6 +6,9 @@
 @import "./typography";
 @import "./transitions";
 // Import component-specific Sass files
+@import "./components/aboutLinks.scss";
+@import "./components/codewars.scss";
+@import "./components/contactForm.scss";
 
 // Import page-specific Sass files
 @import "./pages/homepage.scss";
