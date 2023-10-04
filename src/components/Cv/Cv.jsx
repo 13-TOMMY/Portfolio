@@ -5,7 +5,6 @@ import { ThemeContext } from "../../context/ThemeContext";
 import { motion } from "framer-motion";
 import { AiOutlineDownload } from "react-icons/ai";
 import { MdOutlineFindInPage } from "react-icons/md";
-import "./Cv.css";
 import LanguageText from "../LanguageText/LanguageText";
 
 function Cv() {
@@ -16,10 +15,8 @@ function Cv() {
 
   return (
     <div className="cv-container">
-      <div
-        className={darkMode ? "cv div-dark" : "cv div-light"}
-      >
-        <h3 className={darkMode ? "dark-text" : "light-text"}>
+      <div className={darkMode ? "cv div-dark" : "cv div-light"}>
+        <h3 className={darkMode ? "dark-text m-font" : "light-text m-font"}>
           <LanguageText
             englishText={<>English CV</>}
             polishText={<>Angielskie CV</>}
@@ -57,8 +54,8 @@ function Cv() {
         </motion.button>
       </div>
       <div className={darkMode ? "cv div-dark" : "cv div-light"}>
-        <h3 className={darkMode ? "dark-text" : "light-text"}>
-        <LanguageText
+        <h3 className={darkMode ? "dark-text m-font" : "light-text m-font"}>
+          <LanguageText
             englishText={<>Polish CV</>}
             polishText={<>Polskie CV</>}
           />

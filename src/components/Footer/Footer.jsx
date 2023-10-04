@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { FaRegCopyright } from "react-icons/fa";
 import { ThemeContext } from "../../context/ThemeContext";
 import { LangContext } from "../../context/LangContext";
-import "./Footer.css";
 import LanguageText from "../LanguageText/LanguageText";
 
 function Footer() {
@@ -18,30 +17,38 @@ function Footer() {
         <div className="footer-left">
           <p
             className={
-              darkMode ? "dark-text p-footer-left" : "light-text p-footer-left"
+              darkMode
+                ? "dark-text p-footer-left s-font"
+                : "light-text p-footer-left s-font"
             }
           >
             <LanguageText
-              englishText={<>Thank you for taking the time to view my projects ☺️</>}
-              polishText={<>Dziękuję za poświęcenie czasu na obejrzenie moich projektów ☺️</>}
+              englishText={
+                <>Thank you for taking the time to view my projects ☺️</>
+              }
+              polishText={
+                <>
+                  Dziękuję za poświęcenie czasu na obejrzenie moich projektów ☺️
+                </>
+              }
             />
           </p>
         </div>
         <div className="footer-right">
+          <FaRegCopyright />
           <p
             className={
               darkMode
-                ? "dark-text p-footer-right"
-                : "light-text p-footer-right"
+                ? "dark-text p-footer-right s-font"
+                : "light-text p-footer-right s-font"
             }
-          >
-            <FaRegCopyright /> Tommy-Portfolio
-          </p>
+          ></p>
+          TOMMY-PORTFOLIO
           <p
             className={
               darkMode
-                ? "dark-text p-footer-right"
-                : "light-text p-footer-right"
+                ? "dark-text p-footer-right s-font"
+                : "light-text p-footer-right s-font"
             }
           >
             2023
