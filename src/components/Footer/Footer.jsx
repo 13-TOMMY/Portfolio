@@ -9,11 +9,11 @@ function Footer() {
   const { darkMode } = useContext(ThemeContext);
   return (
     <div
-      className={
-        darkMode ? "div-dark footer-container" : "div-light footer-container"
-      }
+      className="footer-container"
     >
-      <div className="footer">
+      <div className={
+        darkMode ? "div-dark footer" : "div-light footer"
+      }>
         <div className="footer-left">
           <p
             className={
