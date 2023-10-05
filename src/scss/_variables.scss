@@ -2,13 +2,13 @@
 $color-black: #000000;
 $color-white: #ffffff;
 /* Color variables light*/
-$ashGray: #b2beb5;
-$platinum: #e5e4e2;
-$coral: #ff7f50;
+$baseLight: #e5e4e2; //platinum
+$secondLight: #588157; //fernGreen
+$mainLight: #ff7f50; //coral
 /* Color variables dark*/
-$gunMetal: #414a4c;
-$taupe: #8b8589;
-$amber: #ffbf00;
+$baseDark: #262B2C; //gunmetal
+$secondDark: #0FA3B1; //moonstone
+$mainDark: #ffbf00; //amber
 
 /* font variables */
 $font-family: "M PLUS 1 Code", sans-serif;

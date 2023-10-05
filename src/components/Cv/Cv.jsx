@@ -16,12 +16,12 @@ function Cv() {
   return (
     <div className="cv-container">
       <div className={darkMode ? "cv div-dark" : "cv div-light"}>
-        <h3 className={darkMode ? "dark-text m-font" : "light-text m-font"}>
+        <p className={darkMode ? "dark-text s-font" : "light-text s-font"}>
           <LanguageText
             englishText={<>English CV</>}
             polishText={<>Angielskie CV</>}
           />
-        </h3>
+        </p>
         <motion.button
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
@@ -54,12 +54,12 @@ function Cv() {
         </motion.button>
       </div>
       <div className={darkMode ? "cv div-dark" : "cv div-light"}>
-        <h3 className={darkMode ? "dark-text m-font" : "light-text m-font"}>
+        <p className={darkMode ? "dark-text s-font" : "light-text s-font"}>
           <LanguageText
             englishText={<>Polish CV</>}
             polishText={<>Polskie CV</>}
           />
-        </h3>
+        </p>
         <motion.button
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
