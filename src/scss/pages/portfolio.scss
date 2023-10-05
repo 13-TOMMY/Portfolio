@@ -2,13 +2,10 @@
 .portfolio-container {
   width: 100%;
   height: fit-content;
-  margin: 50px 0;
-  min-height: fit-content;
+  margin: $margin-m-top-bottom;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 50px;
-  }
-
-
+  gap: $gap-xl;
+}

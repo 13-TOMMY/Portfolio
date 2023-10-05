@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { motion } from "framer-motion";
-import "./Codewars.css";
 
 function Codewars() {
   const { darkMode } = useContext(ThemeContext);

@@ -1,0 +1,100 @@
+@import "./mixins";
+@import "./reset";
+@import "./variables";
+@import "./global";
+@import "./modes";
+@import "./typography";
+@import "./transitions";
+// Import component-specific Sass files
+@import "./components/aboutLinks.scss";
+@import "./components/codewars.scss";
+@import "./components/contactForm.scss";
+@import "./components/cv.scss";
+@import "./components/footer.scss";
+@import "./components/header.scss";
+@import "./components/projectCard.scss";
+@import "./components/socialMediaLinks.scss";
+@import "./components/techStack.scss";
+
+// Import page-specific Sass files
+@import "./pages/homepage.scss";
+@import "./pages/about.scss";
+@import "./pages/portfolio.scss";
+@import "./pages/contact.scss";
+
+/*App.jsx*/
+/* viewable area */
+.viewable-area {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+/* left side */
+.left-side {
+  width: max(200px, 10%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  z-index: 2;
+}
+
+/* right side */
+.right-side {
+  width: 90%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .viewable-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+  }
+  .left-side {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+  }
+  .right-side {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 767px) {
+  .viewable-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+  }
+  .left-side {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+  }
+  .right-side {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

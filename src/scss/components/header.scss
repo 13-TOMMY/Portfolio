@@ -1,0 +1,81 @@
+/* general */
+.nav-container {
+  width: 100px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: $padding-s-top-bottom;
+  position: fixed;
+  gap: 50px;
+  @include tablet {
+    width: 650px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    padding: $padding-s-side;
+    position: static;
+  }
+  @include mobile {
+    width: 85%;
+    gap: 0;
+  }
+}
+/* top */
+.nb-icon-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include tablet {
+    flex-direction: row;
+  }
+  .icon {
+    font-size: 60px;
+    @include mobile {
+      font-size: 48px;
+    }
+  }
+}
+
+/* bottom */
+.bottom-icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  @include tablet {
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+  img {
+    width: 70px;
+    height: 70px;
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
+.dark-light-mode,
+.language-mode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 70px;
+  @include tablet {
+    transform: rotate(90deg);
+    width: 40px;
+  }
+  .react-switch {
+    vertical-align: middle;
+  }
+  .rotate-switch {
+    @include tablet {
+      transform: rotate(-90deg);
+    }
+  }
+}

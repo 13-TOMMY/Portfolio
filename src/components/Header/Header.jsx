@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { Link, useLocation } from "react-router-dom";
-import "./Header.css";
 import { motion } from "framer-motion"; // Import motion from Framer Motion
 import {
   BiHomeAlt2,
@@ -99,8 +98,8 @@ function NavBar() {
               handleDiameter={28}
               offColor="#FFFFFF"
               onColor="#FFFFFF"
-              offHandleColor="#FF5733"
-              onHandleColor="#1CB2CC"
+              offHandleColor="#ff7f50"
+              onHandleColor="#ffbf00"
               height={40}
               width={70}
               borderRadius={12}
@@ -178,8 +177,8 @@ function NavBar() {
               handleDiameter={28}
               offColor="#FFFFFF"
               onColor="#FFFFFF"
-              offHandleColor="#FF5733"
-              onHandleColor="#1CB2CC"
+              offHandleColor="#ff7f50"
+              onHandleColor="#ffbf00"
               height={40}
               width={70}
               borderRadius={12}

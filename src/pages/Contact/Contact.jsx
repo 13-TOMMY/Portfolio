@@ -1,6 +1,5 @@
 import ContactForm from "../../components/ContactForm/ContactForm";
 import SocialMediaLinks from "../../components/SocialMediaLinks/SocialMediaLinks";
-import "./Contact.css";
 
 function Contact() {
   return (

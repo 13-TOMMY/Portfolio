@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
-import "./TechStack.css";
+
 
 function TechStack() {
   const { darkMode } = useContext(ThemeContext);
@@ -30,7 +30,7 @@ function TechStack() {
               className="js-icon"
             />
             <label
-              className={darkMode ? "dark-text" : "light-text"}
+              className={darkMode ? "dark-text s-font" : "light-text s-font"}
               htmlFor="js-icon"
             >
               Java Script
@@ -43,7 +43,7 @@ function TechStack() {
               className="react-icon"
             />
             <label
-              className={darkMode ? "dark-text" : "light-text"}
+              className={darkMode ? "dark-text s-font" : "light-text s-font"}
               htmlFor="react-icon"
             >
               React
@@ -56,7 +56,7 @@ function TechStack() {
               className="node-icon"
             />
             <label
-              className={darkMode ? "dark-text" : "light-text"}
+              className={darkMode ? "dark-text s-font" : "light-text s-font"}
               htmlFor="js-icon"
             >
               Node.Js
@@ -69,7 +69,7 @@ function TechStack() {
               className="html-icon"
             />
             <label
-              className={darkMode ? "dark-text" : "light-text"}
+              className={darkMode ? "dark-text s-font" : "light-text s-font"}
               htmlFor="html-icon"
             >
               HTML
@@ -84,7 +84,7 @@ function TechStack() {
               className="css-icon"
             />
             <label
-              className={darkMode ? "dark-text" : "light-text"}
+              className={darkMode ? "dark-text s-font" : "light-text s-font"}
               htmlFor="css-icon"
             >
               CSS
@@ -97,7 +97,7 @@ function TechStack() {
               className="git-icon"
             />
             <label
-              className={darkMode ? "dark-text" : "light-text"}
+              className={darkMode ? "dark-text s-font" : "light-text s-font"}
               htmlFor="git-icon"
             >
               Git
@@ -110,7 +110,7 @@ function TechStack() {
               className="firebase-icon"
             />
             <label
-              className={darkMode ? "dark-text" : "light-text"}
+              className={darkMode ? "dark-text s-font" : "light-text s-font"}
               htmlFor="firebase-icon"
             >
               Firebase
@@ -123,7 +123,7 @@ function TechStack() {
               className="figma-icon"
             />
             <label
-              className={darkMode ? "dark-text" : "light-text"}
+              className={darkMode ? "dark-text s-font" : "light-text s-font"}
               htmlFor="figma-icon"
             >
               Figma
