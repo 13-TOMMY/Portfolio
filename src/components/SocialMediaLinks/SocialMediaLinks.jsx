@@ -1,11 +1,10 @@
-import React, { useContext } from "react";
-import "./SocialMediaLinks.css";
+import { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import { motion } from "framer-motion";
 import LanguageText from "../LanguageText/LanguageText";
 
 function SocialMediaLinks() {
-  const { darkMode, setDarkMode } = useContext(ThemeContext);
+  const { darkMode } = useContext(ThemeContext);
 
   return (
     <div
@@ -39,7 +38,7 @@ function SocialMediaLinks() {
           <label
             htmlFor="sml-img-link"
             className={
-              darkMode ? "dark-text sml-label" : "light-text sml-label"
+              darkMode ? "dark-text s-font" : "light-text s-font"
             }
           >
             Twiiter / X
@@ -63,7 +62,7 @@ function SocialMediaLinks() {
           <label
             htmlFor="sml-img-link"
             className={
-              darkMode ? "dark-text sml-label" : "light-text sml-label"
+              darkMode ? "dark-text s-font" : "light-text s-font"
             }
           >
             LinkedIn
@@ -87,7 +86,7 @@ function SocialMediaLinks() {
           <label
             htmlFor="sml-img-link"
             className={
-              darkMode ? "dark-text sml-label" : "light-text sml-label"
+              darkMode ? "dark-text s-font" : "light-text s-font"
             }
           >
             Medium
