@@ -1,34 +1,31 @@
 //Light mode
 .div-light {
-  background: rgba(233, 233, 233, 0.39);
+  background: rgba(237, 237, 235, 0.71);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(11px);
-  -webkit-backdrop-filter: blur(11px);
-  border: 1px solid rgba(233, 233, 233, 0.43);
+  backdrop-filter: blur(11.6px);
+  -webkit-backdrop-filter: blur(11.6px);
+  border: 1px solid #588157;
 }
 .light-mode-viewArea {
-  background-image: url("/assets/light-background.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll;
+  background-color: $baseLight;
 }
 .light-text {
   color: $color-black;
 }
 .selected-light {
-  color: $coral;
+  color: $mainLight;
 }
 //Light btn styling
 .light-btn {
-  background-color: $coral;
+  background-color: $mainLight;
   border: none;
 }
 .light-btn:hover {
   border: 1px solid $color-black;
 }
 .light-btn-two {
-  background-color: $platinum;
+  background-color: $secondLight;
   border: none;
 }
 .light-btn-two:hover {
@@ -36,36 +33,33 @@
 }
 //Dark mode
 .div-dark {
-  background: rgba(109, 109, 109, 0.39);
+  background: rgba(50, 57, 58, 0.74);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(11px);
-  -webkit-backdrop-filter: blur(11px);
-  border: 1px solid rgba(109, 109, 109, 0.43);
+  backdrop-filter: blur(10.9px);
+  -webkit-backdrop-filter: blur(10.9px);
+  border: 1px solid #0FA3B1;
 }
 .dark-mode-viewArea {
-  background-image: url("/assets/dark-background.avif");
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll;
+  background-color: $baseDark;
 }
 .dark-text {
   color: $color-white;
 }
 .selected-dark {
-  color: $amber;
+  color: $mainDark;
 }
 //Dark btn styling
 
 .dark-btn {
-  background-color: $amber;
+  background-color: $mainDark;
   border: none;
 }
 .dark-btn:hover {
   border: 1px solid $color-white;
 }
 .dark-btn-two {
-  background-color: $taupe;
+  background-color: $secondDark;
   border: none;
 }
 .dark-btn-two:hover {
@@ -90,16 +84,4 @@
   100% {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0);
   }
-}
-
-//Need to delete
-
-:root {
-  --secondary-light-2: #5c5c5c; /* Light Gray */
-}
-
-:root {
-  --one-dark: #1cb2cc; /* Dark Aqua Marine */
-  --two-dark: #fc9f5b; /* A different shade */
-  --secondary-dark-2: #212121; /* Dark Gray */
 }

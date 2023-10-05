@@ -35,15 +35,22 @@ function Footer() {
           </p>
         </div>
         <div className="footer-right">
-          <FaRegCopyright />
+          <FaRegCopyright className={
+              darkMode
+                ? "dark-text s-font"
+                : "light-text s-font"
+            }/>
           <p
             className={
               darkMode
                 ? "dark-text p-footer-right s-font"
                 : "light-text p-footer-right s-font"
             }
-          ></p>
-          TOMMY-PORTFOLIO
+          >
+            {" "}
+            TOMMY-PORTFOLIO
+          </p>
+
           <p
             className={
               darkMode
