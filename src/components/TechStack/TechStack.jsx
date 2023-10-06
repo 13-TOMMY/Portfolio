@@ -92,6 +92,19 @@ function TechStack() {
           </div>
           <div className="ts-icon-stack">
             <img
+              src="/assets/tech-stack/sass.svg"
+              alt="Firebase icon"
+              className="sass-icon"
+            />
+            <label
+              className={darkMode ? "dark-text s-font" : "light-text s-font"}
+              htmlFor="sass-icon"
+            >
+              Sass
+            </label>
+          </div>
+          <div className="ts-icon-stack">
+            <img
               src="/assets/tech-stack/git.svg"
               alt="Git icon"
               className="git-icon"
@@ -101,19 +114,6 @@ function TechStack() {
               htmlFor="git-icon"
             >
               Git
-            </label>
-          </div>
-          <div className="ts-icon-stack">
-            <img
-              src="/assets/tech-stack/firebase.svg"
-              alt="Firebase icon"
-              className="firebase-icon"
-            />
-            <label
-              className={darkMode ? "dark-text s-font" : "light-text s-font"}
-              htmlFor="firebase-icon"
-            >
-              Firebase
             </label>
           </div>
           <div className="ts-icon-stack">

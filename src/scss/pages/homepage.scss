@@ -32,10 +32,14 @@
     gap: $gap-l;
     p, h1{
       padding: 0 10%;
+      @include tablet{
+        padding: 20px 10%;
+      }
     }
     @include tablet {
       width: 650px;
       height: 300px;
+      gap: $gap-s;
     }
     @include mobile {
       width: 90%;
