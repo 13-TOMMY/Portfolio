@@ -30,13 +30,16 @@
     align-items: flex-start;
     justify-content: center;
     gap: $gap-l;
-    p, h1{
+    @include animation(BottomFade, 1);
+    p,
+    h1 {
       padding: 0 10%;
-      @include tablet{
+      @include tablet {
         padding: 20px 10%;
       }
     }
     @include tablet {
+      @include animation(Fade, 1);
       width: 650px;
       height: 300px;
       gap: $gap-s;
@@ -52,7 +55,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include animation(BottomFade, 1);
     @include tablet {
+      @include animation(Fade, 1);
+
       width: 650px;
       height: 400px;
     }

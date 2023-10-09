@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  @include animation(BottomFadeCards, 1);
   padding: $padding-s-top-bottom;
   @include mobile {
     max-width: 425px;

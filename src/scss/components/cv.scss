@@ -5,10 +5,12 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  @include animation(BottomFade, 1);
   @include tablet {
     width: 650px;
     height: fit-content;
     flex-direction: column;
+    @include animation(Fade, 1);
   }
   @include mobile {
     width: 90%;

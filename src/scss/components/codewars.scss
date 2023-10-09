@@ -4,8 +4,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  @include animation(BottomFade, 1);
   @include tablet{
     width: 650px;
+    @include animation(Fade, 1);
   }
   @include mobile{
     width: 90%;

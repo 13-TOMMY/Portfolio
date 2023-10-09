@@ -31,9 +31,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include animation(BottomFade, 1);
     @include tablet {
       width: 650px;
       height: 500px;
+      @include animation(Fade, 1);
     }
     @include mobile {
       width: 90%;
@@ -53,9 +55,11 @@
   align-items: center;
   justify-content: flex-start;
   width: fit-content;
+  @include animation(BottomFade, 1);
   @include tablet {
     justify-content: center;
     width: 100%;
+    @include animation(Fade, 1);
   }
   @include mobile {
     width: 90%;

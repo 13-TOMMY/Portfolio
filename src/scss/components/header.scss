@@ -9,7 +9,9 @@
   padding: $padding-s-top-bottom;
   position: fixed;
   gap: 50px;
+  @include headerAnimation(HeaderBounce, 2s, linear, 0s, 1, alternate);
   @include tablet {
+    @include headerAnimation(HeaderTopBounce, 2s, linear, 0s, 1, alternate);
     width: 650px;
     height: 100px;
     display: flex;

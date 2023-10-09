@@ -7,8 +7,10 @@
   height: fit-content;
   padding: $padding-m-top-bottom;
   gap: $gap-l;
+  @include animation(BottomFade, 1);
   @include tablet {
     width: 650px;
+    @include animation(Fade, 1);
   }
   @include mobile {
     width: 90%;
