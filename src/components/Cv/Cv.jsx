@@ -32,7 +32,7 @@ function Cv() {
           }
         >
           <a
-            href="https://drive.google.com/file/d/1ihIHT8sSh7XQtcW77YDX1PlS7JiDcZmp/view?usp=sharing"
+            href="https://drive.google.com/file/d/1tPWlzNYBh-_mzRA957dm_RQ0JLXF0qNM/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -70,7 +70,7 @@ function Cv() {
           }
         >
           <a
-            href="https://drive.google.com/file/d/1iZb5p_xITa3JB604kwkpwsVk_hRpgh-U/view?usp=sharing"
+            href="https://drive.google.com/file/d/1kRtS7mBUbyQqpKxtWDWcULX9GevUJ41l/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
