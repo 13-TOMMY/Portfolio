@@ -1,4 +1,4 @@
-import { useContext, } from "react";
+import { useContext } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./scss/app.scss";
 import Homepage from "./pages/Homepage/Homepage";
@@ -8,15 +8,19 @@ import Contact from "./pages/Contact/Contact";
 import Header from "./components/Header/Header";
 import { ThemeContext } from "./context/ThemeContext";
 import Footer from "./components/Footer/Footer";
+import BackgroundSVG from "./components/BackgroundSVG";
 
 function App() {
-  const { darkMode, } = useContext(ThemeContext);
+  const { darkMode } = useContext(ThemeContext);
 
   return (
     <BrowserRouter>
       <div
         className={darkMode ? "dark-mode-viewArea " : "light-mode-viewArea "}
       >
+        <div className="background-svg-app">
+          <BackgroundSVG />
+        </div>
         <div>
           <div className=" viewable-area">
             <div className="left-side">
@@ -33,7 +37,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div>
+        <div className="app-footer-container">
           <Footer />
         </div>
       </div>

@@ -6,6 +6,7 @@
 @import "./typography";
 @import "./transitions";
 // Import component-specific Sass files
+@import "./components/BackgroundSVG.scss";
 @import "./components/aboutLinks.scss";
 @import "./components/codewars.scss";
 @import "./components/contactForm.scss";
@@ -24,6 +25,12 @@
 @import "./pages/contact.scss";
 
 /*App.jsx*/
+.background-svg-app {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
 /* viewable area */
 .viewable-area {
   display: flex;
@@ -60,6 +67,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 2;
   @include tablet {
     width: 100%;
     height: fit-content;
@@ -67,4 +75,8 @@
     align-items: center;
     justify-content: center;
   }
+}
+
+.app-footer-container{
+  z-index: 2;
 }

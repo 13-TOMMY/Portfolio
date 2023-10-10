@@ -9,6 +9,7 @@
   align-items: center;
   justify-content: space-between;
   padding: $padding-m-side;
+  z-index: 2;
   @include tablet {
     height: 80px;
   }
