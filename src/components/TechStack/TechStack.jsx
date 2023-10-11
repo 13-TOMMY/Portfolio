@@ -15,7 +15,7 @@ function TechStack() {
       <div className="ts-name">
         <h3
           className={
-            darkMode ? "dark-text hp-ts-text" : "light-text hp-ts-text"
+            darkMode ? "dark-text hp-ts-text" : "light-text hp-ts-text "
           }
         >
           TECH STACK
@@ -27,7 +27,7 @@ function TechStack() {
             <img
               src="/assets/tech-stack/javascript.svg"
               alt="JavaScript icon"
-              className="js-icon"
+              className="js-icon "
             />
             <label
               className={darkMode ? "dark-text s-font" : "light-text s-font"}

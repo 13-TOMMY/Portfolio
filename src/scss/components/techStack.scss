@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: space-around;
   padding: $padding-m-top-bottom;
+
   @include animation(BottomFade, 1);
   @include tablet {
     @include animation(BottomFade, 1);
@@ -90,4 +91,30 @@
   label {
     text-align: center;
   }
+}
+
+.js-icon {
+  animation: tech-stack-animation 2s ease 4s 1 normal forwards;
+}
+
+.react-icon {
+  animation: tech-stack-animation 2s ease 8s 1 normal forwards;
+}
+.node-icon {
+  animation: tech-stack-animation 2s ease 12s 1 normal forwards;
+}
+.html-icon {
+  animation: tech-stack-animation 2s ease 16s 1 normal forwards;
+}
+.css-icon {
+  animation: tech-stack-animation 2s ease 20s 1 normal forwards;
+}
+.sass-icon {
+  animation: tech-stack-animation 2s ease 24s 1 normal forwards;
+}
+.git-icon {
+  animation: tech-stack-animation 2s ease 28s 1 normal forwards;
+}
+.figma-icon {
+  animation: tech-stack-animation 2s ease 32s 1 normal forwards;
 }
