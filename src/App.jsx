@@ -16,7 +16,7 @@ function App() {
   return (
     <BrowserRouter>
       <div
-        className={darkMode ? "dark-mode-viewArea " : "light-mode-viewArea "}
+        className={darkMode ? "dark-mode-viewArea app" : "light-mode-viewArea app"}
       >
         <div className="background-svg-app">
           <BackgroundSVG />
