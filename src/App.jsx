@@ -16,7 +16,9 @@ function App() {
   return (
     <BrowserRouter>
       <div
-        className={darkMode ? "dark-mode-viewArea app" : "light-mode-viewArea app"}
+        className={
+          darkMode ? "dark-mode-viewArea app" : "light-mode-viewArea app"
+        }
       >
         <div className="background-svg-app">
           <BackgroundSVG />
@@ -34,11 +36,11 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="*" element={<Homepage />} />
               </Routes>
+              <div className="app-footer-container">
+                <Footer />
+              </div>
             </div>
           </div>
-        </div>
-        <div className="app-footer-container">
-          <Footer />
         </div>
       </div>
     </BrowserRouter>
