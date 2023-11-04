@@ -2,9 +2,12 @@ import { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import TechStack from "../../components/TechStack/TechStack";
 import LanguageText from "../../components/LanguageText/LanguageText";
-
+import ImageBox from "../../components/imageBox";
+  
 function Homepage() {
   const { darkMode } = useContext(ThemeContext);
+
+  const imgLink = "/assets/svg-imgs/top-view-laptop.svg";
 
   return (
     <div className="Homepage-container">
@@ -14,18 +17,10 @@ function Homepage() {
             darkMode ? "div-dark hp-top-left" : "div-light hp-top-left"
           }
         >
-          <h1
-            className={
-              darkMode ? "dark-text l-font" : "light-text l-font"
-            }
-          >
+          <h1 className={darkMode ? "dark-text l-font" : "light-text l-font"}>
             Front-end Developer
           </h1>
-          <p
-            className={
-              darkMode ? "dark-text s-font" : "light-text s-font"
-            }
-          >
+          <p className={darkMode ? "dark-text s-font" : "light-text s-font"}>
             <LanguageText
               englishText={
                 <>
@@ -64,6 +59,7 @@ function Homepage() {
       </div>
       <div className="hp-bottom">
         <TechStack />
+        <ImageBox  imglink={imgLink} />
       </div>
     </div>
   );
