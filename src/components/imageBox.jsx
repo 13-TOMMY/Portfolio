@@ -2,8 +2,8 @@ import React from "react";
 
 function ImageBox({ imglink }) {
   return (
-    <div className="imge-box">
-      <div className="custom-shape-divider-bottom-1699005273">
+    <div className="img-box">
+      {/* <div className="custom-shape-divider-bottom-1699005273">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -25,7 +25,7 @@ function ImageBox({ imglink }) {
             className="shape-fill"
           ></path>
         </svg>
-      </div>
+      </div> */}
       <div className="img-box-cotainer">
         <img src={imglink} />
         hello
