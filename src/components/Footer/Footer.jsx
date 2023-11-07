@@ -8,12 +8,8 @@ function Footer() {
   const { language } = useContext(LangContext);
   const { darkMode } = useContext(ThemeContext);
   return (
-    <div
-      className="footer-container"
-    >
-      <div className={
-        darkMode ? "div-dark footer" : "div-light footer"
-      }>
+    <div className="footer-container">
+      <div className={darkMode ? "div-dark footer" : "div-light footer"}>
         <div className="footer-left">
           <p
             className={
@@ -23,23 +19,12 @@ function Footer() {
             }
           >
             <LanguageText
-              englishText={
-                <>Thank you for taking the time to view my projects ☺️</>
-              }
-              polishText={
-                <>
-                  Dziękuję za poświęcenie czasu na obejrzenie moich projektów ☺️
-                </>
-              }
+              englishText={<>Thank you ☺️</>}
+              polishText={<>Dziękuję ☺️</>}
             />
           </p>
         </div>
         <div className="footer-right">
-          <FaRegCopyright className={
-              darkMode
-                ? "dark-text s-font"
-                : "light-text s-font"
-            }/>
           <p
             className={
               darkMode
@@ -47,19 +32,11 @@ function Footer() {
                 : "light-text p-footer-right s-font"
             }
           >
-            {" "}
-            TOMMY-PORTFOLIO
+            TOMMY-PORTFOLIO 2K23
           </p>
-
-          <p
-            className={
-              darkMode
-                ? "dark-text p-footer-right s-font"
-                : "light-text p-footer-right s-font"
-            }
-          >
-            2023
-          </p>
+          <FaRegCopyright
+            className={darkMode ? "dark-text s-font" : "light-text s-font"}
+          />
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@
   z-index: 999;
   height: 80px;
   margin: $margin-s-side;
+  padding-bottom: 20px;
 }
 .footer {
   height: 60px;
@@ -19,7 +20,7 @@
   .footer-left {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     width: 50%;
     @include mobile {
       display: none;
@@ -31,11 +32,12 @@
   .footer-right {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 30%;
+    justify-content: flex-end;
+    width: 50%;
     gap: $gap-s;
     @include mobile {
       width: 100%;
+      justify-content: center;
     }
     .p-footer-right {
       text-align: center;
