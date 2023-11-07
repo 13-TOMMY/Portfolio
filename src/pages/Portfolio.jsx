@@ -1,5 +1,5 @@
-import ProjectCard from "../../components/ProjectCard/ProjectCard";
-import LanguageText from "../../components/LanguageText/LanguageText";
+import ProjectCard from "../components/ProjectCard/ProjectCard";
+import LanguageText from "../components/LanguageText/LanguageText";
 
 function Portfolio() {
   return (

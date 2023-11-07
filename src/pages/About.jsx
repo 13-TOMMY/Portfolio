@@ -1,9 +1,9 @@
 import { useContext } from "react";
-import { ThemeContext } from "../../context/ThemeContext";
-import AboutLinks from "../../components/AboutLinks/AboutLinks";
-import Cv from "../../components/Cv/Cv";
-import LanguageText from "../../components/LanguageText/LanguageText";
-import Codewars from "../../components/Codewars/Codewars";
+import { ThemeContext } from "../context/ThemeContext";
+import AboutLinks from "../components/AboutLinks/AboutLinks";
+import Cv from "../components/Cv/Cv";
+import LanguageText from "../components/LanguageText/LanguageText";
+import Codewars from "../components/Codewars/Codewars";
 
 function About() {
   const { darkMode } = useContext(ThemeContext);

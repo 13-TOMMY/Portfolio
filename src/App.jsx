@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./scss/app.scss";
-import Homepage from "./pages/Homepage/Homepage";
-import About from "./pages/About/About";
-import Portfolio from "./pages/Portfolio/Portfolio";
-import Contact from "./pages/Contact/Contact";
+import Homepage from "./pages/Homepage";
+import About from "./pages/About";
+import Portfolio from "./pages/Portfolio";
+import Contact from "./pages/Contact";
 import Header from "./components/Header/Header";
 import { ThemeContext } from "./context/ThemeContext";
 import Footer from "./components/Footer/Footer";

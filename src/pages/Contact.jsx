@@ -1,5 +1,5 @@
-import ContactForm from "../../components/ContactForm/ContactForm";
-import SocialMediaLinks from "../../components/SocialMediaLinks/SocialMediaLinks";
+import ContactForm from "../components/ContactForm/ContactForm";
+import SocialMediaLinks from "../components/SocialMediaLinks/SocialMediaLinks";
 
 function Contact() {
   return (

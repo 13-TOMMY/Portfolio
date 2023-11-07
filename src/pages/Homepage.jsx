@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import { ThemeContext } from "../../context/ThemeContext";
-import TechStack from "../../components/TechStack/TechStack";
-import LanguageText from "../../components/LanguageText/LanguageText";
-import ImageBox from "../../components/imageBox";
+import { ThemeContext } from "../context/ThemeContext";
+import TechStack from "../components/TechStack/TechStack";
+import LanguageText from "../components/LanguageText/LanguageText";
+import ImageBox from "../components/imageBox";
   
 function Homepage() {
   const { darkMode } = useContext(ThemeContext);
