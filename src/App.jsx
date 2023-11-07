@@ -5,9 +5,9 @@ import Homepage from "./pages/Homepage";
 import About from "./pages/About";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
-import Header from "./components/Header/Header";
+import Header from "./components/Header";
 import { ThemeContext } from "./context/ThemeContext";
-import Footer from "./components/Footer/Footer";
+import Footer from "./components/Footer";
 import BackgroundSVG from "./components/BackgroundSVG";
 
 function App() {

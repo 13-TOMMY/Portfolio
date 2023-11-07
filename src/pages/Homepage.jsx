@@ -1,13 +1,13 @@
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
-import TechStack from "../components/TechStack/TechStack";
-import LanguageText from "../components/LanguageText/LanguageText";
+import TechStack from "../components/TechStack";
+import LanguageText from "../components/LanguageText";
 import ImageBox from "../components/imageBox";
-  
+
 function Homepage() {
   const { darkMode } = useContext(ThemeContext);
 
-  const imgLink = "/assets/svg-imgs/top-view-laptop.svg";
+  // const imgLink =
 
   return (
     <div className="Homepage-container">
@@ -59,7 +59,13 @@ function Homepage() {
       </div>
       <div className="hp-bottom">
         <TechStack />
-        <ImageBox  imglink={imgLink} />
+        <ImageBox
+          imglink={
+            darkMode
+              ? "/assets/svg-imgs/top-view-laptop-dark.svg"
+              : "/assets/svg-imgs/top-view-laptop.svg"
+          }
+        />
       </div>
     </div>
   );

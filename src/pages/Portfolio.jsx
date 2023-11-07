@@ -1,5 +1,5 @@
-import ProjectCard from "../components/ProjectCard/ProjectCard";
-import LanguageText from "../components/LanguageText/LanguageText";
+import ProjectCard from "../components/ProjectCard";
+import LanguageText from "../components/LanguageText";
 
 function Portfolio() {
   return (
@@ -23,8 +23,7 @@ function Portfolio() {
                 using cutting-edge technologies, including REACT, TypeScript,
                 SCSS, and extensive NPM packages to ensure responsiveness. For
                 the development of this single-page application (SPA) website, I
-                leveraged Vite, while Figma and Canva served as my design
-                tools.
+                leveraged Vite, while Figma and Canva served as my design tools.
               </>
             }
             polishText={

@@ -11,8 +11,8 @@ import {
   BiSolidMoon,
 } from "react-icons/bi";
 import Switch from "react-switch";
-import { ThemeContext } from "../../context/ThemeContext";
-import { LangContext } from "../../context/LangContext";
+import { ThemeContext } from "../context/ThemeContext";
+import { LangContext } from "../context/LangContext";
 
 function NavBar() {
   const { darkMode, setDarkMode } = useContext(ThemeContext);
@@ -172,7 +172,7 @@ function NavBar() {
         <div className="language-mode">
           <label htmlFor="material-switch">
             <Switch
-              checked={language === 'pl'}
+              checked={language === "pl"}
               onChange={toggleLanguage}
               handleDiameter={28}
               offColor="#FFFFFF"
@@ -201,7 +201,7 @@ function NavBar() {
               }
               checkedIcon={
                 <div
-                className="rotate-switch"
+                  className="rotate-switch"
                   style={{
                     display: "flex",
                     justifyContent: "center",
@@ -217,7 +217,7 @@ function NavBar() {
               }
               uncheckedHandleIcon={
                 <div
-                className="rotate-switch"
+                  className="rotate-switch"
                   style={{
                     display: "flex",
                     justifyContent: "center",
@@ -232,7 +232,7 @@ function NavBar() {
               }
               checkedHandleIcon={
                 <div
-                className="rotate-switch"
+                  className="rotate-switch"
                   style={{
                     display: "flex",
                     justifyContent: "center",

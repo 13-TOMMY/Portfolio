@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { ThemeContext } from "../../context/ThemeContext";
+import { ThemeContext } from "../context/ThemeContext";
 import { motion } from "framer-motion";
-import LanguageText from "../LanguageText/LanguageText";
+import LanguageText from "./LanguageText";
 
 function SocialMediaLinks() {
   const { darkMode } = useContext(ThemeContext);
@@ -16,13 +16,16 @@ function SocialMediaLinks() {
     >
       <h3 className={darkMode ? "dark-text " : "light-text "}>
         {" "}
-        <LanguageText englishText={<>Find Me Here!</>} polishText={<>Znajdź mnie tutaj!</>} />
+        <LanguageText
+          englishText={<>Find Me Here!</>}
+          polishText={<>Znajdź mnie tutaj!</>}
+        />
       </h3>
       <ul className="sml-list-links">
         <li style={{ listStyle: "none" }}>
           <motion.a
             whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.8}}
+            whileTap={{ scale: 0.8 }}
             href="https://twitter.com/13___tommy"
             target="_blank"
             rel="noopener noreferrer"
@@ -37,9 +40,7 @@ function SocialMediaLinks() {
 
           <label
             htmlFor="sml-img-link"
-            className={
-              darkMode ? "dark-text s-font" : "light-text s-font"
-            }
+            className={darkMode ? "dark-text s-font" : "light-text s-font"}
           >
             Twiiter / X
           </label>
@@ -47,7 +48,7 @@ function SocialMediaLinks() {
         <li style={{ listStyle: "none" }}>
           <motion.a
             whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.8}}
+            whileTap={{ scale: 0.8 }}
             href="https://www.linkedin.com/in/tomasz-lis-67b879261"
             target="_blank"
             rel="noopener noreferrer"
@@ -61,9 +62,7 @@ function SocialMediaLinks() {
           </motion.a>
           <label
             htmlFor="sml-img-link"
-            className={
-              darkMode ? "dark-text s-font" : "light-text s-font"
-            }
+            className={darkMode ? "dark-text s-font" : "light-text s-font"}
           >
             LinkedIn
           </label>
@@ -71,7 +70,7 @@ function SocialMediaLinks() {
         <li style={{ listStyle: "none" }}>
           <motion.a
             whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.8}}
+            whileTap={{ scale: 0.8 }}
             href="https://medium.com/@13__TOMMY"
             target="_blank"
             rel="noopener noreferrer"
@@ -85,9 +84,7 @@ function SocialMediaLinks() {
           </motion.a>
           <label
             htmlFor="sml-img-link"
-            className={
-              darkMode ? "dark-text s-font" : "light-text s-font"
-            }
+            className={darkMode ? "dark-text s-font" : "light-text s-font"}
           >
             Medium
           </label>

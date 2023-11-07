@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { ThemeContext } from "../../context/ThemeContext";
+import { ThemeContext } from "../context/ThemeContext";
 import { motion } from "framer-motion";
-import LanguageText from "../LanguageText/LanguageText";
+import LanguageText from "./LanguageText";
 
 function AboutLinks() {
   const { darkMode } = useContext(ThemeContext);
@@ -24,10 +24,10 @@ function AboutLinks() {
         <div className="abl-icon-row">
           <motion.a
             whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.8,}}
+            whileTap={{ scale: 0.8 }}
             href="https://github.com/13-TOMMY"
             target="_blank"
-            rel="noopener noreferrer"  
+            rel="noopener noreferrer"
           >
             <img
               src="/assets/social-media/github-dark.svg"
@@ -37,10 +37,10 @@ function AboutLinks() {
           </motion.a>
           <motion.a
             whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.8,}}
+            whileTap={{ scale: 0.8 }}
             href="https://twitter.com/13___tommy"
             target="_blank"
-            rel="noopener noreferrer"  
+            rel="noopener noreferrer"
           >
             <img
               src="/assets/social-media/twitter.svg"
@@ -52,10 +52,10 @@ function AboutLinks() {
         <div className="abl-icon-row">
           <motion.a
             whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.8,}}
+            whileTap={{ scale: 0.8 }}
             href="https://www.linkedin.com/in/tomasz-lis-67b879261"
             target="_blank"
-            rel="noopener noreferrer"  
+            rel="noopener noreferrer"
           >
             <img
               src="/assets/social-media/linkedin.svg"
@@ -66,10 +66,10 @@ function AboutLinks() {
 
           <motion.a
             whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.8,}}
+            whileTap={{ scale: 0.8 }}
             href="https://medium.com/@13__TOMMY"
             target="_blank"
-            rel="noopener noreferrer"  
+            rel="noopener noreferrer"
           >
             <img
               src="/assets/social-media/medium.svg"

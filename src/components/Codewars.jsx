@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ThemeContext } from "../../context/ThemeContext";
+import { ThemeContext } from "../context/ThemeContext";
 import { motion } from "framer-motion";
 
 function Codewars() {
@@ -13,15 +13,15 @@ function Codewars() {
     >
       <motion.a
         whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.8,}}
+        whileTap={{ scale: 0.8 }}
         href="https://www.codewars.com/users/13-TOMMY"
         target="_blank"
         rel="noopener noreferrer"
       >
         <img
           src="https://www.codewars.com/users/13-TOMMY/badges/micro"
-                  alt="codewars bage 13-tommy"
-                  className="cw-icon"
+          alt="codewars bage 13-tommy"
+          className="cw-icon"
         />
       </motion.a>
     </div>

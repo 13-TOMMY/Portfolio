@@ -1,10 +1,10 @@
 import { useRef, useState, useContext } from "react";
 import emailjs from "@emailjs/browser";
 import { toast, ToastContainer } from "react-toastify";
-import { ThemeContext } from "../../context/ThemeContext";
+import { ThemeContext } from "../context/ThemeContext";
 import { motion } from "framer-motion";
 import "react-toastify/dist/ReactToastify.css";
-import LanguageText from "../LanguageText/LanguageText";
+import LanguageText from "./LanguageText";
 
 const ContactForm = () => {
   const { darkMode } = useContext(ThemeContext);
@@ -85,7 +85,11 @@ const ContactForm = () => {
         <div className="form-name">
           <label
             htmlFor="text"
-            className={darkMode ? "dark-text cf-label s-font" : "light-text cf-label s-font"}
+            className={
+              darkMode
+                ? "dark-text cf-label s-font"
+                : "light-text cf-label s-font"
+            }
           >
             <LanguageText englishText={<>Name:</>} polishText={<>Imię</>} />
           </label>
@@ -101,7 +105,11 @@ const ContactForm = () => {
         <div className="form-email">
           <label
             htmlFor="email"
-            className={darkMode ? "dark-text cf-label s-font" : "light-text cf-label s-font"}
+            className={
+              darkMode
+                ? "dark-text cf-label s-font"
+                : "light-text cf-label s-font"
+            }
           >
             Email:
           </label>
@@ -117,7 +125,11 @@ const ContactForm = () => {
         <div className="form-phone">
           <label
             htmlFor="number"
-            className={darkMode ? "dark-text cf-label s-font" : "light-text cf-label s-font"}
+            className={
+              darkMode
+                ? "dark-text cf-label s-font"
+                : "light-text cf-label s-font"
+            }
           >
             <LanguageText
               englishText={<>Phone Number (Optional):</>}
@@ -135,7 +147,11 @@ const ContactForm = () => {
         <div className="form-message">
           <label
             htmlFor="message"
-            className={darkMode ? "dark-text cf-label s-font" : "light-text cf-label s-font"}
+            className={
+              darkMode
+                ? "dark-text cf-label s-font"
+                : "light-text cf-label s-font"
+            }
           >
             <LanguageText
               englishText={<>Message:</>}

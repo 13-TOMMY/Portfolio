@@ -1,11 +1,11 @@
 import { useContext } from "react";
-import EnglishCv from "../../Assets/cv/cv-eng.pdf";
-import PolishCv from "../../Assets/cv/cv-pl.pdf";
-import { ThemeContext } from "../../context/ThemeContext";
+import EnglishCv from "../Assets/cv/cv-eng.pdf";
+import PolishCv from "../Assets/cv/cv-pl.pdf";
+import { ThemeContext } from "../context/ThemeContext";
 import { motion } from "framer-motion";
 import { AiOutlineDownload } from "react-icons/ai";
 import { MdOutlineFindInPage } from "react-icons/md";
-import LanguageText from "../LanguageText/LanguageText";
+import LanguageText from "./LanguageText";
 
 function Cv() {
   const englishCVUrl = EnglishCv;

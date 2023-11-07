@@ -1,7 +1,7 @@
 import { createRef, useContext, useEffect, useState } from "react";
-import { ThemeContext } from "../../context/ThemeContext";
+import { ThemeContext } from "../context/ThemeContext";
 import { motion } from "framer-motion";
-import LanguageText from "../LanguageText/LanguageText";
+import LanguageText from "./LanguageText";
 
 function ProjectCard({
   photo,
@@ -40,7 +40,7 @@ function ProjectCard({
       }
     >
       {width ? (
-        <img src={photo} className="portfolio-img"/> 
+        <img src={photo} className="portfolio-img" />
       ) : (
         <video
           ref={videoRef}
@@ -49,10 +49,14 @@ function ProjectCard({
           muted
           onMouseEnter={handleVideoHover}
           onMouseLeave={handleVideoLeave}
-          className={isHovered ? "hovered-video portfolio-video" : "portfolio-video"}
+          className={
+            isHovered ? "hovered-video portfolio-video" : "portfolio-video"
+          }
         />
       )}
-      <h3 className={darkMode ? "dark-text m-font" : "light-text m-font"}>{projectName}</h3>
+      <h3 className={darkMode ? "dark-text m-font" : "light-text m-font"}>
+        {projectName}
+      </h3>
       <p className={darkMode ? "dark-text s-font" : "light-text s-font"}>
         {projectDescription}
       </p>
@@ -66,8 +70,8 @@ function ProjectCard({
               : "light-text light-btn pc-btn m-font"
           }
         >
-          <a href={ visitLink} target="_blank" rel="noopener noreferrer">
-          <LanguageText englishText={<>Visit</>} polishText={<>Odwiedz</>} />
+          <a href={visitLink} target="_blank" rel="noopener noreferrer">
+            <LanguageText englishText={<>Visit</>} polishText={<>Odwiedz</>} />
           </a>
         </motion.button>
         <motion.button

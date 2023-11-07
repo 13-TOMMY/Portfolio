@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import { FaRegCopyright } from "react-icons/fa";
-import { ThemeContext } from "../../context/ThemeContext";
-import { LangContext } from "../../context/LangContext";
-import LanguageText from "../LanguageText/LanguageText";
+import { ThemeContext } from "../context/ThemeContext";
+import { LangContext } from "../context/LangContext";
+import LanguageText from "./LanguageText";
 
 function Footer() {
   const { language } = useContext(LangContext);
