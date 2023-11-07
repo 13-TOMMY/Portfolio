@@ -1,9 +1,29 @@
-.imge-box-container {
+.img-box-container {
   width: 100%;
   height: 100%;
-  background-color: $color-white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include animation(BottomFade, 1);
+    @include tablet {
+      @include animation(Fade, 1);
+      width: 650px;
+      height: 400px;
+    }
+    @include mobile {
+      width: 90%;
+      height: 350px;
+    }
   img{
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
+    @include tablet {
+      width: 400px;
+      height: 400px;
+    }
+    @include mobile {
+      width: 85%;
+      height: 350px;
+    }
   }
-}
+};
