@@ -15,7 +15,6 @@ function SocialMediaLinks() {
       }
     >
       <h3 className={darkMode ? "dark-text " : "light-text "}>
-        {" "}
         <LanguageText
           englishText={<>Find Me Here!</>}
           polishText={<>Znajdź mnie tutaj!</>}
