@@ -7,7 +7,7 @@ function Contact() {
     <div className="contact-page">
       <ContactForm />
       <SocialMediaLinks />
-      <SocialMediaConnections/>
+      {/* <SocialMediaConnections/> */}
     </div>
   );
 }
