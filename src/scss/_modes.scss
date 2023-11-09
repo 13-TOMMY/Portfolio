@@ -76,6 +76,16 @@
   border-color: rgba(255, 255, 255, 0.5); /* Change the border color on hover */
   animation: lightPulse 0.8s infinite alternate; /* Add a light pulse animation */
 }
+.rgb-border-circle {
+  border: 2px solid transparent; /* Set the initial border size and color */
+  transition: border-color 0.5s ease-in-out;
+  border-radius: 50%;
+  padding: 15px;
+}
+.rgb-border-circle:hover {
+  border-color: rgba(255, 255, 255, 0.5); /* Change the border color on hover */
+  animation: lightPulse 0.8s infinite alternate; /* Add a light pulse animation */
+}
 
 @keyframes lightPulse {
   0% {

@@ -6,8 +6,8 @@ function Contact() {
   return (
     <div className="contact-page">
       <ContactForm />
-      <SocialMediaLinks />
-      {/* <SocialMediaConnections/> */}
+      {/* <SocialMediaLinks /> */}
+      <SocialMediaConnections/>
     </div>
   );
 }

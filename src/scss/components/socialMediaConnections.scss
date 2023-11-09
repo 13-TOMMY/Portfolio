@@ -1,0 +1,39 @@
+.smc-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  padding: $padding-m-top-bottom;
+  gap: $gap-l;
+  @include animation(BottomFade, 1);
+  @include tablet {
+    width: 650px;
+    @include animation(Fade, 1);
+  }
+  @include mobile {
+    width: 90%;
+  }
+}
+
+.smc-unorderd-list {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: $gap-l;
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: $gap-s;
+    padding: $padding-s-top-bottom;
+    height: fit-content;
+    .sm-icon {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
