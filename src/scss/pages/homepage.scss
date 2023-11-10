@@ -83,4 +83,13 @@
   justify-content: flex-start;
   width: 100%;
   height: fit-content;
+  .hp-bottom-img-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    @include tablet {
+      flex-direction: column;
+    }
+  }
 }

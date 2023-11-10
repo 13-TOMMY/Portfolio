@@ -26,7 +26,7 @@ function SocialMediaConnections() {
         {title || (
           <LanguageText
             englishText={<>Lets Connect ☺️</>}
-            polishText={<>Połączmy się ☺️</>}
+            polishText={<>Połączmy Się ☺️</>}
           />
         )}
       </h3>

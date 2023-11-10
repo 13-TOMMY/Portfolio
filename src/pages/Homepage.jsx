@@ -3,6 +3,7 @@ import { ThemeContext } from "../context/ThemeContext";
 import TechStack from "../components/TechStack";
 import LanguageText from "../components/LanguageText";
 import ImageBox from "../components/imageBox";
+import SocialMediaConnections from "../components/SocialMediaConnections";
 
 function Homepage() {
   const { darkMode } = useContext(ThemeContext);
@@ -59,13 +60,16 @@ function Homepage() {
       </div>
       <div className="hp-bottom">
         <TechStack />
-        <ImageBox
-          imglink={
-            darkMode
-              ? "/assets/svg-imgs/top-view-laptop-dark.svg"
-              : "/assets/svg-imgs/top-view-laptop.svg"
-          }
-        />
+        <div className="hp-bottom-img-links">
+          <ImageBox
+            imglink={
+              darkMode
+                ? "/assets/svg-imgs/top-view-laptop-dark.svg"
+                : "/assets/svg-imgs/top-view-laptop.svg"
+            }
+          />
+          <SocialMediaConnections />
+        </div>
       </div>
     </div>
   );
