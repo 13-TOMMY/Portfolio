@@ -21,6 +21,9 @@ function SocialMediaConnections() {
 
   return (
     <div className="smc-container">
+      <h3 className={darkMode ? "dark-text m-font" : "light-text m-font"}>
+        {title || "Let's Connect "}
+      </h3>
       <ul className="smc-unorderd-list">
         <li style={{ listStyle: "none" }}>
           <motion.a
@@ -127,9 +130,6 @@ function SocialMediaConnections() {
           </motion.a>
         </li>
       </ul>
-      <h3 className={darkMode ? "dark-text m-font" : "light-text m-font"}>
-        {title || "Let's Connect "}
-      </h3>
     </div>
   );
 }

@@ -1,11 +1,10 @@
 .smc-container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-end;
   flex-direction: column;
   width: 100%;
   height: fit-content;
-  padding: $padding-m-top-bottom;
   gap: $gap-l;
   @include animation(BottomFade, 1);
   @include tablet {
@@ -23,6 +22,9 @@
   align-items: center;
   justify-content: space-around;
   gap: $gap-l;
+  @include mobile {
+    gap: $gap-s;
+  }
   li {
     display: flex;
     flex-direction: column;
