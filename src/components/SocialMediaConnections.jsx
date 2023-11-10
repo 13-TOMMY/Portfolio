@@ -11,9 +11,10 @@ import {
   FaSquareGithub,
 } from "react-icons/fa6";
 import { IoLogoMedium } from "react-icons/io5";
+import LanguageText from "./LanguageText";
 
 function SocialMediaConnections() {
-  const {darkMode} = useContext(ThemeContext);
+  const { darkMode } = useContext(ThemeContext);
   const [xHover, setXHoverOn] = useState(false);
   const [lHover, setLHoverOn] = useState(false);
   const [mHover, setMHoverOn] = useState(false);
@@ -22,7 +23,12 @@ function SocialMediaConnections() {
   return (
     <div className="smc-container">
       <h3 className={darkMode ? "dark-text m-font" : "light-text m-font"}>
-        {title || "Let's Connect "}
+        {title || (
+          <LanguageText
+            englishText={<>Lets Connect ☺️</>}
+            polishText={<>Połączmy się ☺️</>}
+          />
+        )}
       </h3>
       <ul className="smc-unorderd-list">
         <li style={{ listStyle: "none" }}>
