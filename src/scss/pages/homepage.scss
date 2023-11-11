@@ -84,12 +84,18 @@
   width: 100%;
   height: fit-content;
   .hp-bottom-img-links {
+    width: 900px;
+    height: fit-content;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     @include tablet {
       flex-direction: column;
+      width: 650px;
+    }
+    @include mobile {
+      width: 90%;
     }
   }
 }

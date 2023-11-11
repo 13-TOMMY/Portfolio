@@ -10,6 +10,9 @@ function Homepage() {
 
   // const imgLink =
 
+  const darkImg = ["/assets/svg-imgs/top-view-laptop-dark.svg", "/assets/svg-imgs/Innovation-amico-blue.svg"];
+  const lightImg = ["/assets/svg-imgs/top-view-laptop.svg", "/assets/svg-imgs/Innovation-amico-green.svg"];
+
   return (
     <div className="Homepage-container">
       <div className="hp-top">
@@ -64,8 +67,8 @@ function Homepage() {
           <ImageBox
             imglink={
               darkMode
-                ? "/assets/svg-imgs/top-view-laptop-dark.svg"
-                : "/assets/svg-imgs/top-view-laptop.svg"
+                ? darkImg
+                : lightImg
             }
           />
           <SocialMediaConnections />
