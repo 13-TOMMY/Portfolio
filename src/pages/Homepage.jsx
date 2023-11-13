@@ -10,8 +10,8 @@ function Homepage() {
 
   // const imgLink =
 
-  const darkImg = ["/assets/svg-imgs/top-view-laptop-dark.svg", "/assets/svg-imgs/Innovation-amico-blue.svg"];
-  const lightImg = ["/assets/svg-imgs/top-view-laptop.svg", "/assets/svg-imgs/Innovation-amico-green.svg"];
+  const darkImg = ["/assets/svg-imgs/top-view-laptop-dark.svg", "/assets/svg-imgs/Innovation-amico-blue.svg", "/assets/svg-imgs/programming-amico-dark.svg", "/assets/svg-imgs/static-website-cuate-dark.svg"];
+  const lightImg = ["/assets/svg-imgs/top-view-laptop.svg", "/assets/svg-imgs/Innovation-amico-green.svg", "/assets/svg-imgs/programming-amico-light.svg", "/assets/svg-imgs/static-website-cuate-light.svg"];
 
   return (
     <div className="Homepage-container">
