@@ -85,7 +85,7 @@
   height: fit-content;
   .hp-bottom-img-links {
     width: 900px;
-    height: fit-content;
+    height: 500px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -93,6 +93,7 @@
     @include tablet {
       flex-direction: column;
       width: 650px;
+      height: fit-content;
     }
     @include mobile {
       width: 90%;

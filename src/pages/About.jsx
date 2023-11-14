@@ -4,10 +4,22 @@ import AboutLinks from "../components/AboutLinks";
 import Cv from "../components/Cv";
 import LanguageText from "../components/LanguageText";
 import Codewars from "../components/Codewars";
+import ImageBox from "../components/imageBox";
 
 function About() {
   const { darkMode } = useContext(ThemeContext);
-
+  const darkImg = [
+    "/assets/svg-imgs/top-view-laptop-dark.svg",
+    "/assets/svg-imgs/Innovation-amico-blue.svg",
+    "/assets/svg-imgs/programming-amico-dark.svg",
+    "/assets/svg-imgs/static-website-cuate-dark.svg",
+  ];
+  const lightImg = [
+    "/assets/svg-imgs/top-view-laptop.svg",
+    "/assets/svg-imgs/Innovation-amico-green.svg",
+    "/assets/svg-imgs/programming-amico-light.svg",
+    "/assets/svg-imgs/static-website-cuate-light.svg",
+  ];
   return (
     <div className="about-container">
       <div className="ab-left">
@@ -164,6 +176,9 @@ function About() {
               }
             />
           </p>
+        </div>
+        <div className="about-carousel-img">
+          <ImageBox imglink={darkMode ? darkImg : lightImg} />
         </div>
       </div>
     </div>

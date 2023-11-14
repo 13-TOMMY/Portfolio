@@ -40,7 +40,7 @@ function ProjectCard({
       }
     >
       {width ? (
-        <img src={photo} className="portfolio-img" />
+        <img src={photo} className="portfolio-img" loading="lazy" />
       ) : (
         <video
           ref={videoRef}
@@ -52,6 +52,7 @@ function ProjectCard({
           className={
             isHovered ? "hovered-video portfolio-video" : "portfolio-video"
           }
+          loading="lazy"
         />
       )}
       <h3 className={darkMode ? "dark-text m-font" : "light-text m-font"}>

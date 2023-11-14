@@ -54,6 +54,8 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-direction: column;
+  gap: $gap-l;
   width: fit-content;
   @include animation(BottomFade, 1);
   @include tablet {
@@ -77,5 +79,8 @@
     @include tablet {
       width: 650px;
     }
+  }
+  .about-carousel-img{
+    height: 300px;
   }
 }
