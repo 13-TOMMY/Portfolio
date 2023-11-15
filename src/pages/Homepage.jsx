@@ -1,18 +1,14 @@
-import { useContext } from "react";
+import { useContext, useRef } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 import TechStack from "../components/TechStack";
 import LanguageText from "../components/LanguageText";
-import ImageBox from "../components/imageBox";
 import SocialMediaConnections from "../components/SocialMediaConnections";
+import Lottie from "lottie-react";
+import desktop from "../Assets/lottie/desk/desk-prgramming.json";
 
 function Homepage() {
   const { darkMode } = useContext(ThemeContext);
-
-  // const imgLink =
-
-  const darkImg = ["/assets/svg-imgs/top-view-laptop-dark.svg", "/assets/svg-imgs/Innovation-amico-blue.svg", "/assets/svg-imgs/programming-amico-dark.svg", "/assets/svg-imgs/static-website-cuate-dark.svg"];
-  const lightImg = ["/assets/svg-imgs/top-view-laptop.svg", "/assets/svg-imgs/Innovation-amico-green.svg", "/assets/svg-imgs/programming-amico-light.svg", "/assets/svg-imgs/static-website-cuate-light.svg"];
-
+  const lottieRef = useRef(null);
   return (
     <div className="Homepage-container">
       <div className="hp-top">
@@ -65,12 +61,14 @@ function Homepage() {
       <div className="hp-bottom">
         <TechStack />
         <div className="hp-bottom-img-links">
-          <ImageBox
-            imglink={
-              darkMode
-                ? darkImg
-                : lightImg
-            }
+          <Lottie
+            animationData={desktop}
+            loop={true}
+            lottieRef={lottieRef}
+            onComplete={() => {
+              // lottieRef.current.goToAndPlay(100, false);
+              lottieRef.current.setSpeed(0.5);
+            }}
           />
           <SocialMediaConnections />
         </div>
