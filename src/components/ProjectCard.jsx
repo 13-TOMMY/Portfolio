@@ -2,6 +2,8 @@ import { createRef, useContext, useEffect, useState } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 import { motion } from "framer-motion";
 import LanguageText from "./LanguageText";
+import Lottie from "lottie-react";
+import orangeLoading from "../Assets/lottie/loading /orange-ball-loading.json";
 
 function ProjectCard({
   photo,
@@ -14,8 +16,29 @@ function ProjectCard({
   const { darkMode } = useContext(ThemeContext);
   const [isHovered, setIsHovered] = useState(false);
   const videoRef = createRef();
+  const imgRef = createRef();
   const [width, setWidth] = useState(window.innerWidth < 1024);
+  const [loading, setLoading] = useState(false);
 
+  const handleImgLoad = () => {
+    if (imgRef.current.complete) {
+      setLoading(false);
+    }
+  };
+  
+  const handleVideoLoad = () => {
+    if (videoRef.current.readyState === 4) {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+    return () => clearTimeout(timeoutId);
+  }, [])
+  
   useEffect(() => {
     const handleWindowResize = () => setWidth(window.innerWidth < 1024);
     window.addEventListener("resize", handleWindowResize);
@@ -40,7 +63,19 @@ function ProjectCard({
       }
     >
       {width ? (
-        <img src={photo} className="portfolio-img" loading="lazy" />
+        loading ? (
+          <Lottie animationData={orangeLoading} loop={true} className="portfolio-video"/>
+        ) : (
+          <img
+            src={photo}
+            ref={imgRef}
+            className="portfolio-img"
+            loading="lazy"
+            onLoad={handleImgLoad}
+          />
+        )
+      ) : loading ? (
+        <Lottie animationData={orangeLoading} loop={true} className="portfolio-video"/>
       ) : (
         <video
           ref={videoRef}
@@ -49,6 +84,7 @@ function ProjectCard({
           muted
           onMouseEnter={handleVideoHover}
           onMouseLeave={handleVideoLeave}
+          onLoadedData={handleVideoLoad}
           className={
             isHovered ? "hovered-video portfolio-video" : "portfolio-video"
           }

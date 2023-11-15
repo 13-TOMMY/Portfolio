@@ -33,6 +33,7 @@ function About() {
             src="/assets/photos/d93e089e-eee7-46ea-9ff6-3c87830453b0.jpeg"
             alt="Photo of me"
             className="ab-left-middle-img"
+            loading="lazy"
           />
         </div>
         <Codewars />
