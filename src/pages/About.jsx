@@ -20,6 +20,11 @@ function About() {
     "/assets/svg-imgs/programming-amico-light.svg",
     "/assets/svg-imgs/static-website-cuate-light.svg",
   ];
+  const myPictures = [
+    "/assets/photos/2C9068B8-7709-4DEF-86AE-A7C43D2C6553_1_105_c.jpeg",
+    "/assets/photos/d93e089e-eee7-46ea-9ff6-3c87830453b0.jpeg",
+    "/assets/photos/IMG_8014.jpeg",
+  ];
   return (
     <div className="about-container">
       <div className="ab-left">
@@ -29,12 +34,7 @@ function About() {
             darkMode ? "div-dark ab-left-middle" : "div-light ab-left-middle"
           }
         >
-          <img
-            src="/assets/photos/d93e089e-eee7-46ea-9ff6-3c87830453b0.jpeg"
-            alt="Photo of me"
-            className="ab-left-middle-img"
-            loading="lazy"
-          />
+          <ImageBox imglink={myPictures} />
         </div>
         <Codewars />
         <AboutLinks />

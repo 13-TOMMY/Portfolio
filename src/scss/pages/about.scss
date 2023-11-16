@@ -40,7 +40,7 @@
     @include mobile {
       width: 90%;
     }
-    .ab-left-middle-img {
+    :first-child {
       width: 98%;
       height: 98%;
       object-fit: cover;
