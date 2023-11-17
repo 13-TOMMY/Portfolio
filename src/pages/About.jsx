@@ -21,10 +21,11 @@ function About() {
     "/assets/svg-imgs/static-website-cuate-light.svg",
   ];
   const myPictures = [
-    "/assets/photos/2C9068B8-7709-4DEF-86AE-A7C43D2C6553_1_105_c.jpeg",
-    "/assets/photos/d93e089e-eee7-46ea-9ff6-3c87830453b0.jpeg",
-    "/assets/photos/IMG_8014.jpeg",
+    "/assets/photos/outsideMe.jpeg",
+    "/assets/photos/meVsLama.jpeg",
+    "/assets/photos/krakowMe.jpeg",
   ];
+
   return (
     <div className="about-container">
       <div className="ab-left">
@@ -34,7 +35,7 @@ function About() {
             darkMode ? "div-dark ab-left-middle" : "div-light ab-left-middle"
           }
         >
-          <ImageBox imglink={myPictures} />
+          <ImageBox imglink={myPictures} intervalTime={25000}/>
         </div>
         <Codewars />
         <AboutLinks />
@@ -179,7 +180,7 @@ function About() {
           </p>
         </div>
         <div className="about-carousel-img">
-          <ImageBox imglink={darkMode ? darkImg : lightImg} />
+          <ImageBox imglink={darkMode ? darkImg : lightImg} intervalTime={5000}/>
         </div>
       </div>
     </div>
