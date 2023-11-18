@@ -51,7 +51,7 @@ function Homepage() {
           }
         >
           <img
-            src="/assets/photos/IMG_8014.jpeg"
+            src="/assets/photos/outsideMe.jpeg"
             alt="Photo of me"
             className="hp-top-right-img"
             loading="lazy"

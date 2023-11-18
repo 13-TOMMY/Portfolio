@@ -7,11 +7,13 @@ function ImageBox({ imglink, intervalTime }) {
   const nextImage = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imglink.length);
   };
-  
+
+  const timeMs = (time = 5000) => time;
+
   useEffect(() => {
     const interval = setInterval(() => {
       nextImage();
-    }, intervalTime);
+    }, timeMs(intervalTime));
     return () => {
       clearInterval(interval);
     };

@@ -35,7 +35,7 @@ function About() {
             darkMode ? "div-dark ab-left-middle" : "div-light ab-left-middle"
           }
         >
-          <ImageBox imglink={myPictures} intervalTime={25000}/>
+          <ImageBox imglink={myPictures} />
         </div>
         <Codewars />
         <AboutLinks />
@@ -180,7 +180,7 @@ function About() {
           </p>
         </div>
         <div className="about-carousel-img">
-          <ImageBox imglink={darkMode ? darkImg : lightImg} intervalTime={5000}/>
+          <ImageBox imglink={darkMode ? darkImg : lightImg} intervalTime={2500}/>
         </div>
       </div>
     </div>
