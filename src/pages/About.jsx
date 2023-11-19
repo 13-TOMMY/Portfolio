@@ -180,7 +180,7 @@ function About() {
           </p>
         </div>
         <div className="about-carousel-img">
-          <ImageBox imglink={darkMode ? darkImg : lightImg} intervalTime={2500}/>
+          <ImageBox imglink={darkMode ? darkImg : lightImg} intervalTime={3500}/>
         </div>
       </div>
     </div>

@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  @include animation(BottomFade, 1);
+  // @include animation(BottomFade, 1);
   @include tablet {
     @include animation(Fade, 1);
   }
