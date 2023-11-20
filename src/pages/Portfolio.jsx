@@ -2,6 +2,8 @@ import ProjectCard from "../components/ProjectCard";
 import LanguageText from "../components/LanguageText";
 
 function Portfolio() {
+  //preperation for dynamic elements
+  // need to comment this so i can commit it as a develop branch no to break current
   return (
     <div className="portfolio-container">
       <ProjectCard
