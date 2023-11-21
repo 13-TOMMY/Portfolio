@@ -1,4 +1,4 @@
-import { createRef, useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 import { motion } from "framer-motion";
 import LanguageText from "./LanguageText";
@@ -15,8 +15,8 @@ function ProjectCard({
 }) {
   const { darkMode } = useContext(ThemeContext);
   const [isHovered, setIsHovered] = useState(false);
-  const videoRef = createRef();
-  const imgRef = createRef();
+  const videoRef = useRef();
+  const imgRef = useRef();
   const [width, setWidth] = useState(window.innerWidth < 1024);
   const [loading, setLoading] = useState(false);
 
@@ -27,7 +27,7 @@ function ProjectCard({
   };
   
   const handleVideoLoad = () => {
-    if (videoRef.current.readyState === 4) {
+    if (videoRef.current.readyState >= 2) {
       setLoading(false);
     }
   };
@@ -47,6 +47,7 @@ function ProjectCard({
 
   const handleVideoHover = () => {
     setIsHovered(true);
+    
     videoRef.current.play();
   };
 
