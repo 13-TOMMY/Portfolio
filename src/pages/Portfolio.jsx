@@ -4,7 +4,45 @@ import LanguageText from "../components/LanguageText";
 function Portfolio() {
   //preperation for dynamic elements
   // need to comment this so i can commit it as a develop branch no to break current
-  // const project = [];
+  const projects = [
+    {
+      index: 1,
+      photo: "/assets/potfolio/fox-remonty/fox-remonty.png",
+      video: "/assets/potfolio/fox-remonty/fox-remonty.mp4",
+      name: {
+        englishText: <>Fox Remonty - Construction Company</>,
+        polishText: <>Fox Remonty - Firmy Budowlanej</>,
+      },
+      description: {
+        englishText: (
+          <>
+            Fox Remonty represents my first freelance project, developed for a
+            construction company aiming to provide comprehensive information to
+            prospective clients. This application was crafted using cutting-edge
+            technologies, including REACT, TypeScript, SCSS, and extensive NPM
+            packages to ensure responsiveness. For the development of this
+            single-page application (SPA) website, I leveraged Vite, while Figma
+            and Canva served as my design tools.
+          </>
+        ),
+        polishText: (
+          <>
+            Fox Remonty to mój pierwszy niezależny projekt, opracowany dla firmy
+            budowlanej, mający na celu dostarczenie informacji potencjalnym
+            klientom. Ta aplikacja została stworzona przy użyciu
+            najnowocześniejszych technologii, w tym REACT, TypeScript, SCSS i
+            rozbudowane pakiety NPM w celu zapewnienia responsywności. Dla do
+            stworzenia tej jednostronicowej aplikacji (SPA) wykorzystałem
+            wykorzystałem Vite, a Figma i Canva posłużyły mi jako narzędzia
+            projektowe.
+          </>
+        ),
+      },
+      visit: "https://fox-remonty.com/",
+      view: "https://github.com/13-TOMMY/fox-remonty",
+    },
+    
+  ];
   return (
     <div className="portfolio-container">
       <ProjectCard
