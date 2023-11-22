@@ -38,6 +38,7 @@ function Portfolio() {
           </>
         ),
       },
+      techStack: ["React", "TypeScript", "SCSS", "NPM", "Vite"],
       visit: "https://fox-remonty.com/",
       view: "https://github.com/13-TOMMY/fox-remonty",
     },
@@ -72,6 +73,7 @@ function Portfolio() {
           </>
         ),
       },
+      techStack: ["React", "JavaScript", "CSS", "NPM", "Vite", "Firebase"],
       visit: "https://uni-life.netlify.app/",
       view: "https://github.com/13-TOMMY/Uni-Life",
     },
@@ -103,6 +105,7 @@ function Portfolio() {
           </>
         ),
       },
+      techStack: ["React", "JavaScript", "CSS", "NPM", "Vite", "API"],
       visit: "https://uni-life.netlify.app/",
       view: "https://github.com/13-TOMMY/Uni-Life",
     },
@@ -135,6 +138,7 @@ function Portfolio() {
           </>
         ),
       },
+      techStack: ["React", "JavaScript", "CSS", "NPM", "Vite", "Firebase"],
       visit: "https://b10g.netlify.app",
       view: "https://github.com/13-TOMMY/blog",
     },
@@ -169,8 +173,9 @@ function Portfolio() {
           </>
         ),
       },
+      techStack: ["React", "JavaScript", "CSS", "NPM", "Vite", "API"],
       visit: "https://fake-store-e.netlify.app",
-      view: "https://github.com/13-TOMMY/Uni-Life", // Note: You might want to replace this with the correct GitHub link for the Fake Store project
+      view: "https://github.com/13-TOMMY/fakeStore-eCommerce",
     },
     {
       index: 6,
@@ -204,6 +209,7 @@ function Portfolio() {
           </>
         ),
       },
+      techStack: ["JavaScript", "CSS", "HTML", "API"],
       visit:
         "https://stupendous-mandazi-1fbde3.netlify.app/#info-container",
       view: "https://github.com/jungwonJung/Space-Next",
@@ -238,6 +244,7 @@ function Portfolio() {
           </>
         ),
       },
+      techStack: ["React", "JavaScript", "CSS", "NPM", "Vite", "API"],
       visit: "https://cine-trail.netlify.app",
       view: "https://github.com/13-TOMMY/cinetrail",
     },
