@@ -1,22 +1,24 @@
-import { createRef, useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { ThemeContext } from "../context/ThemeContext";
 import { motion } from "framer-motion";
 import LanguageText from "./LanguageText";
 import Lottie from "lottie-react";
 import orangeLoading from "../Assets/lottie/loading /orange-ball-loading.json";
+import TechIcons from "./TechIcons";
 
 function ProjectCard({
   photo,
   videoLink,
   projectName,
   projectDescription,
+  techStack,
   viewlink,
   visitLink,
 }) {
   const { darkMode } = useContext(ThemeContext);
   const [isHovered, setIsHovered] = useState(false);
-  const videoRef = createRef();
-  const imgRef = createRef();
+  const videoRef = useRef();
+  const imgRef = useRef();
   const [width, setWidth] = useState(window.innerWidth < 1024);
   const [loading, setLoading] = useState(false);
 
@@ -27,7 +29,7 @@ function ProjectCard({
   };
   
   const handleVideoLoad = () => {
-    if (videoRef.current.readyState === 4) {
+    if (videoRef.current.readyState >= 2) {
       setLoading(false);
     }
   };
@@ -47,6 +49,7 @@ function ProjectCard({
 
   const handleVideoHover = () => {
     setIsHovered(true);
+    
     videoRef.current.play();
   };
 
@@ -97,6 +100,7 @@ function ProjectCard({
       <p className={darkMode ? "dark-text s-font" : "light-text s-font"}>
         {projectDescription}
       </p>
+      <TechIcons techArr={techStack}/>
       <div className="pc-btn-container">
         <motion.button
           whileHover={{ scale: 1.2 }}
