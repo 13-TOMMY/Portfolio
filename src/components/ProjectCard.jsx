@@ -4,12 +4,14 @@ import { motion } from "framer-motion";
 import LanguageText from "./LanguageText";
 import Lottie from "lottie-react";
 import orangeLoading from "../Assets/lottie/loading /orange-ball-loading.json";
+import TechIcons from "./TechIcons";
 
 function ProjectCard({
   photo,
   videoLink,
   projectName,
   projectDescription,
+  techStack,
   viewlink,
   visitLink,
 }) {
@@ -98,6 +100,7 @@ function ProjectCard({
       <p className={darkMode ? "dark-text s-font" : "light-text s-font"}>
         {projectDescription}
       </p>
+      <TechIcons techArr={techStack}/>
       <div className="pc-btn-container">
         <motion.button
           whileHover={{ scale: 1.2 }}

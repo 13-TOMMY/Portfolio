@@ -268,6 +268,7 @@ function Portfolio() {
               polishText={project.description?.polishText}
             />
           }
+          techStack={project.techStack}
           visitLink={project.visit}
           viewlink={project.view}
         />
