@@ -1,0 +1,95 @@
+@import "./mixins";
+@import "./reset";
+@import "./variables";
+@import "./global";
+@import "./modes";
+@import "./typography";
+@import "./transitions";
+// Import component-specific Sass files
+@import "./components/BackgroundSVG.scss";
+@import "./components/aboutLinks.scss";
+@import "./components/codewars.scss";
+@import "./components/contactForm.scss";
+@import "./components/cv.scss";
+@import "./components/footer.scss";
+@import "./components/header.scss";
+@import "./components/projectCard.scss";
+@import "./components/socialMediaConnections.scss";
+@import "./components/techStack.scss";
+@import "./components/imageBox.scss";
+
+// Import page-specific Sass files
+@import "./pages/homepage.scss";
+@import "./pages/about.scss";
+@import "./pages/portfolio.scss";
+@import "./pages/contact.scss";
+
+/*App.jsx*/
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .background-svg-app {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    @include tablet {
+      display: none;
+    }
+  }
+}
+/* viewable area */
+.viewable-area {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
+/* left side */
+.left-side {
+  width: max(200px, 10%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  z-index: 2;
+  @include tablet {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+  }
+}
+
+/* right side */
+.right-side {
+  width: 90%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 2;
+  @include tablet {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .app-footer-container {
+    width: 90%;
+    z-index: 2;
+    @include tablet {
+      width: 100%;
+    }
+  }
+}
