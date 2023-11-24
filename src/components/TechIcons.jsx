@@ -1,21 +1,28 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   FaReact,
   FaGitAlt,
   FaHtml5,
   FaJs,
-  FaTs,
   FaCss3Alt,
   FaSass,
   FaNpm,
 } from "react-icons/fa6";
-import { TbApi, TbBrandFirebase, TbBrandVite } from "react-icons/tb";
+import {
+  TbApi,
+  TbBrandFirebase,
+  TbBrandVite,
+  TbBrandTypescript,
+} from "react-icons/tb";
+import { ThemeContext } from "../context/ThemeContext";
 
 function TechIcons({ techArr }) {
+  const { darkMode } = useContext(ThemeContext);
+
   const techIconMap = {
     react: <FaReact />,
     javascript: <FaJs />,
-    typescript: <FaTs />,
+    typescript: <TbBrandTypescript />,
     html: <FaHtml5 />,
     scss: <FaSass />,
     css: <FaCss3Alt />,
@@ -26,7 +33,18 @@ function TechIcons({ techArr }) {
     git: <FaGitAlt />,
   };
 
-  return <div>TechIcons</div>;
+  return (
+    <div className="tech-icons-container">
+      {techArr.map((tech, index) => (
+        <div
+          key={index}
+          className={darkMode ? "dark-text m-font" : "light-text m-font"}
+        >
+          {techIconMap[tech.toLowerCase()] || techIconMap.default}
+        </div>
+      ))}
+    </div>
+  );
 }
 
 export default TechIcons;
