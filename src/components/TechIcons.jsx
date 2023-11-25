@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import {
   FaReact,
   FaGitAlt,
@@ -15,9 +15,12 @@ import {
   TbBrandTypescript,
 } from "react-icons/tb";
 import { ThemeContext } from "../context/ThemeContext";
+import { motion } from "framer-motion";
+import LanguageText from "./LanguageText";
 
 function TechIcons({ techArr }) {
   const { darkMode } = useContext(ThemeContext);
+  const [title, setTitle] = useState("");
 
   const techIconMap = {
     react: <FaReact />,
@@ -35,14 +38,28 @@ function TechIcons({ techArr }) {
 
   return (
     <div className="tech-icons-container">
-      {techArr.map((tech, index) => (
-        <div
-          key={index}
-          className={darkMode ? "dark-text m-font" : "light-text m-font"}
-        >
-          {techIconMap[tech.toLowerCase()] || techIconMap.default}
-        </div>
-      ))}
+      <h3 className={darkMode ? "dark-text m-font" : "light-text m-font"}>
+        {title || (
+          <LanguageText
+            englishText={<>---</>}
+            polishText={<>---</>}
+          />
+        )}
+      </h3>
+      <div className="tech-icons">
+        {techArr.map((tech, index) => (
+          <motion.div
+            key={index}
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            onMouseEnter={() => setTitle(`${tech}`)}
+            onMouseLeave={() => setTitle("")}
+            className={darkMode ? "dark-text m-font" : "light-text m-font"}
+          >
+            {techIconMap[tech.toLowerCase()] || techIconMap.default}
+          </motion.div>
+        ))}
+      </div>
     </div>
   );
 }
