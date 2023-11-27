@@ -63,10 +63,7 @@
     width: 100%;
     @include animation(Fade, 1);
   }
-  @include mobile {
-    width: 90%;
-    padding: 2.5%;
-  }
+  
   .ab-right-p {
     display: flex;
     flex-direction: column;
@@ -78,6 +75,10 @@
     gap: $gap-l;
     @include tablet {
       width: 650px;
+    }
+    @include mobile {
+      width: 90%;
+      padding: 2.5%;
     }
   }
   .about-carousel-img{
