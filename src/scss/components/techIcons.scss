@@ -1,13 +1,9 @@
 .tech-icons-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 100px;
-    gap: $gap-l;
+    gap: $gap-m;
+    height: 50px;
     width: 90%;
-    .tech-icons{
-        display: flex;
-        gap: $gap-m;
-    }
 }
