@@ -52,9 +52,8 @@ function Portfolio() {
       description: {
         englishText: (
           <>
-            Website in Progress. RE:serve is a user-friendly web app for
-            effortless restaurant and venue table reservations, powered by
-            React, three.js, Firebase, and responsive design. It offers a
+            Project in Progress. RE:serve is a user-friendly web app for
+            effortless restaurant and venue table reservations. It offers a
             single-page application (SPA) experience with React-router for
             seamless navigation, robust Firebase-based CRUD functionality, and
             comprehensive user authentication.
