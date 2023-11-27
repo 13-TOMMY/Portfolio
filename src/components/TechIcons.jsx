@@ -39,7 +39,7 @@ function TechIcons({ techArr }) {
   return (
     <div className="tech-icons-container">
       <h3 className={darkMode ? "dark-text m-font" : "light-text m-font"}>
-        {title || <LanguageText englishText={""} polishText={""} />}
+        {title || <LanguageText englishText={"Built Using"} polishText={"Zbudowane Używając"} />}
       </h3>
       <div className="tech-icons">
         {techArr.map((tech, index) => (

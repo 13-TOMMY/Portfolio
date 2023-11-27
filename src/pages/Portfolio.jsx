@@ -15,7 +15,7 @@ function Portfolio() {
       description: {
         englishText: (
           <>
-            Fox Remonty represents my first freelance project, developed for a
+            Fox Remonty is my first freelance project, developed for a
             construction company aiming to provide comprehensive information to
             prospective clients. This application was crafted using cutting-edge
             technologies, including REACT, TypeScript, SCSS, and extensive NPM

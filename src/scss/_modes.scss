@@ -25,7 +25,7 @@
   border: 1px solid $color-black;
 }
 .light-btn-two {
-  background-color: $secondLight;
+  background-color: transparent ;
   border: none;
 }
 .light-btn-two:hover {
@@ -38,7 +38,7 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10.9px);
   -webkit-backdrop-filter: blur(10.9px);
-  border: 1px solid #0FA3B1;
+  border: 1px solid #0fa3b1;
 }
 .dark-mode-viewArea {
   background-color: $baseDark;
@@ -59,7 +59,7 @@
   border: 1px solid $color-white;
 }
 .dark-btn-two {
-  background-color: $secondDark;
+  background-color: transparent;
   border: none;
 }
 .dark-btn-two:hover {

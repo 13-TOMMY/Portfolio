@@ -100,15 +100,15 @@ function ProjectCard({
       <p className={darkMode ? "dark-text s-font" : "light-text s-font"}>
         {projectDescription}
       </p>
-      <TechIcons techArr={techStack}/>
+      <TechIcons techArr={techStack} className="tech-icons-hover"/>
       <div className="pc-btn-container">
         <motion.button
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
           className={
             darkMode
-              ? "dark-text dark-btn pc-btn m-font"
-              : "light-text light-btn pc-btn m-font"
+              ? "dark-text dark-btn pc-btn m-font rgb-border"
+              : "light-text light-btn pc-btn m-font rgb-border"
           }
         >
           <a href={visitLink} target="_blank" rel="noopener noreferrer">
@@ -120,8 +120,8 @@ function ProjectCard({
           whileTap={{ scale: 0.9 }}
           className={
             darkMode
-              ? "dark-text dark-btn-two pc-btn m-font"
-              : "light-text light-btn-two pc-btn m-font"
+              ? "dark-text dark-btn-two pc-btn m-font rgb-border"
+              : "light-text light-btn-two pc-btn m-font rgb-border"
           }
         >
           <a href={viewlink} target="_blank" rel="noopener noreferrer">

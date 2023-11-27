@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   @include animation(BottomFadeCards, 1);
   padding: $padding-s-top-bottom;
   @include mobile {
@@ -13,7 +13,7 @@
     height: 800px;
   }
   .portfolio-img {
-    height: 35%;
+    height: 240px;
     width: 375px;
     object-fit: fill;
     border-radius: $in-border-radius;
@@ -24,7 +24,7 @@
     }
   }
   .portfolio-video {
-    height: 35%;
+    height: 240px;
     width: 375px;
     object-fit: fill;
     border-radius: $in-border-radius;
@@ -34,27 +34,26 @@
     animation: playVideo 1s linear infinite;
   }
   h3 {
-    height: 15%;
+    height: 50px;
     width: 90%;
-    padding-top: 10px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     text-align: center;
   }
   p {
-    height: 40%;
+    height: 200px;
     width: 90%;
     text-align: center;
-    @include mobile {
-      height: 45%;
-    }
+  }
+  .tech-icons-hover{
+    height: 100px;
   }
 }
 .pc-btn-container {
   display: flex;
   justify-content: space-around;
-  height: 10%;
+  height: 50px;
   width: 90%;
   .pc-btn {
     width: 125px;
@@ -63,6 +62,5 @@
     align-items: center;
     justify-content: center;
     border-radius: $in-border-radius;
-    font-weight: bold;
   }
 }
