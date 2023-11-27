@@ -2,7 +2,6 @@ import ProjectCard from "../components/ProjectCard";
 import LanguageText from "../components/LanguageText";
 
 function Portfolio() {
-
   const projects = [
     {
       index: 1,
@@ -15,25 +14,21 @@ function Portfolio() {
       description: {
         englishText: (
           <>
-            Fox Remonty is my first freelance project, developed for a
-            construction company aiming to provide comprehensive information to
-            prospective clients. This application was crafted using cutting-edge
-            technologies, including REACT, TypeScript, SCSS, and extensive NPM
-            packages to ensure responsiveness. For the development of this
-            single-page application (SPA) website, I leveraged Vite, while Figma
-            and Canva served as my design tools.
+            Fox Remonty, my debut freelance project, serves a construction
+            company by delivering extensive client information. Crafted as a
+            responsive single-page application (SPA) using Vite, the design
+            process was guided by Figma and Canva. Explore the project's
+            innovative features and design details.
           </>
         ),
         polishText: (
           <>
-            Fox Remonty to mój pierwszy niezależny projekt, opracowany dla firmy
-            budowlanej, mający na celu dostarczenie informacji potencjalnym
-            klientom. Ta aplikacja została stworzona przy użyciu
-            najnowocześniejszych technologii, w tym REACT, TypeScript, SCSS i
-            rozbudowane pakiety NPM w celu zapewnienia responsywności. Dla do
-            stworzenia tej jednostronicowej aplikacji (SPA) wykorzystałem
-            wykorzystałem Vite, a Figma i Canva posłużyły mi jako narzędzia
-            projektowe.
+            Fox Remonty, mój debiutancki projekt freelancerski, obsługuje firmę
+            budowlaną, dostarczając obszerne informacje klientowi. Stworzony
+            jako responsywna aplikacja jednostronowa (SPA) przy użyciu narzędzia
+            Vite, proces projektowania był prowadzony przy użyciu narzędzi Figma
+            i Canva. Zapraszam do odkrywania innowacyjnych funkcji i szczegółów
+            projektu.
           </>
         ),
       },
@@ -52,22 +47,21 @@ function Portfolio() {
       description: {
         englishText: (
           <>
-            Project in Progress. RE:serve is a user-friendly web app for
-            effortless restaurant and venue table reservations. It offers a
-            single-page application (SPA) experience with React-router for
-            seamless navigation, robust Firebase-based CRUD functionality, and
-            comprehensive user authentication.
+            The project is still in progress. RE:serve is an easy to use web app
+            that facilitates restaurant table reservations. React-router
+            provides a seamless single-page application (SPA) experience by
+            incorporating robust Firebase-based CRUD functionality and extensive
+            user authentication for a streamlined reservation process.
           </>
         ),
         polishText: (
           <>
-            Strona w trakcie realizacji. RE:serve to przyjazna dla użytkownika
-            aplikacja webowa umożliwiająca łatwe rezerwacje stolików w
-            restauracjach i lokalach, zasilana przez React, three.js, Firebase
-            oraz responsywny design. Zapewnia wiele stron do eksploracji dzięki
-            React-router, solidne funkcje CRUD oparte na Firebase oraz
-            kompleksową autentykację użytkownika. Jest to aplikacja typu Single
-            Page Application (SPA).
+            Projekt jest wciąż w trakcie realizacji. RE:serve to łatwa w użyciu
+            aplikacja internetowa ułatwiająca rezerwacje stolików w
+            restauracjach. React-router zapewnia płynne doświadczenie aplikacji
+            jednostronicowej (SPA), integrując solidną funkcjonalność CRUD
+            opartą na Firebase oraz obszerną autentykację użytkownika, co
+            sprawia, że proces rezerwacji jest przejrzysty i zoptymalizowany.
           </>
         ),
       },
@@ -86,20 +80,21 @@ function Portfolio() {
       description: {
         englishText: (
           <>
-            UniLife streamlines the process of discovering student housing.
-            Crafted with React and react-router, this responsive application
-            retrieves data from an API, providing an array of pages for
-            exploration. It showcases my expertise in React, React Router, and
-            seamless API integration. This is a Single Page Application (SPA).
+            UniLife simplifies the student housing discovery process by
+            leveraging React and react-router for a responsive experience. This
+            Single Page Application (SPA) integrates seamlessly with an API and
+            provides various pages for exploring and finding the ideal rental.
+            Filtering makes it simple to display what you like.
           </>
         ),
         polishText: (
           <>
-            UniLife upraszcza proces poszukiwania zakwaterowania dla studentów.
-            Stworzona przy użyciu React i react-router, responsywna aplikacja
-            pobiera dane z API, oferując wiele stron do eksploracji. Prezentuje
-            moją wiedzę w zakresie React, React Router oraz płynnej integracji z
-            API. To jest aplikacja typu Single Page Application (SPA).
+            UniLife upraszcza proces odkrywania mieszkań dla studentów,
+            wykorzystując React i react-router dla responsywnego doświadczenia.
+            Ta aplikacja jednostronicowa (SPA) doskonale integruje się z
+            interfejsem API, oferując różne strony do eksploracji i znalezienia
+            idealnego wynajmu. Dzięki funkcji filtrowania łatwo można wyświetlać
+            to, co cię interesuje.
           </>
         ),
       },
@@ -118,21 +113,22 @@ function Portfolio() {
       description: {
         englishText: (
           <>
-            Blog It is a single-page application (SPA) built using React,
-            Firebase, JavaScript, and CSS. It offers users the ability to create
-            accounts and share engaging articles. Visitors can not only read
-            these articles but also interact by liking and commenting, creating
-            a dynamic and engaging platform for sharing and discussing ideas.
+            The Blog web application allows users to easily create, share, and
+            interact with articles. The app utilises Firebase to provide robust
+            CRUD functionality, allowing users to write, read, edit, and delete
+            articles. Engage further by commenting on and liking articles,
+            building a dynamic and interactive platform for content sharing.
           </>
         ),
         polishText: (
           <>
-            Blog It to jednostronicowa aplikacja (SPA) stworzona przy użyciu
-            React, Firebase, JavaScript i CSS. Umożliwia użytkownikom tworzenie
-            kont i udostępnianie interesujących artykułów. Odwiedzający mogą nie
-            tylko czytać te artykuły, ale także interagować, lajkować i
-            komentować, tworząc dynamiczną i angażującą platformę do dzielenia
-            się i dyskutowania na temat pomysłów.
+            Aplikacja internetowa Blog umożliwia użytkownikom łatwe tworzenie,
+            udostępnianie i interakcję z artykułami. Aplikacja wykorzystuje
+            Firebase, aby dostarczyć solidną funkcjonalność CRUD, umożliwiając
+            użytkownikom pisanie, czytanie, edytowanie i usuwanie artykułów.
+            Zaangażuj się jeszcze bardziej, dodając komentarze i polubienia
+            artykułów, tworząc dynamiczną i interaktywną platformę do dzielenia
+            się treściami.
           </>
         ),
       },
@@ -151,23 +147,21 @@ function Portfolio() {
       description: {
         englishText: (
           <>
-            Fake Store is an immersive shopping web app that offers users a
-            personalized online shopping experience. Built using React, it's a
-            responsive Single Page Application (SPA) crafted based on a Figma
-            design. This project excels in implementing dynamic routing,
-            conditional rendering, and efficient state management using React
-            hooks. It also demonstrates fetching data from an API.
+            Fake Store, a web app designed for personalised online shopping,
+            immerses you in its world. Browse a wide range of products, save
+            your favourites, and then proceed to checkout when you've made your
+            decision. Take advantage of a user-friendly interface that improves
+            your online shopping experience.
           </>
         ),
         polishText: (
           <>
-            Fake Store to immersyjna aplikacja internetowa do zakupów, która
-            zapewnia użytkownikom spersonalizowane doświadczenie zakupowe
-            online. Zbudowana przy użyciu React, to responsywna aplikacja typu
-            Single Page Application (SPA), stworzona na podstawie projektu z
-            Figma. Ten projekt wyróżnia się w implementacji dynamicznego
-            routingu, warunkowego renderowania oraz użyciu React hooks. Ponadto,
-            prezentuje pobierania danych z API.
+            Fake Store, aplikacja internetowa zaprojektowana do
+            spersonalizowanych zakupów online, zanurza Cię w swoim świecie.
+            Przeglądaj szeroką gamę produktów, zapisuj ulubione, a następnie
+            przejdź do procesu zamówienia, gdy już podjąłeś decyzję. Skorzystaj
+            z przyjaznego interfejsu, który poprawia Twoje doświadczenie zakupów
+            online.
           </>
         ),
       },
@@ -186,30 +180,30 @@ function Portfolio() {
       description: {
         englishText: (
           <>
-            Space Next gives access to upcoming launch details, featuring
-            countdowns, voting, and interactive maps. This website built using
-            CSS, HTML, and JavaScript. We integrated APIs like the Rocket Launch
-            API for launch data and the Bing Maps Locations API for mapping.
-            Collaborated with talented individuals, Jungwon Jung and Paul Hondl,
-            this project highlighted my skills in web development, responsive
-            design, and data integration.
+            Explore the cosmos with Space Next, a website that provides
+            information on upcoming launches, including countdowns, voting, and
+            interactive maps. We integrated APIs such as Rocket Launch for
+            launch data and Bing Maps Locations for mapping seamlessly. This
+            project, which I worked on with talented individuals Jungwon Jung
+            and Paul Hondl, showcases my expertise in web development,
+            responsive design, and data integration."
           </>
         ),
         polishText: (
           <>
-            Space Next zapewnia dostęp do szczegółów nadchodzących startów,
-            zawierających odliczania, głosowania i interaktywne mapy. Ta strona
-            internetowa została stworzona przy użyciu CSS, HTML i JavaScript.
-            Zintegrowaliśmy interfejsy API, takie jak Rocket Launch API i Bing
-            Maps Locations API. Współpracując z utalentowanymi osobami, Jungwon
-            Jung i Paul Hondl, ten projekt podkreślił moje umiejętności w
-            zakresie rozwoju stron internetowych.
+            Odkrywaj kosmos z Space Next, stroną internetową dostarczającą
+            informacji o nadchodzących startach, w tym odliczaniach,
+            głosowaniach i interaktywnych mapach. Zintegrowaliśmy interfejsy
+            API, takie jak Rocket Launch dla danych o startach i Bing Maps
+            Locations do bezproblemowego mapowania. Ten projekt, nad którym
+            pracowałem z utalentowanymi osobami - Jungwon Jung i Paul Hondl,
+            prezentuje moje umiejętności w zakresie tworzenia stron
+            internetowych, responsywnego projektowania i integracji danych.
           </>
         ),
       },
       techStack: ["JavaScript", "CSS", "HTML", "API"],
-      visit:
-        "https://stupendous-mandazi-1fbde3.netlify.app/#info-container",
+      visit: "https://stupendous-mandazi-1fbde3.netlify.app/#info-container",
       view: "https://github.com/jungwonJung/Space-Next",
     },
     {
@@ -223,22 +217,22 @@ function Portfolio() {
       description: {
         englishText: (
           <>
-            CineTrail is an engaging website based on React that utilizes NPM
-            packages and a movie database API to deliver an immersive
-            movie-watching experience to users. With built-in user
-            authentication, it offers a personalized environment where users can
-            discover movies, leave comments, and interact with the world of
-            cinema.
+            Immerse yourself in the world of cinema with CineTrail, a
+            captivating React-based website that includes NPM packages and a
+            movie database API. CineTrail, with its seamless user
+            authentication, creates a personalised environment for users to
+            explore, discover, and interact within the immersive world of
+            cinema."
           </>
         ),
         polishText: (
           <>
-            CineTrail to atrakcyjna strona internetowa oparta na React,
-            wykorzystująca pakiety NPM i bazę danych filmów API, aby zapewnić
-            użytkownikom immersyjne doświadczenia związane z oglądaniem filmów.
-            Dzięki wbudowanej autentykacji użytkowników, oferuje
-            spersonalizowane środowisko, w którym użytkownicy mogą odkrywać
-            filmy, zostawiać komentarze i interakcjonować z światem kina.
+            Zanurz się w świecie kina z CineTrail, fascynującą stroną
+            internetową opartą na React, zawierającą paczki NPM oraz interfejs
+            API bazodanowy filmów. CineTrail, dzięki płynnej autentykacji
+            użytkownika, tworzy spersonalizowane środowisko, które pozwala
+            użytkownikom eksplorować, odkrywać i interweniować w fascynującym
+            świecie kina.
           </>
         ),
       },
