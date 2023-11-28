@@ -1,0 +1,97 @@
+//Light mode
+.div-light {
+  background: rgba(237, 237, 235, 0.71);
+  border-radius: $out-border-radius;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.6px);
+  -webkit-backdrop-filter: blur(11.6px);
+  border: 1px solid #588157;
+}
+.light-mode-viewArea {
+  background-color: $baseLight;
+}
+.light-text {
+  color: $color-black;
+}
+.selected-light {
+  color: $mainLight;
+}
+//Light btn styling
+.light-btn {
+  background-color: $mainLight;
+  border: none;
+}
+.light-btn:hover {
+  border: 1px solid $color-black;
+}
+.light-btn-two {
+  background-color: transparent ;
+  border: none;
+}
+.light-btn-two:hover {
+  border: 1px solid $color-black;
+}
+//Dark mode
+.div-dark {
+  background: rgba(50, 57, 58, 0.74);
+  border-radius: $out-border-radius;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.9px);
+  -webkit-backdrop-filter: blur(10.9px);
+  border: 1px solid #0fa3b1;
+}
+.dark-mode-viewArea {
+  background-color: $baseDark;
+}
+.dark-text {
+  color: $color-white;
+}
+.selected-dark {
+  color: $mainDark;
+}
+//Dark btn styling
+
+.dark-btn {
+  background-color: $mainDark;
+  border: none;
+}
+.dark-btn:hover {
+  border: 1px solid $color-white;
+}
+.dark-btn-two {
+  background-color: transparent;
+  border: none;
+}
+.dark-btn-two:hover {
+  border: 1px solid $color-white;
+}
+
+/*Border effect*/
+.rgb-border {
+  border: 2px solid transparent; /* Set the initial border size and color */
+  transition: border-color 0.5s ease-in-out;
+  border-radius: 24%;
+}
+.rgb-border:hover {
+  border-color: rgba(255, 255, 255, 0.5); /* Change the border color on hover */
+  animation: lightPulse 0.8s infinite alternate; /* Add a light pulse animation */
+}
+.rgb-border-circle {
+  border: 2px solid transparent; /* Set the initial border size and color */
+  transition: border-color 0.5s ease-in-out;
+  border-radius: 50%;
+  padding: 15px;
+}
+.rgb-border-circle:hover {
+  border-color: rgba(255, 255, 255, 0.5); /* Change the border color on hover */
+  animation: lightPulse 0.8s infinite alternate; /* Add a light pulse animation */
+}
+
+@keyframes lightPulse {
+  0% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.778);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0);
+  }
+}

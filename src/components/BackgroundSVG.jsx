@@ -1,0 +1,169 @@
+import { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
+
+function BackgroundSVG() {
+  const { darkMode } = useContext(ThemeContext);
+  return (
+    <div className="backgroundSVG-container">
+      {darkMode ? (
+        <svg
+          className="svg-background"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+          xmlnssvgjs="http://svgjs.dev/svgjs"
+          viewBox="0 0 640 800"
+          opacity="1"
+        >
+          <defs>
+            <filter
+              id="bbblurry-filter"
+              x="-100%"
+              y="-100%"
+              width="400%"
+              height="400%"
+              filterUnits="objectBoundingBox"
+              primitiveUnits="userSpaceOnUse"
+              colorInterpolationFilters="sRGB"
+            >
+              <feGaussianBlur
+                stdDeviation="47"
+                x="0%"
+                y="0%"
+                width="100%"
+                height="100%"
+                in="SourceGraphic"
+                edgeMode="none"
+                result="blur"
+              ></feGaussianBlur>
+            </filter>
+          </defs>
+          <g filter="url(#bbblurry-filter)">
+            <ellipse
+              rx="120.5"
+              ry="119.5"
+              cx="362.5826055716469"
+              cy="127.84891286320712"
+              fill="#0fa3b1ff"
+            ></ellipse>
+            <ellipse
+              rx="120.5"
+              ry="119.5"
+              cx="100.08116708590285"
+              cy="324.0863916592335"
+              fill="#ffbf00"
+            ></ellipse>
+            <ellipse
+              rx="120.5"
+              ry="119.5"
+              cx="587.5602647072357"
+              cy="617.0406465380603"
+              fill="#262b2cff"
+            ></ellipse>
+            <ellipse
+              rx="120.5"
+              ry="119.5"
+              cx="628.3733456596655"
+              cy="437.9796500480612"
+              fill="#ffbf00ff"
+            ></ellipse>
+            <ellipse
+              rx="120.5"
+              ry="119.5"
+              cx="442.3672015604549"
+              cy="653.0887117236073"
+              fill="#0fa3b1ff"
+            ></ellipse>
+            <ellipse
+              rx="120.5"
+              ry="119.5"
+              cx="178.06461262328463"
+              cy="169.1624242972329"
+              fill="#262b2cff"
+            ></ellipse>
+          </g>
+        </svg>
+      ) : (
+        <svg
+          className="svg-background"
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          xmlnsXlink="http://www.w3.org/1999/xlink"
+          xmlnssvgjs="http://svgjs.dev/svgjs"
+          viewBox="0 0 640 800"
+          opacity="1"
+        >
+          <defs>
+            <filter
+              id="bbblurry-filter"
+              x="-100%"
+              y="-100%"
+              width="400%"
+              height="400%"
+              filterUnits="objectBoundingBox"
+              primitiveUnits="userSpaceOnUse"
+              colorInterpolationFilters="sRGB"
+            >
+              <feGaussianBlur
+                stdDeviation="47"
+                x="0%"
+                y="0%"
+                width="100%"
+                height="100%"
+                in="SourceGraphic"
+                edgeMode="none"
+                result="blur"
+              ></feGaussianBlur>
+            </filter>
+          </defs>
+          <g filter="url(#bbblurry-filter)">
+            <ellipse
+              rx="120.5"
+              ry="119.5"
+              cx="362.5826055716469"
+              cy="127.84891286320712"
+              fill="#588157"
+            ></ellipse>
+            <ellipse
+              rx="120.5"
+              ry="119.5"
+              cx="100.08116708590285"
+              cy="324.0863916592335"
+              fill="#e5e4e2"
+            ></ellipse>
+            <ellipse
+              rx="120.5"
+              ry="119.5"
+              cx="533.3870133527619"
+              cy="632.158759650283"
+              fill="#ff7f50"
+            ></ellipse>
+            <ellipse
+              rx="120.5"
+              ry="119.5"
+              cx="628.3733456596655"
+              cy="437.9796500480612"
+              fill="#588157"
+            ></ellipse>
+            <ellipse
+              rx="120.5"
+              ry="119.5"
+              cx="442.3672015604549"
+              cy="653.0887117236073"
+              fill="#e5e4e2"
+            ></ellipse>
+            <ellipse
+              rx="120.5"
+              ry="119.5"
+              cx="178.06461262328463"
+              cy="169.1624242972329"
+              fill="#ff7f50"
+            ></ellipse>
+          </g>
+        </svg>
+      )}
+    </div>
+  );
+}
+
+export default BackgroundSVG;
