@@ -1,7 +1,11 @@
 import ProjectCard from "../components/ProjectCard";
 import LanguageText from "../components/LanguageText";
+import { ThemeContext } from "../context/ThemeContext";
+import { useContext } from "react";
 
 function Portfolio() {
+  const { darkMode } = useContext(ThemeContext);
+
   const projects = [
     {
       index: 1,
@@ -186,7 +190,7 @@ function Portfolio() {
             launch data and Bing Maps Locations for mapping seamlessly. This
             project, which I worked on with talented individuals Jungwon Jung
             and Paul Hondl, showcases my expertise in web development,
-            responsive design, and data integration."
+            responsive design, and data integration.
           </>
         ),
         polishText: (
@@ -195,10 +199,9 @@ function Portfolio() {
             informacji o nadchodzących startach, w tym odliczaniach,
             głosowaniach i interaktywnych mapach. Zintegrowaliśmy interfejsy
             API, takie jak Rocket Launch dla danych o startach i Bing Maps
-            Locations do bezproblemowego mapowania. Ten projekt, nad którym
-            pracowałem z utalentowanymi osobami - Jungwon Jung i Paul Hondl,
-            prezentuje moje umiejętności w zakresie tworzenia stron
-            internetowych, responsywnego projektowania i integracji danych.
+            Locations do mapowania. Ten projekt, nad którym pracowałem z osobami
+            - Jungwon i Paul, prezentuje moje umiejętności w tworzenia stron,
+            responsywnego projektowania i integracji danych.
           </>
         ),
       },
@@ -243,28 +246,44 @@ function Portfolio() {
   ];
   return (
     <div className="portfolio-container">
-      {projects.map((project, index) => (
-        <ProjectCard
-          key={index}
-          photo={project.photo}
-          videoLink={project.video}
-          projectName={
-            <LanguageText
-              englishText={project.name?.englishText}
-              polishText={project.name?.polishText}
-            />
-          }
-          projectDescription={
-            <LanguageText
-              englishText={project.description?.englishText}
-              polishText={project.description?.polishText}
-            />
-          }
-          techStack={project.techStack}
-          visitLink={project.visit}
-          viewlink={project.view}
-        />
-      ))}
+      <div
+        className={
+          darkMode
+            ? " div-dark portfolio-header"
+            : " div-light portfolio-header"
+        }
+      >
+        <h3 className={darkMode ? "dark-text m-font" : "light-text m-font"}>
+          <LanguageText
+            englishText={<>Play video on hover</>}
+            polishText={<>Odtwarzanie wideo po najechaniu</>}
+          />
+        </h3>
+      </div>
+      <div className="portfolio-cards">
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={index}
+            photo={project.photo}
+            videoLink={project.video}
+            projectName={
+              <LanguageText
+                englishText={project.name?.englishText}
+                polishText={project.name?.polishText}
+              />
+            }
+            projectDescription={
+              <LanguageText
+                englishText={project.description?.englishText}
+                polishText={project.description?.polishText}
+              />
+            }
+            techStack={project.techStack}
+            visitLink={project.visit}
+            viewlink={project.view}
+          />
+        ))}
+      </div>
     </div>
   );
 }
