@@ -12,8 +12,8 @@ function Portfolio() {
       photo: "/assets/potfolio/fox-remonty/fox-remonty.png",
       video: "/assets/potfolio/fox-remonty/fox-remonty.mp4",
       name: {
-        englishText: <>Fox Remonty - Construction Company</>,
-        polishText: <>Fox Remonty - Firmy Budowlanej</>,
+        englishText: <>Fox Remonty</>,
+        polishText: <>Fox Remonty</>,
       },
       description: {
         englishText: (
@@ -45,8 +45,8 @@ function Portfolio() {
       photo: "/assets/potfolio/re-serve/re-serve-img.jpg",
       video: "/assets/potfolio/re-serve/re-serve.mp4",
       name: {
-        englishText: <>RE:serve - Simplify Reservations</>,
-        polishText: <>RE:serve - Ułatw Rezerwacje</>,
+        englishText: <>RE:serve</>,
+        polishText: <>RE:serve</>,
       },
       description: {
         englishText: (
@@ -78,8 +78,8 @@ function Portfolio() {
       photo: "/assets/potfolio/uni-life/uni-life-img.png",
       video: "/assets/potfolio/uni-life/uni-life.mp4",
       name: {
-        englishText: <>UniLife - Student Accommodation Search</>,
-        polishText: <>UniLife - Wyszukiwanie Zakwaterowania Studenckiego</>,
+        englishText: <>UniLife</>,
+        polishText: <>UniLife</>,
       },
       description: {
         englishText: (
@@ -111,8 +111,8 @@ function Portfolio() {
       photo: "/assets/potfolio/blog/blog-img.png",
       video: "/assets/potfolio/blog/blog.mp4",
       name: {
-        englishText: <>Blog - Write Your Story</>,
-        polishText: <>Blog - Napisz Swoją Historię</>,
+        englishText: <>Blog</>,
+        polishText: <>Blog</>,
       },
       description: {
         englishText: (
@@ -145,8 +145,8 @@ function Portfolio() {
       photo: "/assets/potfolio/fake-store/fake-store-img.png",
       video: "/assets/potfolio/fake-store/fake-store.mp4",
       name: {
-        englishText: <>Fake store - Online Shopping</>,
-        polishText: <>Fake Store - Zakupy Online</>,
+        englishText: <>Fake store</>,
+        polishText: <>Fake Store</>,
       },
       description: {
         englishText: (
@@ -178,8 +178,8 @@ function Portfolio() {
       photo: "/assets/potfolio/space-next/space-next-img.png",
       video: "/assets/potfolio/space-next/space-next.mp4",
       name: {
-        englishText: <>Space Next - Real Time Launches</>,
-        polishText: <>Space Next - Starty na Żywo</>,
+        englishText: <>Space Next</>,
+        polishText: <>Space Next</>,
       },
       description: {
         englishText: (
@@ -214,8 +214,8 @@ function Portfolio() {
       photo: "/assets/potfolio/cine-trail/cine-trail-img.png",
       video: "/assets/potfolio/cine-trail/cine-trail.mp4",
       name: {
-        englishText: <>Cinetrail - Database of Movies</>,
-        polishText: <>Cinetrail - Baza Filmów</>,
+        englishText: <>Cinetrail</>,
+        polishText: <>Cinetrail</>,
       },
       description: {
         englishText: (
