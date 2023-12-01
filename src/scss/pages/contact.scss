@@ -6,8 +6,13 @@
   width: 100%;
   height: fit-content;
   padding: $padding-m-top-bottom;
-  gap: $gap-xl;
+  gap: $gap-l;
   @include tablet {
+  }
+  .post-box-lottie{
+    display: flex;
+    height: 200px;
+    width: 100%;
   }
 }
 
