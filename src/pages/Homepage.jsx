@@ -24,22 +24,25 @@ function Homepage() {
             <LanguageText
               englishText={
                 <>
-                  Hello! I&apos;m Tomasz Lis, a Krakow-based Front-end
-                  Developer. My world revolves around code and continuous
-                  learning. Currently, I&apos;m on a journey to become a Full
-                  Stack Developer, driven by my passion for pushing boundaries.
-                  Coding isn&apos;t just my job; it&apos;s a daily source of
-                  inspiration for me, fuelling my growth.
+                  Hello, fellow tech enthusiasts! I&apos;m Tomasz Lis, a
+                  Krakow-based Front-end Developer with a passion for code and
+                  continuous learning. Driven by my insatiable curiosity,
+                  I&apos;m on a journey to become a Full-stack Developer,
+                  crafting user-centric interfaces that blend technology and
+                  human interaction seamlessly. Join me on this path of
+                  innovation as we push the boundaries of digital experiences.
                 </>
               }
               polishText={
                 <>
-                  Cześć! Jestem Tomasz Lis, Front-end Developer z Krakowa. Moje
-                  życie kręci się wokół kodu i nieustannej nauki. Obecnie dążę
-                  do zostania Deweloperem Full Stack, kierując się pasją do
-                  przekraczania własnych ograniczeń. Programowanie to nie tylko
-                  moja praca; to codzienne źródło inspiracji, które napędza mój
-                  rozwój.
+                  Hello, miłośnicy technologii! Jestem Tomasz Lis, Front-end
+                  Developer z Krakowa z pasją do kodowania i ciągłego uczenia
+                  się. Jestem napędzany nienasyconą ciekawością i planuję zostać
+                  Full-stack Developerem. Tworzę interfejsy użytkownika
+                  ukierunkowane na użytkownika, które łączą technologię i
+                  interakcję człowieka w bezproblemowy sposób. Dołącz do mnie w
+                  tej podróży innowacji, gdy przesuwamy granice doświadczeń
+                  cyfrowych.
                 </>
               }
             />
