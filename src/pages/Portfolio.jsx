@@ -41,6 +41,37 @@ function Portfolio() {
       view: "https://github.com/13-TOMMY/fox-remonty",
     },
     {
+      index: 8,
+      photo: "/assets/potfolio/portoflio/portoflio.png",
+      video: "/assets/potfolio/portfolio/portoflio.mp4",
+      name: {
+        englishText: <>Tommy Portfolio</>,
+        polishText: <>Tommy Portfolio</>,
+      },
+      description: {
+        englishText: (
+          <>
+            The design on the website you are currently viewing was made with
+            figma. Many pages served as the source of inspiration for the
+            website's style. This website is continuously improving. You can
+            look at my projects, get in touch with me, and learn more about me.
+          </>
+        ),
+        polishText: (
+          <>
+            Projekt strony internetowej, którą właśnie przeglądasz, został
+            wykonany w programie Figma. Wiele stron posłużyło jako źródło
+            inspiracji dla stylu strony. Ta strona jest stale ulepszana. Możesz
+            obejrzeć moje projekty, skontaktować się ze mną i dowiedzieć się
+            więcej o mnie.
+          </>
+        ),
+      },
+      techStack: ["React", "JavaScript", "SCSS", "NPM", "Vite"],
+      visit: "https://tommy-portfolio.dev/",
+      view: "https://github.com/13-TOMMY/Portfolio",
+    },
+    {
       index: 2,
       photo: "/assets/potfolio/re-serve/re-serve-img.jpg",
       video: "/assets/potfolio/re-serve/re-serve.mp4",
